@@ -3415,7 +3415,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"futurano2d_demibold Damage"
+				"name"		"futurano2d_demibold_dmg"
 				"tall"		"20"
 				"antialias" 	"1"
 			}
