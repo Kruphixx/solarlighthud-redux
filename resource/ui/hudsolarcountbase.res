@@ -90,7 +90,7 @@
 		"textAlignment"			"west"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"Futura16"
+		"font"					"SLBoldMediumSmall"
 		"fgcolor_override"		"TanLight"
 	}
 	
@@ -111,7 +111,7 @@
 		"textAlignment"			"west"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"Futura16"
+		"font"					"SLBoldMediumSmallStroke"
 		"fgcolor_override"		"TanDarker"
 	}
 }

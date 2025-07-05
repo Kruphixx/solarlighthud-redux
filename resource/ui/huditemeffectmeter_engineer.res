@@ -12,11 +12,11 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"SkullIcon"
-		"xpos"			"2"
-		"ypos"			"4"
+		"xpos"			"0"
+		"ypos"			"2"
 		"zpos"			"3"
-		"wide"			"12"
-		"tall"			"12"
+		"wide"			"18"
+		"tall"			"18"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/leaderboard_class_engineer.vtf"
@@ -26,14 +26,15 @@
 	"ItemEffectMeterCount"
 	{
 		"fieldName"		"ItemEffectMeterCount"
-		"xpos"		"10"
+		"xpos"		"11"
+		"ypos"		"1"
 		"textAlignment"			"center"
 		"wide"		"30"
 	}
 	
 	"ItemEffectMeterCountShadow"
 	{
-		"fieldName"		"ItemEffectMeterCount"
+		"fieldName"		"ItemEffectMeterCountShadow"
 		"xpos"		"11"
 		"textAlignment"			"center"
 		"wide"		"30"
@@ -51,7 +52,7 @@
 		"fillcolor"		"46 43 42 230"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"draw_corner_height" "11"
 	}

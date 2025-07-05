@@ -1,3 +1,4 @@
+//demoman sticky charge meter and sticky count
 "Resource/UI/HudDemomanPipes.res"
 {
 	"background"
