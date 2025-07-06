@@ -28,6 +28,7 @@ event CompetitiveGame_RestoreChatWindow
     RunEventChild HudPlayerHealth HPSpawnAnim 0.1
 	RunEventChild HudPlayerClass ClassSpawnAnim 0.1
     RunEventChild HudWeaponAmmo AmmoSpawnAnim 0.1
+	RunEvent HudTournament_DoorsCleanup 0.1
 }
 
 event HPSpawnAnim
@@ -68,11 +69,6 @@ event HudTournamentSetupPanelClose
 	Animate HudTournamentSetup	Position	"c-90 -70"	Spline 0.001 0.2
 }
 
-
-
-event HudMatchStatus_ShowMatchStartDoors
-{
-}
 
 //HP AND AMMO
 
@@ -258,13 +254,13 @@ event ActiveTimerDim
 {
 }
 
-event HudTournament_AnimateTeams_In
-{
-}
+//event HudTournament_AnimateTeams_In
+//{
+//}
 
-event HudTournament_AnimateTeams_Out
-{
-}
+//event HudTournament_AnimateTeams_Out
+//{
+//}
 
 event HudReadyPulse
 {
@@ -316,4 +312,136 @@ event TeamsFullArrowAnimateEnd
 {
 	StopEvent TeamsFullArrowAnimate 0.0
 	StopEvent TeamsFullArrowAnimateLoop 0.0
+}
+
+//disable surveys
+
+event SurveyShowSequence
+{
+	// Modified: quickly gets rid of the survey
+	RunEventChild Survey SurveyDelete 0
+
+//	Animate Survey		ypos	480		Linear 0 0
+//	Animate Survey		ypos	150		Linear 1 0.3
+//	Animate Survey		ypos	130		Deaccel 1.3 0.1
+//	Animate Survey		ypos	150		Accel 1.4 0.1
+}
+
+event SurveySubmitSequence
+{
+//	// Show submitting
+//	SetVisible	QuestionContainer	0	0
+//	SetVisible	SubmittingContainer	1	0
+//
+//	// Show thanks
+//	SetVisible	SubmittingContainer	0	2
+//	SetVisible	ThanksContainer		1	2
+//
+//	RunEvent SurveyHideSequence 6
+}
+
+//casual and mvm timer
+
+event HudTournament_ShowTimerCompetitive
+{
+	Animate CountdownLabel ypos 150 Linear 0 0
+	Animate CountdownLabelShadow ypos 150 Linear 0 0
+
+	SetVisible CountdownBG  1 0
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+}
+
+event HudTournament_ShowTimerDefault
+{
+	Animate CountdownLabel ypos 400 Linear 0 0
+	Animate CountdownLabelShadow ypos 400 Linear 0 0
+
+	SetVisible CountdownBG  1 0
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+}
+
+event HudTournament_HideTimer
+{
+	SetVisible CountdownBG  0 0
+	SetVisible CountdownLabel 0 0
+	SetVisible CountdownLabelShadow 0 0
+}
+
+
+//CASUAL MODE DOORS
+
+
+//WARMUP END, MATCH BEGIN
+event HudMatchStatus_ShowMatchStartDoors
+{
+	SetVisible	BlueTeamPanel	1	0
+	SetVisible	RedTeamPanel	1	0
+	SetVisible CountdownLabel 1 0
+	SetVisible CountdownLabelShadow 1 0
+
+	SetVisible	HudTournamentBG 0	2
+	RunEventChild MatchDoors PlayDoorCloseAnim 0
+	RunEventChild FrontParticlePanel PlayDoorSlamParticles 0.45
+	RunEventChild MatchDoors PlayDoorOpenAnim 7
+
+	RunEvent HudTournament_AnimateTeams_In 0.25
+	RunEvent HudTournament_AnimateTeams_Out 7.70
+
+	SetVisible MatchDoors	0 9
+
+	RunEvent HudTournament_DoorsCleanup 10
+	
+	SetVisible CountdownBG 1 11
+}
+
+//ROUND WIN, TRANSITION, REOPEN (UM, NO?)
+event HudMatchStatus_ShowMatchWinDoors
+{
+	SetVisible	PostGameTopBar	1	0
+	SetVisible	PostGameBottomBar	1	0
+	
+	//Cleanup
+	Animate PostGameTopBar ypos -55 Linear 0 0
+	Animate PostGameBottomBar ypos r-5 Linear 0 0
+	
+	//Slide in
+	Animate PostGameTopBar ypos 0 Deaccel 0 1.5
+	Animate PostGameBottomBar ypos r50 Deaccel 0 1.5
+	
+	Animate PostGameTopBar ypos -55 Accel 4.5 1.5
+	Animate PostGameBottomBar ypos r-5 Accel 4.5 1.5
+}
+	
+
+//MATCH OVER, MAP VOTE?
+event HudMatchStatus_ShowMatchWinDoors_NoOpen
+{
+	SetVisible	PostGameTopBar	1	0
+	SetVisible	PostGameBottomBar	1	0
+	
+	//Cleanup
+	Animate PostGameTopBar ypos -55 Linear 0 0
+	Animate PostGameBottomBar ypos r-5 Linear 0 0
+	Animate PostGameBGLine alpha 0 Linear 0 0
+	Animate PostGameBGColor alpha 0 Linear 0 0
+	
+	//Slide in
+	Animate PostGameTopBar ypos 0 Deaccel 0 1.5
+	Animate PostGameBottomBar ypos r50 Deaccel 0 1.5
+	Animate PostGameBGLine alpha 255 Spline 0 1.5
+	Animate PostGameBGColor alpha 255 Spline 0 1.5
+}
+
+event HudTournament_DoorsCleanup
+{
+	SetVisible	PostGameTopBar	0	0
+	SetVisible	PostGameBottomBar	0	0
+	
+	Animate PostGameTopBar ypos 0 Linear 0 0
+	Animate PostGameBottomBar ypos r50 Linear 0 0
+
+	Animate RedTeamPanel xpos r-5 Accel 0 0
+	Animate BlueTeamPanel xpos -155 Accel 0 0
 }
