@@ -5,9 +5,7 @@
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
-		"xpos"			"r270"
 	}
-	
 	"ItemEffectMeterLabelNew"
 	{
 		"fieldName"				"ItemEffectMeterLabelNew"
