@@ -1,5 +1,5 @@
-//note: this file and everything related to it is a pain to work with.
-//todo: add some way to recognize team color
+//this file and everything related to it is a pain to work with.
+//todo: add some way to recognize team color (maybe a banner above disguise text)
 //todo: find out why some icons are missing in first game load/spy spawn
 "Resource/UI/disguise_menu/HudMenuSpyDisguise.res"
 {
@@ -11,6 +11,25 @@
 		"enabled"		"0"
 	}
 
+	"teambg"	//might be removed. testing....
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"teambg"
+		"xpos"			"0"	[$WIN32]
+		"ypos"			"10"
+		"ypos_hidef"	"-100"	//off-screen
+		"ypos_lodef"	"-100"	//off-screen
+		"zpos"			"1"
+		"wide"			"f0"
+		"tall"			"18"
+		"visible"		"1"
+		"enabled"		"1"
+		"drawcolor"		"255 255 255 255"
+		"teambg_1"		"replay/thumbnails/ColorTanDarkTransparent"
+		"teambg_2"		"replay/thumbnails/ColorREDTransparent"
+		"teambg_3"		"replay/thumbnails/ColorBLUTransparent"
+		"scaleImage"		"1"
+	}
 	"NewBG"
 	{
 		"ControlName"	"ImagePanel"
