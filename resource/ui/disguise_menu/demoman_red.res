@@ -50,15 +50,15 @@
 		"icon"			"ico_key_blank"
 		"iconColor"		"255 255 255 255"
 	}
-
+	
 	"NewNumberLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"Default"
-		"fgcolor"		"Black"
-		"xpos"			"15"
-		"ypos"			"90"
+		"font"			"Futura16"
+		"fgcolor"		"White"
+		"xpos"			"0"
+		"ypos"			"3"
 		"zpos"			"0"
 		"wide"			"15"
 		"tall"			"15"
@@ -71,7 +71,6 @@
 		"dulltext"		"1"
 		"brighttext"	"0"
 	}
-
 	"NumberLabel"
 	{
 		"ControlName"	"CExLabel"

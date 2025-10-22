@@ -1,6 +1,6 @@
 //note: this file and everything related to it is a pain to work with.
 //todo: add some way to recognize team color
-//todo: add support for simple disguise (tf_simple_disguise_menu 1)
+//todo: find out why some icons are missing in first game load/spy spawn
 "Resource/UI/disguise_menu/HudMenuSpyDisguise.res"
 {
 	"MainBackground"
@@ -13,7 +13,7 @@
 
 	"NewBG"
 	{
-		"ControlName"		"CTFImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"NewBG"
 		"xpos"			"0"	[$WIN32]
 		"ypos"			"10"
@@ -217,7 +217,7 @@
 		"wide"			"96"
 		"tall"			"120"
 
-		"visible"		"1"
+		"visible"		"0"
 	}
 
 	"class_item_blue_5"
@@ -243,7 +243,7 @@
 		"wide"			"96"
 		"tall"			"120"
 
-		"visible"		"1"
+		"visible"		"0"
 	}
 
 	"class_item_blue_6"
@@ -269,7 +269,7 @@
 		"wide"			"96"
 		"tall"			"120"
 
-		"visible"		"1"
+		"visible"		"0"
 	}
 
 	"class_item_blue_7"
@@ -344,8 +344,8 @@
 		"xpos"			"9999"
 		"ypos"			"9999"
 		"zpos"			"4"
-		"wide"			"15"
-		"tall"			"15"
+		"wide"			"0"
+		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"
@@ -357,10 +357,10 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"Default"
-		"fgcolor"		"Black"
-		"xpos"			"25"
-		"ypos"			"100"
+		"font"			"Futura16"
+		"fgcolor"		"White"
+		"xpos"			"5"
+		"ypos"			"73"
 		"zpos"			"5"
 		"wide"			"15"
 		"tall"			"15"
@@ -378,11 +378,11 @@
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"NumberBg"
-		"xpos"			"10"
-		"ypos"			"10"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"4"
-		"wide"			"15"
-		"tall"			"15"
+		"wide"			"0"
+		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"
@@ -394,10 +394,10 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"Default"
-		"fgcolor"		"Black"
-		"xpos"			"10"
-		"ypos"			"10"
+		"font"			"Futura16"
+		"fgcolor"		"White"
+		"xpos"			"55"
+		"ypos"			"72"
 		"zpos"			"5"
 		"wide"			"15"
 		"tall"			"15"
@@ -418,8 +418,8 @@
 		"xpos"			"379"
 		"ypos"			"140"
 		"zpos"			"4"
-		"wide"			"15"
-		"tall"			"15"
+		"wide"			"0"
+		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"
@@ -431,10 +431,10 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"Default"
-		"fgcolor"		"Black"
-		"xpos"			"379"
-		"ypos"			"140"
+		"font"			"Futura16"
+		"fgcolor"		"White"
+		"xpos"			"105"
+		"ypos"			"73"
 		"zpos"			"5"
 		"wide"			"15"
 		"tall"			"15"

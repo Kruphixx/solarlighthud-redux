@@ -50,15 +50,15 @@
 		"icon"			"ico_key_blank"
 		"iconColor"		"255 255 255 255"
 	}
-
+	//controls number in concise disguise method
 	"NewNumberLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"Futura12"
+		"font"			"Futura16"
 		"fgcolor"		"White"
-		"xpos"			"-5"
-		"ypos"			"0"
+		"xpos"			"0"
+		"ypos"			"3"
 		"zpos"			"0"
 		"wide"			"15"
 		"tall"			"15"
@@ -71,7 +71,7 @@
 		"dulltext"		"1"
 		"brighttext"	"0"
 	}
-	//note: this is the one that ACTUALLY controls the label
+	//controls number in normal disguise method
 	"NumberLabel"
 	{
 		"ControlName"	"CExLabel"
