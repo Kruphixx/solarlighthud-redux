@@ -15,21 +15,25 @@
 		"tabPosition"	"0"
 	}
 	
-	"BGDarken"
+	"bggradient"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"BGDarken"
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"bggradient"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"f0"
-		"tall"			"f0"
-		"fillcolor"		"0 0 0 150"
+		"zpos"			"-100"
+		"wide"			"f-20"
+		"tall"			"f-20"
+		"drawcolor"     "128 128 128 255"    
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
-		"alpha"			"255"
+		"image"			"replay/thumbnails/gradient_red"
+		"teambg_1"		"replay/thumbnails/gradient_red"
+		"teambg_2"		"replay/thumbnails/gradient_red"
+		"teambg_3"		"replay/thumbnails/gradient_blue"
+		"alpha"			"170"
 	}
 	
 	"BGHeader"
@@ -38,7 +42,7 @@
 		"fieldName"		"BGHeader"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"0"
+		"zpos"			"1"
 		"wide"			"f0"
 		"tall"			"25"
 		"fillcolor"		"0 0 0 0"
@@ -46,8 +50,8 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/ColorTanDark"
-		"teambg_1"		"replay/thumbnails/ColorBLU"
+		"image"			"replay/thumbnails/ColorTanLight"
+		"teambg_1"		"replay/thumbnails/ColorTanLight"
 		"teambg_2"		"replay/thumbnails/ColorRED"
 		"teambg_2_lodef"	"replay/thumbnails/ColorRED"
 		"teambg_3"		"replay/thumbnails/ColorBLU"
@@ -61,7 +65,7 @@
 		"fieldName"		"BGFooter"
 		"xpos"			"0"
 		"ypos"			"r25"
-		"zpos"			"0"
+		"zpos"			"1"
 		"wide"			"f0"
 		"tall"			"25"
 		"fillcolor"		"0 0 0 0"
@@ -70,7 +74,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"replay/thumbnails/ColorTanLight"
-		"teambg_1"		"replay/thumbnails/ColorRED"
+		"teambg_1"		"replay/thumbnails/ColorTanLight"
 		"teambg_2"		"replay/thumbnails/ColorRED"
 		"teambg_2_lodef"	"replay/thumbnails/ColorRED"
 		"teambg_3"		"replay/thumbnails/ColorBLU"
@@ -104,18 +108,19 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"BGBar"
-		"xpos"			"0"
+		"xpos"			"cs-0.5"
 		"ypos"			"100"
 		"zpos"			"0"
-		"wide"			"f0"
+		"wide"			"f30"
 		"tall"			"280"
-		"fillcolor"		"0 0 0 170"
+		"fillcolor"		"0 0 0 0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"alpha"			"255"
-	}
+		"border"		"BorderBlackCornersTransparentVerySmall"
+		"proportionaltoparent"	"1"
+	}	
 	
 	"SelectTeamLabelSolar" [$WIN32]
 	{
@@ -143,7 +148,7 @@
 		"pin_to_sibling_corner"		"4"
 	}
 	
-	"SelectTeamLabelColored"
+	"SelectTeamLabelColored"	//centerwrap is the only way to center this shit because of the special text characters used in labeltext
 	{
 		"controlname" "cautofittinglabel"
 		"fieldName"		"SelectTeamLabelColored"
@@ -158,10 +163,11 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_SelectATeam"
-		"textAlignment"	"center"
+		"textAlignment"	"west"
 		"font"			"SLHealthAmmo"
 		"auto_wide_tocontents"	"1"
 		"centerwrap"			"1"
+		"textinsetx"	"0" //didn't work either
 		
 		//define text colors
 		"colors"
@@ -183,26 +189,29 @@
 		"pin_to_sibling_corner"		"4"
 	}
 	
-	"SelectTeamLabelSolarOutline" [$WIN32]
+	"SelectTeamLabelSolarOutline" [$WIN32] //centerwrap is the only way to center this shit because of the special text characters used in labeltext
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SelectTeamLabelSolarOutline"
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"10"
-		"wide"			"300"
+		"wide"			"f0"
 		"tall"			"40"
-		"autoResize"	"1"
-		"pinCorner"		"2"
+		"autoResize"	"0"
+		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_SelectATeam"
-		"textAlignment"	"center"
+		"textAlignment"	"west"
 		"font"			"SLHealthAmmoOutline"
 		"fgcolor"		"TanDarker"
 		"auto_wide_tocontents"	"1"
 		"centerwrap"			"1"
+		"border"		"BorderTargetIDTanDarker"
+		"proportionaltoparent"	"1"
+		"textinsetx"	"0" //didn't work either
 		
 		"pin_to_sibling"	"SelectTeamLabelAnchor"
 		"pin_corner_to_sibling"		"4"
@@ -690,7 +699,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"HighlanderLabel"
 		"xpos"			"c-100"
-		"ypos"			"82"
+		"ypos"			"22"
 		"zpos"			"6"
 		"wide"			"200"
 		"tall"			"35"
@@ -712,7 +721,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"HighlanderLabelShadow"
 		"xpos"			"c-100"
-		"ypos"			"82"
+		"ypos"			"22"
 		"zpos"			"5"
 		"wide"			"200"
 		"tall"			"35"
@@ -866,21 +875,5 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
-	
-	"Box1"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"Box1"
-		"xpos"			"c-210"
-		"ypos"			"75"
-		"zpos"			"0"
-		"wide"			"420"
-		"tall"			"295"
-		"fillcolor"		"0 0 0 200"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-	}	
 }
 

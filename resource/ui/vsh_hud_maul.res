@@ -148,7 +148,7 @@
 		{
 			"ControlName"		"CTFImagePanel"
 			"fieldName"		"VSHCustomBG"
-			"xpos"			"c-88"
+			"xpos"			"cs-0.5"
 			"ypos"			"56"
 			"zpos"			"-1"
 			"wide"			"174"
@@ -156,7 +156,27 @@
 			"zpos"          "16"
 			"visible"		"1"
 			"enabled"		"1"
-			"image"                 "replay/thumbnails/ColorTanDarkerTransparent"	
+			"image"			"replay/thumbnails/ColorTanDarkerTransparent"	
+			"proportionalToParent"	"1"
+			"border"		"NoBorder"
+		}
+		
+		"VSHCustomBorder"
+		{
+			"ControlName"		"EditablePanel"
+			"fieldName"		"VSHCustomBorder"
+			"xpos"			"cs-0.5"
+			"ypos"			"43"
+			"zpos"			"-3"
+			"wide"			"190"
+			"tall"	 		"48"
+			"zpos"          "16"
+			"visible"		"1"
+			"visible_minmode"	"0"
+			"enabled"		"1"
+			"border"		"BorderTargetIDTanDarker"
+			"proportionalToParent"	"1"
+			"alpha"			"200"
 		}
 		
 		"ProgressBarContainer"
@@ -166,7 +186,7 @@
 			"xpos"					"c-100"
 			"ypos"					"42"
 			"zpos"					"1"
-			"wide"					"184"
+			"wide"					"200"
 			"tall"					"50"
 			"visible"				"1"
 			"enabled"				"1"
@@ -179,7 +199,7 @@
 				"xpos"			"-10"
 				"ypos"			"16"
 				"zpos"			"5"
-				"wide"			"218"
+				"wide"			"220"
 				"tall"			"18"
 				"autoResize"	"1"
 				"pinCorner"		"0"
@@ -220,7 +240,6 @@
 				"labelText"		"%score%"
 				"font"			"SLBoldSmall"
 				"fgcolor"		"TanLight"		
-				"fgcolor_minmode"	"HUDTrainingHint"
 				"proportionalToParent"	"1"
 			}	
 		

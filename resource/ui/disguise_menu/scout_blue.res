@@ -6,16 +6,24 @@
 		"ControlName"				"EditablePanel"
 		"fieldName"					"TitleBG"
 		"xpos"						"0"
+<<<<<<< Updated upstream
 		"ypos"						"10"
 		"zpos"						"-11"
 		"wide"						"f0"
 		"tall"						"18"
+=======
+		"ypos"						"14"
+		"zpos"						"-11"
+		"wide"						"f0"
+		"tall"						"14"
+>>>>>>> Stashed changes
 		"visible"					"1"
 		"enabled"					"1"
 		"proportionaltoparent"		"1"
 		"paintbackground"			"1"
 		"paintbackgroundtype"		"2"
 		"roundedcorners"			"0"
+<<<<<<< Updated upstream
 		"bgcolor_override"			"SolarTeamBLUDark"
 
 		"BottomLine"
@@ -37,23 +45,67 @@
 	}
 
 	"ItemNameLabel"
+=======
+		"bgcolor_override"			"SolarTeamBLU"
+	}
+	
+	"DisguiseLabel"
+>>>>>>> Stashed changes
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"ItemName"
-		"font"			"Default"
+		"fieldName"		"DisguiseLabel"
+		"font"			"SLBoldMediumSmaller"
 		"xpos"			"0"
-		"ypos"			"10"
+		"ypos"			"6"
 		"zpos"			"1"
-		"wide"			"45"
-		"tall"			"20"
+		"wide"			"150"
+		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"#TF_Class_Name_Scout"
-		"textAlignment"	"Center"
+		"labelText"		"#Hud_Menu_Disguise_Title"
+		"textAlignment"	"north"
 		"dulltext"		"0"
 		"brighttext"	"0"
+	}
+
+<<<<<<< Updated upstream
+	"ClassIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ClassIcon"
+		"xpos"			"15"
+		"ypos"			"40"
+		"zpos"			"1"
+		"wide"			"20"
+		"tall"			"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"
+		"image"			"../hud/leaderboard_class_scout"
+	}
+
+=======
+	"DisguiseLabelStroke"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"DisguiseLabelStroke"
+		"font"			"SLBoldMediumSmallerStroke"
+		"xpos"			"0"
+		"ypos"			"6"
+		"zpos"			"1"
+		"wide"			"150"
+		"tall"			"30"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"#Hud_Menu_Disguise_Title"
+		"textAlignment"	"north"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"fgcolor"		"SolarTeamBLU"
 	}
 
 	"ClassIcon"
@@ -71,6 +123,7 @@
 		"image"			"../hud/leaderboard_class_scout"
 	}
 
+>>>>>>> Stashed changes
 	"NumberBg"
 	{
 		"ControlName"	"CIconPanel"

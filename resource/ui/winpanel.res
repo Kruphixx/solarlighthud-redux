@@ -1,86 +1,19 @@
 "Resource/UI/winpanel.res"
 {
-
-	"SolarWinPanelBG"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"SolarWinPanelBG"
-		"xpos"			"150"	[$WIN32]
-		"ypos"			"96"
-		"zpos"			"-1"
-		"wide"			"250"
-		"tall"			"32"
-		"visible"		"0" //1
-		"enabled"		"0" //1
-		"image"			"replay/thumbnails/winpanelfade"	
-		"scaleImage"		"1"	
-		"alpha"			"255"
-	}
-	
-	"SolarWinPanelBGStacked" //duplicated to make it darker
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"SolarWinPanelBGStacked"
-		"xpos"			"150"	[$WIN32]
-		"ypos"			"96"
-		"zpos"			"-1"
-		"wide"			"250"
-		"tall"			"32"
-		"visible"		"0" //1
-		"enabled"		"0" //1
-		"image"			"replay/thumbnails/winpanelfade"	
-		"scaleImage"		"1"	
-		"alpha"			"190"
-	}
-	
-	"SolarWinPanelBG2"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"SolarWinPanelBG2"
-		"xpos"			"150"	[$WIN32]
-		"ypos"			"138"
-		"zpos"			"-1"
-		"wide"			"250"
-		"tall"			"34"
-		"visible"		"0" //1
-		"enabled"		"0" //1
-		"image"			"replay/thumbnails/winpanelfade"	
-		"scaleImage"		"1"	
-		"alpha"			"200"
-	}
-	
 	"BlueTeamBackground"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"BlueTeamBackground"
-		"xpos"			"200"
-		"ypos"			"4"
-		"zpos"			"-1"
-		"wide"			"75"
-		"tall"			"12"
-		"fillcolor"		"SolarTeamBLU"
-		"autoResize"	"0"
-		"pinCorner"		"0"
 		"visible"		"0"
-		"visible_minmode"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 	}
 
 	"RedTeamBackground"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"RedTeamBackground"
-		"xpos"			"275"
-		"ypos"			"4"
-		"zpos"			"-1"
-		"wide"			"75"
-		"tall"			"12"
-		"fillcolor"		"SolarTeamRED"
-		"autoResize"	"0"
-		"pinCorner"		"0"
 		"visible"		"0"
-		"visible_minmode"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 	}
 
 	"TeamScoresPanel"
@@ -93,35 +26,69 @@
 		"tall"			"f0"
 		"visible"		"0"
 		
+		"VSBG"
+		{
+			"ControlName"	"CTFImagePanel"
+			"fieldName"		"VSBG"
+			"xpos"			"cs-0.5"
+			"ypos"			"60"
+			"zpos"			"-10"
+			"wide"			"90"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"replay/thumbnails/bgshapes/SHAPES_CTF_SCORES"
+			"scaleImage"	"1"	
+			"proportionaltoparent"	"1"
+		}	
+		
+		"VSStar"
+		{
+			"ControlName"	"ImagePanel"		
+			"fieldName"		"VSStar"
+			"xpos"			"cs-0.5"
+			"ypos"			"50"
+			"zpos"			"3"
+			"wide"			"38"
+			"tall"			"38"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"glyph_achievements"
+			"scaleImage"	"1"
+			"drawcolor" "TanLight"
+			"proportionaltoparent"	"1"
+		}
+		
+		"TrophyIcon"
+		{
+			"ControlName"	"ImagePanel"		
+			"fieldName"		"TrophyIcon"
+			"xpos"			"cs-0.5"
+			"ypos"			"57"
+			"zpos"			"4"
+			"wide"			"26"
+			"tall"			"26"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"replay/thumbnails/icons/trophy"
+			"scaleImage"	"1"
+			"drawcolor" "TanLight"
+			"proportionaltoparent"	"1"
+		}
+		
 		"BlueScoreBG"
 		{
 			"ControlName"		"EditablePanel"
 			"fieldName"		"BlueScoreBG"
 			"xpos"			"9999"
-			"ypos"			"15"
-			"wide"			"135"
-			"tall"			"40"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			
-			"border"		"TFFatLineBorderBlueBGMoreOpaque"
+			"ypos"			"9999"
 		}
 		"RedScoreBG"
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"RedScoreBG"
 			"xpos"			"9999"
-			"ypos"			"15"
-			"wide"			"135"
-			"tall"			"40"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-
-			"border"		"TFFatLineBorderRedBGMoreOpaque"
+			"ypos"			"9999"
 		}
 		"SolarBLUScorePanelBG"
 		{
@@ -129,13 +96,6 @@
 			"fieldName"		"SolarBLUScorePanelBG"
 			"xpos"			"9999"	[$WIN32]
 			"ypos"			"9999"
-			"zpos"			"-1"
-			"wide"			"115"
-			"tall"			"16"
-			"visible"		"0"
-			"enabled"		"0"
-			"image"			"replay/thumbnails/bgtransparent"	
-			"scaleImage"		"1"	
 		}
 		"SolarBLULogoBG"
 		{
@@ -143,13 +103,6 @@
 			"fieldName"		"SolarBLULogoBG"
 			"xpos"			"9999"	[$WIN32]
 			"ypos"			"9999"
-			"zpos"			"-1"
-			"wide"			"12"
-			"tall"			"12"
-			"visible"		"0"
-			"enabled"		"0"
-			"image"			"../hud/team_blue"	
-			"scaleImage"		"1"	
 		}
 		"SolarREDScorePanelBG"
 		{
@@ -157,13 +110,6 @@
 			"fieldName"		"SolarREDScorePanelBG"
 			"xpos"			"9999"	[$WIN32]
 			"ypos"			"9999"
-			"zpos"			"-1"
-			"wide"			"115"
-			"tall"			"16"
-			"visible"		"0"
-			"enabled"		"0"
-			"image"			"replay/thumbnails/bgtransparent"	
-			"scaleImage"		"1"	
 		}
 		"SolarREDLogoBG"
 		{
@@ -171,31 +117,13 @@
 			"fieldName"		"SolarREDLogoBG"
 			"xpos"			"9999"	[$WIN32]
 			"ypos"			"9999"
-			"zpos"			"-1"
-			"wide"			"12"
-			"tall"			"12"
-			"visible"		"1"
-			"enabled"		"1"
-			"image"			"../hud/team_red"	
-			"scaleImage"		"1"	
 		}
 		"BlueTeamLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"BlueTeamLabel"
-			"font"			"Futura12"
-			"labelText"		"%blueteamname%"
-			"textAlignment"		"east"
-			"xpos"			"9999"
-			"ypos"			"4"
-			"zpos"			"10"
-			"wide"			"50"
-			"tall"			"12"
-			"autoResize"	"0"
-			"pinCorner"		"0"
 			"visible"		"0"
 			"enabled"		"0"
-			"fgcolor"		"TanLight"
 		}							
 		"BlueTeamScore"
 		{
@@ -204,8 +132,8 @@
 			"font"			"SLBoldMedium"
 			"labelText"		"%blueteamscore%"
 			"textAlignment"		"east"
-			"xpos"			"223"
-			"ypos"			"64"
+			"xpos"			"c-75"
+			"ypos"			"57"
 			"zpos"			"3"
 			"wide"			"50"
 			"tall"			"26"
@@ -215,16 +143,18 @@
 			"enabled"		"1"
 			"fgcolor"		"SolarTeamBLU"
 			"textinsetx"	"5"
+			"proportionaltoparent"	"1"
 		}
 		"BlueTeamScoreDropshadow"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"BlueTeamScoreDropshadow"
 			"font"			"SLBoldMediumStroke"
+			"fgcolor"		"Black"
 			"labelText"		"%blueteamscore%"
 			"textAlignment"		"east"
-			"xpos"			"223"
-			"ypos"			"64"
+			"xpos"			"c-75"
+			"ypos"			"57"
 			"zpos"			"2"
 			"wide"			"50"
 			"tall"			"26"
@@ -234,7 +164,8 @@
 			"enabled"		"1"
 			"fgcolor"		"TanDarker"
 			"textinsetx"	"5"
-		}
+			"proportionaltoparent"	"1"
+		}		
 		"BlueLeaderAvatar"
 		{
 			"ControlName"		"CAvatarImagePanel"
@@ -267,19 +198,8 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"RedTeamLabel"
-			"font"			"Futura12"
-			"labelText"		"%redteamname%"
-			"textAlignment"		"west"
-			"xpos"			"9999"
-			"ypos"			"4"
-			"zpos"			"10"
-			"wide"			"50"
-			"tall"			"12"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fgcolor"		"White"
+			"visible"		"0"
+			"enabled"		"0"
 		}							
 		"RedTeamScore"
 		{
@@ -288,8 +208,8 @@
 			"font"			"SLBoldMedium"
 			"labelText"		"%redteamscore%"
 			"textAlignment"		"west"
-			"xpos"			"277"
-			"ypos"			"64"
+			"xpos"			"c25"
+			"ypos"			"57"
 			"zpos"			"3"
 			"wide"			"50"
 			"tall"			"26"
@@ -297,18 +217,20 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"		"SolarTeamRED"
+			"fgcolor"		"SolarTeamRED"
 			"textinsetx"	"5"
+			"proportionaltoparent"	"1"
 		}
 		"RedTeamScoreDropshadow"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"RedTeamScoreDropshadow"
 			"font"			"SLBoldMediumStroke"
+			"fgcolor"		"Black"
 			"labelText"		"%redteamscore%"
 			"textAlignment"		"west"
-			"xpos"			"277"
-			"ypos"			"64"
+			"xpos"			"c25"
+			"ypos"			"57"
 			"zpos"			"2"
 			"wide"			"50"
 			"tall"			"26"
@@ -316,9 +238,10 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"		"TanDarker"
+			"fgcolor"		"TanDarker"
 			"textinsetx"	"5"
-		}
+			"proportionaltoparent"	"1"
+		}	
 		"RedLeaderAvatar"
 		{
 			"ControlName"		"CAvatarImagePanel"

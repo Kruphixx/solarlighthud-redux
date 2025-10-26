@@ -48,6 +48,60 @@
 		}
 	}	
 	
+	"VSStar"
+	{
+		"ControlName"	"ImagePanel"		
+		"fieldName"		"VSStar"
+		"xpos"			"c-13"
+		"ypos"			"12"
+		"zpos"			"3"
+		"wide"			"26"
+		"tall"			"26"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"glyph_achievements"
+		"scaleImage"	"1"
+		"drawcolor" "TanLight"
+	}
+	
+	"VSLabel"
+	{	
+		"ControlName"		"CExLabel"
+		"fieldName"		"VSLabel"
+		"font"			"Futura16"
+		"xpos"			"c-10"
+		"ypos"			"14"
+		"zpos"			"4"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"vs."
+		"textAlignment"		"Center"
+		"dulltext"		"0"
+		"brighttext"		"0"
+		"fgcolor_override"	"CreditsGreen"
+	}
+	
+	"VSBG"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"VSBG"
+		"xpos"			"cs-0.5"
+		"xpos"			"cs-0.5"
+		"ypos"			"16"
+		"zpos"			"-10"
+		"wide"			"60"
+		"tall"			"20"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/bgshapes/SHAPES_CTF_SCORES"
+		"scaleImage"	"1"	
+		"proportionaltoparent"	"1"
+	}	
+	
 	"PlayingTo"
 	{
 		"ControlName"	"CExLabel"
@@ -1107,21 +1161,6 @@
 			"textAlignment"	"center"
 			"fgcolor"		"Black"
 		}
-		
-		"playerimage"
-		{
-			"ControlName"	"ImagePanel"		
-			"fieldName"		"playerimage"
-			"xpos"			"12"
-			"ypos"			"10"
-			"zpos"			"3"
-			"wide"			"8"
-			"tall"			"16"
-			"visible"		"0"
-			"enabled"		"0"
-			"image"			"capture_icon_white"
-			"scaleImage"	"1"
-		}
 	}
 
 	"redteam"
@@ -1197,21 +1236,6 @@
 			"labelText"		" "
 			"textAlignment"	"center"
 			"fgcolor"		"Black"
-		}
-	
-		"playerimage"
-		{
-			"ControlName"	"ImagePanel"		
-			"fieldName"		"playerimage"
-			"xpos"			"12"
-			"ypos"			"10"
-			"zpos"			"3"
-			"wide"			"8"
-			"tall"			"16"
-			"visible"		"0"
-			"enabled"		"0"
-			"image"			"capture_icon_white"
-			"scaleImage"	"1"
-		}			
+		}		
 	}
 }

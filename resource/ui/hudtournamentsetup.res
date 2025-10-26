@@ -13,14 +13,13 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/ColorTanDarkerTransparent"
+		"image"			"replay/thumbnails/borders/border_tandarker_corners_transparent"
 
+		"src_corner_height"		"20"				// pixels inside the image
+		"src_corner_width"		"20"
 
-		"src_corner_height"	"23"				// pixels inside the image
-		"src_corner_width"	"23"
-		
-		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"8"	
+		"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"6"
 	}
 
 	"TournamentSetupLabel"

@@ -154,6 +154,7 @@
 			"fieldName"		"PlayingToColoredLabel"
 			"visible"		"0"
 			"enabled"		"0"
+			"ypos"			"9999"
 		}
 				
 		"PlayingToBGNew"

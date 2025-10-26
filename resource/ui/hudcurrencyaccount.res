@@ -18,6 +18,7 @@
 		"textinsetx"	"20"
 	}	
 	// NOTE: breaks a bit on some resolutions (800x600, 1176x664, 1280x960)
+	// Attempted to fix by pinning
 	"CurrencyShadow"
 	{
 		"ControlName"	"CExLabel"
@@ -25,7 +26,7 @@
 		"font"			"SLBoldSmallStroke"
 		"fgcolor"		"TanDarker"
 		"xpos"			"0"
-		"ypos"			"57"
+		"ypos"			"0"
 		"zpos"			"3"
 		"wide"			"90"
 		"tall"			"45"
@@ -34,5 +35,8 @@
 		"textAlignment"	"west"	
 		"labelText"		"%currency%"
 		"textinsetx"	"20"
+		"pin_to_sibling"	"Currency"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
 	}	
 }

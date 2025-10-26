@@ -158,17 +158,38 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"bg"
-		"xpos"			"c-427"
+		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"-12"
-		"wide"			"854"
-		"tall"			"480"
+		"zpos"			"-15"
+		"wide"			"f0"
+		"tall"			"f0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/linebg"
-		"scaleImage"	"1"
+		"image"			"replay/thumbnails/menu_bg/background_diamond_looping_small"
+		"scaleImage"	"0"
+		"tileImage"	"1"
 		"mouseinputenabled"	"0"
+		"drawcolor"     "200 150 255 255"  
 	}	
+	
+	"bggradient"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"bggradient"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-14"
+		"wide"			"f-20"
+		"tall"			"f-20"
+		"drawcolor"     "100 75 128 255"    
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"training/gradient_black"
+		"alpha"			"230"
+		"proportionaltoparent"	"1"
+	}
 	
 	"box"
 	{
@@ -182,8 +203,8 @@
 		"fillcolor"		"0 0 0 200"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 	}	
 	
 	"CaratLabel"
@@ -382,6 +403,7 @@
 		"model_hide"		"1"
 		"resize_to_text"	"1"
 		"padding_height"	"15"
+		"border"			"BorderBlackCornersVerySmall"
 		
 		"attriblabel"
 		{

@@ -5,27 +5,25 @@
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG"
 		"xpos"			"0"
-		"ypos"			"7"
+		"ypos"			"-4"
 		"zpos"			"-10"
 		"wide"			"100"
-		"tall"	 		"10"
-		"autoResize"		"0"
+		"tall"	 		"4"
+		"autoResize"		"1"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"image"			"replay/thumbnails/bgredtransparent"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/borders/border_targetid_tandarker"
 		"scaleImage"		"1"
-		"teambg_1"		"replay/thumbnails/bgtransparent"
-		"teambg_2"		"replay/thumbnails/bgredtransparent"
-		"teambg_2_lodef"	"replay/thumbnails/bgredtransparent"
-		"teambg_3"		"replay/thumbnails/bgbluetransparent"
-		"teambg_3_lodef"	"replay/thumbnails/bgbluetransparent"
+		"teambg_1"		"replay/thumbnails/borders/border_targetid_red"
+		"teambg_2"		"replay/thumbnails/borders/border_targetid_red"
+		"teambg_3"		"replay/thumbnails/borders/border_targetid_blu"
 		
-		"src_corner_height"		"0"				// pixels inside the image
-		"src_corner_width"		"0"
+		"src_corner_height"		"20"				// pixels inside the image
+		"src_corner_width"		"20"
 			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"	
+		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"20"
 	}
 	"TargetIDBGSolar"
 	{
@@ -39,15 +37,38 @@
 		"fillcolor"		"TanDarkerTransparent"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 	}
+	
+	"Notification_Background"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"Notification_Background"
+		"xpos"			"0"
+		"ypos"			"7"
+		"zpos"			"-10"
+		"wide"			"f0"
+		"tall"			"18"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"../vgui/replay/thumbnails/borders/border_tandark_corners"
+		"scaleImage"	"1"
+		"src_corner_height"		"20"				// pixels inside the image
+		"src_corner_width"		"20"
+			
+		"draw_corner_width"		"8"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"8"
+	}
+	
 	"TargetIDBG_Spec_Blue"
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"TargetIDBG_Spec_Blue"
-		"xpos"			"9999"
-		"ypos"			"9999"
+		"xpos"			"0"
+		"ypos"			"-4"
 		"zpos"			"-1"
 		"wide"			"252"
 		"tall"	 		"30"
@@ -55,21 +76,21 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_blu"
-		"image_lodef"	"../hud/color_panel_blu"
+		"image"			"replay/thumbnails/borders/border_targetid_blu"
+		"image_lodef"	"replay/thumbnails/borders/border_targetid_blu"
 		
-		"src_corner_height"		"23"				// pixels inside the image
-		"src_corner_width"		"23"
+		"src_corner_height"		"20"				// pixels inside the image
+		"src_corner_width"		"20"
 			
 		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"
+		"draw_corner_height" 	"20"
 	}
 	"TargetIDBG_Spec_Red"
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"TargetIDBG_Spec_Red"
-		"xpos"			"9999"
-		"ypos"			"9999"
+		"xpos"			"0"
+		"ypos"			"-4"
 		"zpos"			"-1"
 		"wide"			"252"
 		"tall"	 		"30"
@@ -77,14 +98,14 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_red"
-		"image_lodef"	"../hud/color_panel_red"
+		"image"			"replay/thumbnails/borders/border_targetid_red"
+		"image_lodef"	"replay/thumbnails/borders/border_targetid_red"
 		
-		"src_corner_height"		"23"				// pixels inside the image
-		"src_corner_width"		"23"
+		"src_corner_height"		"20"				// pixels inside the image
+		"src_corner_width"		"20"
 			
 		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"
+		"draw_corner_height" 	"20"
 	}
 	
 	"TargetNameLabel"
@@ -115,8 +136,8 @@
 		"controlname" "cautofittinglabel"
 		"fieldName"		"TargetDataLabel"
 		"xpos"			"0"
-		"ypos"			"24"	[$WIN32]
-		"zpos"			"2"
+		"ypos"			"27"	[$WIN32]
+		"zpos"			"-100"
 		"wide"			"100"
 		"tall"			"14"
 		"visible"		"1"
@@ -126,10 +147,12 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"textinsetx"		"10"
+		"textinsety"		"0"
 		"fgcolor"	"TanLight"
 		"auto_wide_tocontents"	"1"
 		"font"  "Asimov12"
-		"bgcolor_override" "TanDarkerTransparent"
+		"bgcolor_override" "0 0 0 0"
+		"border"	"BorderTanDarkerCornersVerySmall"
 		
 		//define text colors
 		"colors"
@@ -146,7 +169,7 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"SpectatorGUIHealth"
-		"xpos"			"0"
+		"xpos"			"2"
 		"ypos"			"0"
 		"wide"			"42"
 		"tall"			"32"
@@ -163,8 +186,8 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"AmmoIcon"
-		"xpos"			"52"
-		"ypos"			"25"
+		"xpos"			"54"
+		"ypos"			"28"
 		"zpos"			"12"
 		"wide"			"10"
 		"tall"			"10"
@@ -178,11 +201,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"KillStreakIcon"
-		"xpos"			"10"
+		"xpos"			"0"
 		"ypos"			"26"
-		"zpos"			"12"
-		"wide"			"10"
-		"tall"			"10"
+		"zpos"			"14"
+		"wide"			"15"
+		"tall"			"15"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/leaderboard_streak"
@@ -205,47 +228,42 @@
 		{
 			"ControlName"	"CIconPanel"
 			"fieldName"		"MoveableIconBG"
-			"xpos"			"0"
-			"ypos"			"0"
-			"zpos"			"0"
-			"wide"			"10"
-			"tall"			"36"
 			"visible"		"0"
 			"enabled"		"0"
-			"icon"			"obj_status_alert_background_tall_nocolor"
-			"iconColor"		"HudBlack"
-			"scaleImage"	"1"
+			"icon"			""
 		}
 		
 		"MoveableIcon"
 		{
 			"ControlName"	"CIconPanel"
 			"fieldName"		"MoveableIcon"
-			"xpos"			"9999"
-			"ypos"			"7"
+			"xpos"			"0"
+			"ypos"			"0"
 			"zpos"			"11"
-			"wide"			"14"
-			"tall"			"14"
+			"wide"			"16"
+			"tall"			"16"
 			"visible"		"0"
 			"enabled"		"0"
 			"icon"			"obj_status_sentrygun_1"
 			"drawcolor"		"ProgressOffWhite"
 			"scaleImage"	"1"
+			"border"		"OctagonBGTANDARKER"
 		}
 		"MoveableSymbolIcon"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"MoveableSymbolIcon"
-			"xpos"			"0"
+			"xpos"			"2"
 			"ypos"			"7"
 			"zpos"			"12"
-			"wide"			"16"
-			"tall"			"8"
+			"wide"			"20"
+			"tall"			"10"
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../hud/eng_sel_item_movable"
 			"drawcolor"		"ProgressOffWhite"
 			"scaleImage"	"1"
+			"border"		"BorderTanDarkerCornersVerySmall"
 		}
 
 		"MoveableKeyLabel"

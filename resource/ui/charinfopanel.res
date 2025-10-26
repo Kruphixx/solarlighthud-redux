@@ -22,13 +22,13 @@
 		"title"			"#CharInfoAndSetup"
 		"title_font"	"HudFontMediumBold"
 		"titletextinsetX"	"40"
-		"titletextinsetY"	"0"
+		"titletextinsetY"	"-30"
 		"titlebarfgcolor_override"				"200 187 161 255"
 		"titlebardisabledfgcolor_override"		"200 187 161 255"
 		"titlebarbgcolor_override"				"46 43 42 255"
 		
 		"clientinsetx_override"			"0"
-		"sheetinset_bottom"				"-10"
+		"sheetinset_bottom"				"20"
 	}
 
 	"SolarHeader"
@@ -40,7 +40,7 @@
 		"zpos"			"-2"
 		"wide"			"f0"
 		"tall"			"120"
-		"fillcolor"		"TanDark"
+		"fillcolor"		"TanDarker"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -56,17 +56,17 @@
 		"zpos"			"1"
 		"wide"			"f0"
 		"tall"			"23"
-		"fillcolor"		"TanLight"
+		"fillcolor"		"TanDarker"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 	}
 	
-	"SolarFooterYellow"
+	"SolarFooterThinLine"
 	{
 		"ControlName"	"ImagePanel"
-		"fieldName"		"SolarFooterYellow"
+		"fieldName"		"SolarFooterThinLine"
 		"xpos"			"0"
 		"ypos"			"455"
 		"zpos"			"0"
@@ -173,28 +173,13 @@
 		"tabwidth"		"240"
 		"tabheight"		"20"
 		"transition_time" "0"
-		"yoffset"	"0"
-		
-		"HeaderLine"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"HeaderLine"
-			"xpos"			"0"
-			"ypos"			"21"
-			"zpos"			"5"
-			"wide"			"f0"
-			"tall"			"10"
-			"visible"		"0"
-			"enabled"		"0"
-			"image"			"loadout_solid_line"
-			"scaleImage"	"1"
-		}					
-		
+		"yoffset"	"10"				
+
 		"tabskv"
 		{
 			"textinsetx"		"40"
-			"font"				"HudFontMediumSmallBold"
-			"selectedcolor"		"SolarMenuYellow"
+			"font"				"LoadoutTabFont"
+			"selectedcolor"		"Orange"
 			"unselectedcolor"	"TanLight"	
 			"defaultBgColor_override"	"46 43 42 255"
 			"paintbackground"	"0"
@@ -232,8 +217,8 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"BackButton"
-		"xpos"			"r80"
-		"ypos"			"0"
+		"xpos"			"r85"
+		"ypos"			"-29"
 		"zpos"			"3"
 		"wide"			"80"
 		"tall"			"20"

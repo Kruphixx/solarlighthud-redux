@@ -25,7 +25,7 @@
 		"xpos"			"cs-0.5"
 		"ypos"			"0"
 		"zpos"			"5"
-		"wide"			"f0"
+		"wide"			"300"
 		"tall"			"200"
 		"visible"		"1"
 		"bgcolor_override"		"0 0 0 0"
@@ -56,22 +56,48 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"bg"
-		"xpos"			"c-427"
+		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"-12"
-		"wide"			"854"
-		"tall"			"480"
+		"zpos"			"-15"
+		"wide"			"f0"
+		"tall"			"f0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/linebg"
-		"scaleImage"	"1"
+		"image"			"replay/thumbnails/menu_bg/background_diamond_looping_small"
+		"scaleImage"	"0"
+		"tileImage"	"1"
 		"mouseinputenabled"	"0"
-
+		"drawcolor"     "200 150 255 255"  
+		
 		"consume_mode"
 		{
 			"visible"	"0"
 		}
 	}	
+	
+	"bggradient"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"bggradient"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-14"
+		"wide"			"f-20"
+		"tall"			"f-20"
+		"drawcolor"     "100 75 128 255"    
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"training/gradient_black"
+		"alpha"			"230"
+		"proportionaltoparent"	"1"
+		
+		"consume_mode"
+		{
+			"visible"	"0"
+		}
+	}
 	
 	"ModelInspectionPanel"
 	{
@@ -80,7 +106,7 @@
 		"ypos"			"0"
 		"zpos"			"5"
 		"wide"			"600"
-		"tall"			"400"
+		"tall"			"440"
 		"visible"		"1"
 
 		"proportionaltoparent"	"1"
@@ -141,6 +167,16 @@
 				"maxDistance"		"1000"
 			}
 		}
+		
+		"consume_mode"
+		{
+			"wide"			"o1.5"
+			"tall"			"p0.8"
+			"model"
+			{
+				"origin_z" "0"
+			}
+		}
 	}
 
 	"TeamNavPanel"
@@ -164,6 +200,11 @@
 		"auto_layout_vertical_buffer"	"-4"
 		"display_vertically"	"0"
 		"align"				"west"
+		
+		"consume_mode"
+		{
+			"ypos"				"p.7-16"
+		}
 		
 		"ButtonSettings"
 		{
@@ -249,9 +290,9 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"PaintkitPreviewContainer"
 		"xpos"			"0"
-		"ypos"			"r40"
+		"ypos"			"r43"
 		"wide"			"f0"
-		"tall"			"40"
+		"tall"			"43"
 		"zpos"			"100"
 		"border"		"NoBorder"
 		"mouseinputenabled"	"1"
@@ -271,7 +312,7 @@
 		}
 		"consume_mode"
 		{
-			"border"		"ReplayHighlightBorder"
+			"border"		"NoBorder"
 			"xpos"			"cs-0.5"
 			"wide"			"300"
 			"ypos"			"p.7"
@@ -287,7 +328,7 @@
 			"zpos"			"0"
 			"wide"			"f0"
 			"tall"			"f0"
-			"fillcolor"		"TanDark"
+			"fillcolor"		"0 0 0 200"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -643,6 +684,15 @@
 			"sound_armed"		"ui/item_info_mouseover.wav"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"fixed_item"
+			{
+				"ypos"		"50"
+			}
+			"fixed_paintkit"
+			{
+				"ypos"		"30"
+			}
 		}
 		
 		"CartImage"

@@ -28,16 +28,18 @@
 		"fieldName"		"ItemEffectMeterCount"
 		"xpos"		"16"
 		"ypos"		"1"
-		"textAlignment"			"center"
-		"wide"		"30"
+		"textAlignment"			"west"
+		"wide"		"60"
+		"textinsetx"	"15"
 	}
 	
 	"ItemEffectMeterCountShadow"
 	{
 		"fieldName"		"ItemEffectMeterCountShadow"
 		"xpos"		"16"
-		"textAlignment"			"center"
-		"wide"		"30"
+		"textAlignment"			"west"
+		"wide"		"60"
+		"textinsetx"	"15"
 	}
 	
 	"Box" //disabled for rewrite

@@ -731,7 +731,7 @@
 						"autoresize"	"0"
 						"linespacing"	"18"
 						"linegap"		"1"
-						"show_columns"	"1"
+						"show_columns"	"0"
 
 						"medal_width"	"s.08"
 						"avatar_width"	"s.08"

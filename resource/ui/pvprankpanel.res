@@ -1,3 +1,5 @@
+//stolen from darhud and then reduxed
+
 "Resource/UI/PvPRankPanel.res"
 {
 	"ModelContainer"
@@ -49,11 +51,11 @@
 		{
 			"ControlName"	"CBaseModelPanel"
 			"fieldName"		"RankModel"
-			"xpos"			"cs-0.5"
-			"ypos"			"cs-0.5"
+			"xpos"			"0"
+			"ypos"			"0"
 			"zpos"			"0"		
-			"wide"			"o1"
-			"tall"			"p0.12"
+			"wide"			"60"
+			"tall"			"60"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -63,10 +65,10 @@
 
 			if_mini
 			{
-				"xpos"		"cs-0.5-228"
+				"xpos"		"cs-0.5-240"
 				"ypos"		"cs-0.5"
-				"wide"		"200"
-				"tall"		"200"
+				"wide"		"160"
+				"tall"		"100"
 			}
 
 			"paintbackground"	"0"
@@ -81,7 +83,7 @@
 				"angles_x"	"0"
 				"angles_y"	"180"
 				"angles_z"	"0"
-				"origin_x"		"45"
+				"origin_x"		"35"
 				"origin_y"		"0"
 				"origin_z"		"0"
 				"spotlight"	"1"
@@ -89,6 +91,7 @@
 				if_mini
 				{
 					"origin_x"		"55"
+					"origin_z"		"0"
 				}
 
 				"animation"
@@ -185,11 +188,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"BGPanel"
-		"xpos"			"rs1"
-		"ypos"			"20"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"			"260"
-		"tall"			"f40"
+		"wide"			"f0"
+		"tall"			"f0"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
 		"proportionaltoparent"	"1"
@@ -206,16 +209,16 @@
 		{
 			"ControlName"	"Label"
 			"fieldName"		"NameLabel"
-			"xpos"			"65"
-			"ypos"			"5"
+			"xpos"			"0"
+			"ypos"			"0"
 			"wide"			"f0"
 			"zpos"			"100"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"HudFontSmallishBold"
+			"font"			"HudFontSmallestBold"
 			"fgcolor_override"	"TanLight"
-			"textAlignment"	"north-west"
+			"textAlignment"	"north-east"
 			"labelText"		"%name%"
 			"proportionaltoparent"	"1"
 
@@ -229,30 +232,30 @@
 		{
 			"ControlName"	"CAutoFittingLabel"
 			"fieldName"		"DescLine1"
-			"xpos"			"65"
-			"ypos"			"19"
-			"wide"			"195"
+			"xpos"			"60"
+			"ypos"			"0"
+			"wide"			"f60"
 			"zpos"			"100"
-			"tall"			"20"
+			"tall"			"21"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"HudFontSmallestBold"
+			"font"			"FuturaItalic12"
 			"fgcolor_override"	"TanLight"
-			"textAlignment"	"north-west"
+			"textAlignment"	"west"
 			"labelText"		"%desc1%"
 			"proportionaltoparent"	"1"
 
 			if_mini
 			{
 				"xpos"	"67"
-				"ypos"	"4"
+				"ypos"	"0"
 			}
 
 			"fonts"
 			{
-				"0"		"HudFontSmallestBold"
-				"1"		"StorePromotionsTitle"
-				"2"		"FontStorePrice"
+				"0"		"FuturaItalic16"
+				"1"		"FuturaItalic12"
+				"2"		"FuturaItalic8"
 			}
 		}
 
@@ -260,23 +263,23 @@
 		{
 			"ControlName"	"CAutoFittingLabel"
 			"fieldName"		"DescLine2"
-			"xpos"			"65"
-			"ypos"			"29"
-			"wide"			"195"
-			"zpos"			"100"
+			"xpos"			"60"
+			"ypos"			"13"
+			"wide"			"f60"
+			"zpos"			"225"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
 			"font"			"HudFontSmallestBold"
 			"fgcolor_override"	"TanLight"
-			"textAlignment"	"north-west"
+			"textAlignment"	"west"
 			"labelText"		"%desc2%"
 			"proportionaltoparent"	"1"
 
 			if_mini
 			{
 				"xpos"	"67"
-				"ypos"	"4"
+				"ypos"	"0"
 			}
 
 			"fonts"
@@ -297,9 +300,9 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"StatsContainer"
-			"xpos"			"rs1-2"
+			"xpos"			"0"
 			"ypos"			"0"
-			"wide"			"f66"
+			"wide"			"f0"
 			"tall"			"f0"
 			"proportionaltoparent"	"1"
 
@@ -308,29 +311,35 @@
 				"xpos"			"rs1-10"
 				"ypos"			"0"
 				"wide"			"p0.85"
+				"tall"			"f0"
 			}
 
 			"XPBar"
 			{
 				"Controlname"	"EditablePanel"
 				"fieldName"		"XPBar"
-				"xpos"			"cs-0.5"
-				"ypos"			"rs1-3"
-				"wide"			"p1"
+				"xpos"			"59"
+				"ypos"			"18"
+				"wide"			"155"
 				"tall"			"30"
 				"proportionaltoparent"	"1"
 
-	
+				"if_mini"
+				{
+					"xpos"		"cs-0.5"
+					"ypos"		"rs1-3"
+					"wide"		"p1"
+				}
 
 				"CurrentXPLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"CurrentXPLabel"
 					"xpos"			"0"
-					"ypos"			"rs1"
+					"ypos"			"rs1-2"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"20"
+					"tall"			"120"
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
@@ -345,7 +354,7 @@
 					"ControlName"	"Label"
 					"fieldName"		"NextLevelXPLabel"
 					"xpos"			"rs1"
-					"ypos"			"rs1"
+					"ypos"			"rs1-2"
 					"zpos"			"0"
 					"wide"			"100"
 					"tall"			"20"
@@ -364,7 +373,7 @@
 					"fieldName"		"ProgressBarsContainer"
 					"xpos"			"0"
 					"ypos"			"rs1-10"
-					"wide"			"170"
+					"wide"			"f0"
 					"tall"			"7"
 					"proportionaltoparent"	"1"
 
@@ -372,7 +381,7 @@
 					{
 						"ControlName"	"ProgressBar"
 						"fieldName"		"ProgressBar"
-						"xpos"			"p"
+						"xpos"			"0"
 						"ypos"			"cs-0.5"
 						"wide"			"f0"
 						"tall"			"f-2"
@@ -417,13 +426,13 @@
 			{
 				"ControlName"	"EditablePanel"
 				"fieldName"		"Stats"
-				"xpos"			"0"
-				"ypos"			"5"
-				"wide"			"f0"
-				"tall"			"p0.45"
-				"visible"		"0"
+				"xpos"			"225"
+				"ypos"			"0"
+				"wide"			"f225"
+				"tall"			"f0"
+				"visible"		"1"
 				"proportionaltoparent"	"1"
-				"bgcolor_override"	"0 0 0 150"
+				"bgcolor_override"	"0 0 0 0"
 
 				"if_mini"
 				{
@@ -437,8 +446,8 @@
 					"xpos"			"0"
 					"ypos"			"0"
 					"zpos"			"10"
-					"wide"			"f0"
-					"tall"			"f0"
+					"wide"			"0"
+					"tall"			"0"
 					"proportionaltoparent"	"1"
 					"border"		"InnerShadowBorder"
 				}
@@ -450,90 +459,53 @@
 				{
 					"ControlName"	"Label"
 					"fieldName"		"GamesLabel"
-					"xpos"			"10"
-					"ypos"			"0"
-					"zpos"			"0"
-					"wide"			"100"
-					"tall"			"20"
+					"xpos"			"0"
+					"ypos"			"rs1-35"
+					"zpos"			"11"
+					"wide"			"p0.48"
+					"tall"			"10"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"HudFontSmallest"
+					"font"			"FontStoreOriginalPrice"
 					"fgcolor_override"	"TanLight"
-					"textAlignment"	"north-west"
+					"textAlignment"	"east"
 					"labelText"		"%stat_games%"
 					"proportionaltoparent"	"1"
 				}
-
+				
 				"KillsLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"KillsLabel"
-					"xpos"			"10"
-					"ypos"			"10"
-					"zpos"			"0"
-					"wide"			"100"
-					"tall"			"20"
+					"xpos"			"0"
+					"ypos"			"rs1-25"
+					"zpos"			"11"
+					"wide"			"p0.48"
+					"tall"			"10"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"HudFontSmallest"
+					"font"			"FontStoreOriginalPrice"
 					"fgcolor_override"	"TanLight"
-					"textAlignment"	"north-west"
+					"textAlignment"	"east"
 					"labelText"		"%stat_kills%"
 					"proportionaltoparent"	"1"
 				}
 
-				"DeathsLabel"
-				{
-					"ControlName"	"Label"
-					"fieldName"		"DeathsLabel"
-					"xpos"			"10"
-					"ypos"			"20"
-					"zpos"			"0"
-					"wide"			"100"
-					"tall"			"20"
-					"visible"		"1"
-					"enabled"		"1"
-					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
-					"textAlignment"	"north-west"
-					"labelText"		"%stat_deaths%"
-					"proportionaltoparent"	"1"
-				}
-
-				// Second column
 				"DamageLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"DamageLabel"
-					"xpos"			"c-20"
-					"ypos"			"0"
-					"zpos"			"0"
-					"wide"			"100"
-					"tall"			"20"
+					"xpos"			"0"
+					"ypos"			"rs1-15"
+					"zpos"			"11"
+					"wide"			"p0.48"
+					"tall"			"10"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"HudFontSmallest"
+					"font"			"FontStoreOriginalPrice"
 					"fgcolor_override"	"TanLight"
-					"textAlignment"	"north-west"
+					"textAlignment"	"east"
 					"labelText"		"%stat_damage%"
-					"proportionaltoparent"	"1"
-				}
-
-				"HealingLabel"
-				{
-					"ControlName"	"Label"
-					"fieldName"		"HealingLabel"
-					"xpos"			"c-20"
-					"ypos"			"10"
-					"zpos"			"0"
-					"wide"			"100"
-					"tall"			"20"
-					"visible"		"1"
-					"enabled"		"1"
-					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
-					"textAlignment"	"north-west"
-					"labelText"		"%stat_healing%"
 					"proportionaltoparent"	"1"
 				}
 
@@ -541,36 +513,73 @@
 				{
 					"ControlName"	"Label"
 					"fieldName"		"SupportLabel"
-					"xpos"			"c-20"
-					"ypos"			"20"
-					"zpos"			"0"
-					"wide"			"100"
-					"tall"			"20"
+					"xpos"			"0"
+					"ypos"			"rs1-5"
+					"zpos"			"11"
+					"wide"			"p0.48"
+					"tall"			"10"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"HudFontSmallest"
+					"font"			"FontStoreOriginalPrice"
 					"fgcolor_override"	"TanLight"
-					"textAlignment"	"north-west"
+					"textAlignment"	"east"
 					"labelText"		"%stat_support%"
 					"proportionaltoparent"	"1"
 				}
 
-				// Third column
+				// Second column
+
 				"ScoreLabel"
 				{
 					"ControlName"	"Label"
 					"fieldName"		"ScoreLabel"
 					"xpos"			"rs1"
-					"ypos"			"0"
-					"zpos"			"0"
-					"wide"			"100"
-					"tall"			"20"
+					"ypos"			"rs1-35"
+					"zpos"			"11"
+					"wide"			"p0.48"
+					"tall"			"10"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"HudFontSmallest"
+					"font"			"FontStoreOriginalPrice"
 					"fgcolor_override"	"TanLight"
-					"textAlignment"	"north-west"
+					"textAlignment"	"west"
 					"labelText"		"%stat_score%"
+					"proportionaltoparent"	"1"
+				}
+
+				"DeathsLabel"
+				{
+					"ControlName"	"Label"
+					"fieldName"		"DeathsLabel"
+					"xpos"			"rs1"
+					"ypos"			"rs1-25"
+					"zpos"			"11"
+					"wide"			"p0.48"
+					"tall"			"10"
+					"visible"		"1"
+					"enabled"		"1"
+					"font"			"FontStoreOriginalPrice"
+					"fgcolor_override"	"TanLight"
+					"textAlignment"	"west"
+					"labelText"		"%stat_deaths%"
+					"proportionaltoparent"	"1"
+				}
+
+				"HealingLabel"
+				{
+					"ControlName"	"Label"
+					"fieldName"		"HealingLabel"
+					"xpos"			"rs1"
+					"ypos"			"rs1-15"
+					"zpos"			"11"
+					"wide"			"p0.48"
+					"tall"			"10"
+					"visible"		"1"
+					"enabled"		"1"
+					"font"			"FontStoreOriginalPrice"
+					"fgcolor_override"	"TanLight"
+					"textAlignment"	"west"
+					"labelText"		"%stat_healing%"
 					"proportionaltoparent"	"1"
 				}
 			}

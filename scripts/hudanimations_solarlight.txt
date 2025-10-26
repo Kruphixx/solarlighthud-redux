@@ -4,6 +4,23 @@ event HudSnapShotReminderIn
 {
 }
 
+//change casual mode round start animation by removing the sign model and using new text entries
+
+event HudTournament_ShowRoundSign
+{
+	Animate NewRoundBeginsAnchor ypos 70 Linear 0 0
+	Animate NewRoundBeginsAnchor ypos 85 Deaccel 0 2
+	Animate NewRoundBeginsBorder alpha 0 Linear 0 0
+	Animate NewRoundBeginsBorder alpha 200 Deaccel 0 2
+	Animate NewRoundBeginsText alpha 0 Linear 0 0
+	Animate NewRoundBeginsText alpha 255 Deaccel 0 2
+	Animate NewRoundBeginsStroke alpha 0 Linear 0 0
+	Animate NewRoundBeginsStroke alpha 255 Deaccel 0 2
+
+	Animate NewRoundBeginsBorder alpha 0 Linear 3 0.5
+	Animate NewRoundBeginsText alpha 0 Accel 3 0.5
+	Animate NewRoundBeginsStroke alpha 0 Accel 3 0.5
+}
 
 //disable casual mode door animations on match start
 

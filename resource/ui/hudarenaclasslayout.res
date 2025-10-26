@@ -13,16 +13,17 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_blu"
+		"image"			"replay/thumbnails/borders/border_tandark_corners"
 		"scaleImage"	"1"	
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
+		"teambg_2"		"replay/thumbnails/borders/border_tandark_corners"
+		"teambg_3"		"replay/thumbnails/borders/border_tandark_corners"
 			
-		"src_corner_height"		"23"			// pixels inside the image
-		"src_corner_width"		"23"
-				
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"	
+		"src_corner_height"		"30"				// pixels inside the image
+		"src_corner_width"		"30"
+		"draw_corner_width"		"17"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"17"
+		
+		"alpha"			"200"
 	}
 	
 	"localPlayerBG"
@@ -38,53 +39,15 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/color_panel_clear"
+		"image"			"replay/thumbnails/borders/border_tandark_corners"
 		"scaleImage"	"1"	
-		"teambg_2"		"../hud/color_panel_clear"
-		"teambg_3"		"../hud/color_panel_clear"
+		"teambg_2"		"replay/thumbnails/borders/border_tandark_corners"
+		"teambg_3"		"replay/thumbnails/borders/border_tandark_corners"
 			
-		"src_corner_height"		"23"			// pixels inside the image
-		"src_corner_width"		"23"
-				
-		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"	
-	}
-	
-	"title"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"title"
-		"xpos"			"c-200"
-		"ypos"			"107"
-		"zpos"			"6"
-		"wide"			"400"
-		"tall"			"20"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"font"			"HudFontMediumBold"
-		"labelText"		"#TF_Arena_Team_Layout"
-		"textAlignment"	"center"
-		"fgcolor"		"TanLight"
-	}
-	"titleShadow"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"titleShadow"
-		"xpos"			"c-199"
-		"ypos"			"108"
-		"zpos"			"5"
-		"wide"			"400"
-		"tall"			"20"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"font"			"HudFontMediumBold"
-		"labelText"		"#TF_Arena_Team_Layout"
-		"textAlignment"	"center"
-		"fgcolor"		"Black"
+		"src_corner_height"		"30"				// pixels inside the image
+		"src_corner_width"		"30"
+		"draw_corner_width"		"17"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"17"
 	}
 		
 	"changeLabel"

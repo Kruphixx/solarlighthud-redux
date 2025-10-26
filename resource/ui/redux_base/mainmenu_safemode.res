@@ -40,10 +40,64 @@
 			"tall"			"f0"
 			"visible"		"1"
 			"enabled"		"1"
-			"image"			"replay/thumbnails/menu_bg/customization_bg"
+			"image"			"replay/thumbnails/linebg_blu"
 			"scaleImage"	"1"
 			"alpha"			"255"
 			"mouseinputenabled"	"0"
+		}	
+		
+		"bggradient"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"bggradient"
+			"xpos"			"0"
+			"ypos"			"40"
+			"zpos"			"-99"
+			"wide"			"f0"
+			"tall"			"f80"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"training/gradient_black"
+			"scaleImage"	"1"
+			"alpha"			"200"
+			"mouseinputenabled"	"0"
+			"drawcolor"        "0 0 120 255"    
+		}	
+		
+		"bggearleft"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"bggearleft"
+			"xpos"			"c-670"
+			"ypos"			"cs-0.5"
+			"zpos"			"-99"
+			"wide"			"500"
+			"tall"			"500"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"replay/thumbnails/customizationmenu/customization_gear"
+			"scaleImage"	"1"
+			"alpha"			"200"
+			"mouseinputenabled"	"0"
+			"proportionalToParent"	"1"
+		}	
+		
+		"bggearright"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"bggearright"
+			"xpos"			"c170"
+			"ypos"			"cs-0.5"
+			"zpos"			"-99"
+			"wide"			"500"
+			"tall"			"500"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"replay/thumbnails/customizationmenu/customization_gear_anticlockwise"
+			"scaleImage"	"1"
+			"alpha"			"200"
+			"mouseinputenabled"	"0"
+			"proportionalToParent"	"1"
 		}	
 		
 		"TopBar"
@@ -82,7 +136,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
-			"font"			"FuturaItalic20"
+			"font"			"SLItalicMediumSmall"
 			"labelText"		"#Customization_Title"
 			"textAlignment"	"center"
 			"xpos"			"cs-0.5"
@@ -94,28 +148,25 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"textinsetx"	"5"
-			"centerwrap"	"1"
 		}
 		
-		"DescriptionLabel"
+		"TitleLabelStroke"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"DescriptionLabel"
-			"font"			"Futura12"
-			"labelText"		"#Customization_Description"
+			"fieldName"		"TitleLabelStroke"
+			"font"			"SLItalicMediumSmallStroke"
+			"labelText"		"#Customization_Title"
 			"textAlignment"	"center"
 			"xpos"			"cs-0.5"
-			"ypos"			"30"
-			"zpos"			"-9"
+			"ypos"			"20"
+			"zpos"			"-10"
 			"wide"			"550"
-			"tall"			"12"
+			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"0"
-			"enabled"		"0"
-			"textinsetx"	"5"
-			"centerwrap"	"1"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor_override" "TanDark"
 		}
 		
 		"QuicksettingsLabel"
@@ -149,11 +200,12 @@
 			"zpos"			"-10"
 			"wide"			"400"
 			"tall"			"190"
-			"fillcolor"		"Black"
+			"fillcolor"		"0 0 0 0"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+			"border"		"BorderTanDarkerCornersVerySmall"
 		}	
 		
 		"ToggleMinmodeButton"
@@ -1165,10 +1217,28 @@
 				"tall"			"f0"
 				"visible"		"1"
 				"enabled"		"1"
-				"image"			"replay/thumbnails/menu_bg/credits_bg"
+				"image"			"replay/thumbnails/linebg_red"
 				"scaleImage"	"1"
-				"alpha"			"50"
+				"alpha"			"255"
 				"mouseinputenabled"	"0"
+			}	
+			
+			"bggradient"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"bggradient"
+				"xpos"			"0"
+				"ypos"			"50"
+				"zpos"			"6"
+				"wide"			"f0"
+				"tall"			"f0"
+				"visible"		"1"
+				"enabled"		"1"
+				"image"			"training/gradient_black"
+				"scaleImage"	"1"
+				"alpha"			"200"
+				"mouseinputenabled"	"0"
+				"drawcolor"        "120 0 0 255"  
 			}	
 			
 			"TopBarOverlay1" //TanDark second top bar
@@ -1207,7 +1277,7 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"TopBarCreditsLabel"
-				"font"			"FuturaItalic20"
+				"font"			"SLItalicMediumSmall"
 				"labelText"		"Credits"
 				"textAlignment"	"center"
 				"xpos"			"cs-0.5"
@@ -1222,6 +1292,25 @@
 				"textinsetx"	"5"
 				"centerwrap"	"1"
 				"proportionaltoparent"	"1"
+			}
+			
+			"TopBarCreditsLabelStroke"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"TopBarCreditsLabelStroke"
+				"font"			"SLItalicMediumSmallStroke"
+				"labelText"		"Credits"
+				"textAlignment"	"center"
+				"xpos"			"cs-0.5"
+				"ypos"			"20"
+				"zpos"			"99"
+				"wide"			"550"
+				"tall"			"20"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"1"
+				"enabled"		"1"
+				"fgcolor_override" "TanDark"
 			}
 			
 			"TopBarCollapseButton"
@@ -1348,50 +1437,6 @@
 				}		
 			}
 			
-			"SLHudTitle"
-			{
-				"ControlName"	"CExLabel"
-				"fieldName"		"SLHudTitle"
-				"font"			"SLItalicMedium"
-				"labelText"		"SOLARLIGHTHUD REDUX"
-				"textAlignment"	"center"
-				"xpos"			"cs-0.5"
-				"ypos"			"c-100"
-				"zpos"			"10"
-				"wide"			"550"
-				"tall"			"40"
-				"autoResize"	"0"
-				"pinCorner"		"0"
-				"visible"		"0"
-				"enabled"		"0"
-				"textinsetx"	"5"
-				"centerwrap"	"1"
-				"fgcolor_override"	"TanLight"
-				"proportionaltoparent"		"1"
-			}
-			
-			"SLHudTitleStroke"
-			{
-				"ControlName"	"CExLabel"
-				"fieldName"		"SLHudTitleStroke"
-				"font"			"SLItalicMediumStroke"
-				"labelText"		"SOLARLIGHTHUD REDUX"
-				"textAlignment"	"center"
-				"xpos"			"cs-0.5"
-				"ypos"			"c-100"
-				"zpos"			"9"
-				"wide"			"550"
-				"tall"			"40"
-				"autoResize"	"0"
-				"pinCorner"		"0"
-				"visible"		"0"
-				"enabled"		"0"
-				"textinsetx"	"5"
-				"centerwrap"	"1"
-				"fgcolor_override"	"TanDarker"
-				"proportionaltoparent"		"1"
-			}
-			
 			"SLHUDLOGO"
 			{
 				"ControlName"	"ImagePanel"
@@ -1416,10 +1461,10 @@
 				"labelText"		"#Customization_Credits"
 				"textAlignment"	"center"
 				"xpos"			"cs-0.5"
-				"ypos"			"c0"
+				"ypos"			"c-10"
 				"zpos"			"10"
-				"wide"			"550"
-				"tall"			"100"
+				"wide"			"280"
+				"tall"			"150"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -1428,8 +1473,8 @@
 				"centerwrap"	"1"
 				"fgcolor_override"	"TanLight"
 				"proportionaltoparent"		"1"
+				"border"		"BorderTanDarkerCornersVerySmall"
 			}
-
 				
             "OptionList"
             {

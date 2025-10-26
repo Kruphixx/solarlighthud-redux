@@ -21,7 +21,7 @@
 		"outoffocus_bgcolor_override" "0 0 0 0"
 		
 		"item_xpos_offcenter_a"	"-310"
-		"item_xpos_offcenter_b"	"170"
+		"item_xpos_offcenter_b"	"-162"
 		"item_ypos"		"60"
 		"item_ydelta"	"75"
 		"item_mod_wide"	"40"
@@ -93,36 +93,81 @@
 		}
 	}
 	
+    "presetpinner"
+    {
+        "ControlName"                "Panel"
+        "xpos"                        "-4"
+        "ypos"                        "0"
+        "wide"                        "0"
+        "tall"                        "0"
+        "proportionaltoparent"        "1"
+    }
+    "loadout_preset_panel"
+    {
+        "ControlName"                "CLoadoutPresetPanel"
+        "FieldName"                    "loadout_preset_panel"
+        "xpos"                        "0"
+        "zpos"                        "-12"
+        "wide"                        "300"
+        "tall"                        "100" //edit loadoutpresetpanel.res instead
+        "visible"                    "1"
+        "ignorescheme"                "1"
+        "pin_to_sibling"            "presetpinner"
+        "pin_to_sibling_corner"        "3"
+    }
+	
 	"bg"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"bg"
-		"xpos"			"c-427"
+		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"-12"
-		"wide"			"854"
-		"tall"			"480"
+		"zpos"			"-15"
+		"wide"			"f0"
+		"tall"			"f0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/linebg"
-		"scaleImage"	"1"
+		"image"			"replay/thumbnails/menu_bg/background_diamond_looping_light"
+		"scaleImage"	"0"
+		"tileImage"	"1"
 		"mouseinputenabled"	"0"
+		"drawcolor"     "100 100 100 255"  
 	}	
+	
+	"bggradient"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"bggradient"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-14"
+		"wide"			"f-20"
+		"tall"			"f-20"
+		"drawcolor"     "128 100 75 255"    
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"training/gradient_black"
+		"alpha"			"230"
+		"proportionaltoparent"	"1"
+	}
 
 	"box"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"box"
-		"xpos"			"c-320"
-		"ypos"			"12"
+		"xpos"			"c-316"
+		"ypos"			"54"
 		"zpos"			"-11"
-		"wide"			"640"
-		"tall"			"382"
-		"fillcolor"		"0 0 0 200"
+		"wide"			"300"
+		"tall"			"308"
+		"fillcolor"		"0 0 0 0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		"border"		"BorderTanDarkerCornersVerySmall"
 	}	
 	
 	"CaratLabel"
@@ -135,14 +180,56 @@
 		"enabled"		"0"
 	}
 	
+	"LOGOTEST"
+	{
+		"ControlName"	"CTFLogoPanel"
+		"fieldName"		"LOGOTEST"
+		"xpos"			"c-310"
+		"ypos"			"18"
+		"zpos"			"19"
+		"wide"			"35"
+		"tall"			"35"
+		"visible"		"1"
+		"proportionaltoparent"	"1"
+		"mouseinputenabled"	"0"
+		"alpha"			"255"
+
+		"radius"		"10"
+		"velocity"		"30"
+		"fgcolor_override"	"TanLight"
+		"border"		"OctagonBGTANDARKER"
+	}
+	
 	"ClassLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"ClassLabel"
-		"font"			"FuturaItalic32"
+		"font"			"SLItalicMedium"
 		"labelText"		"#ClassBeingEquipped"
-		"textAlignment"	"west"
-		"xpos"			"c-310"
+		"textAlignment"	"center"
+		"xpos"			"c-275"
+		"ypos"			"18"
+		"zpos"			"2"
+		"wide"			"240"
+		"tall"			"35"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"allcaps"		"1"
+		"fgcolor_override"	"TanLight"
+		"auto_wide_tocontents"	"1"
+		"textinsetx"	"20"
+	}
+
+	"ClassLabelStroke"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"ClassLabelStroke"
+		"font"			"SLItalicMediumStroke"
+		"labelText"		"#ClassBeingEquipped"
+		"textAlignment"	"center"
+		"xpos"			"c-275"
 		"ypos"			"18"
 		"zpos"			"1"
 		"wide"			"240"
@@ -151,42 +238,13 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"textinsetx"	"5"
-		"fgcolor_override"	"TanLight"
-	}
-	"ClassLabel2"
-	{
-		"ControlName"	"cautofittinglabel"
-		"fieldName"		"ClassLabel2"
-		"font"			"FuturaItalic100"
-		"labelText"		"#ClassBeingEquipped"
-		"textAlignment"	"center"
-		"xpos"			"cs-0.5"
-		"ypos"			"c-50"
-		"zpos"			"-1"
-		"wide"			"320"
-		"tall"			"100"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"textinsetx"	"0"
-		"proportionaltoparent"	"1"
+		"allcaps"		"1"
 		"fgcolor_override"	"TanDarker"
-		
-		//auto-picks a smaller font in the event of clipping
-		"fonts"
-		{
-			"1"
-			{
-				"font"  "FuturaItalic100"
-			}
-			"2"
-			{
-				"font"  "FuturaItalic92"
-			}
-		}
+		"border"		"BorderTargetIDTanDarker"
+		"auto_wide_tocontents"	"1"
+		"textinsetx"	"20"
 	}
+
 
 	"TauntCaratLabel"
 	{
@@ -206,23 +264,7 @@
 		"enabled"		"0"
 		"fgcolor_override" "TanLight"
 	}
-	"TauntLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"TauntLabel"
-		"font"			"FuturaItalic16"
-		"labelText"		"#TF_Taunt"
-		"textAlignment"	"center"
-		"xpos"			"c-120"
-		"ypos"			"352"
-		"zpos"			"1"
-		"wide"			"240"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-	}
+
 	
 	"TopLine"
 	{
@@ -245,15 +287,16 @@
 		"ControlName"	"CTFPlayerModelPanel"
 		"fieldName"		"classmodelpanel"
 		
-		"xpos"			"c-320"
-		"ypos"			"12"
-		"zpos"			"-1"		
-		"wide"			"640"
-		"tall"			"382"
+		"xpos"			"cs-0.5"
+		"ypos"			"cs-0.5"
+		"zpos"			"-13"		
+		"wide"			"1000"
+		"tall"			"672"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		"proportionaltoparent" "1"
 		
 		"render_texture"	"0"
 		"fov"			"30"
@@ -266,11 +309,11 @@
 			"force_pos"	"1"
 
 			"angles_x" "0"
-			"angles_y" "170"
+			"angles_y" "160"
 			"angles_z" "0"
 			"origin_x" "350"
-			"origin_y" "0"
-			"origin_z" "-52"
+			"origin_y" "-40"
+			"origin_z" "-42"
 			"frame_origin_x"	"0"
 			"frame_origin_y"	"0"
 			"frame_origin_z"	"0"
@@ -339,21 +382,6 @@
 		"fgcolor"		"255 215 0 255"
 		"centerwrap"	"1"
 	}
-	
-	"loadout_preset_panel"
-	{
-		"ControlName"	"CLoadoutPresetPanel"
-		"FieldName"		"loadout_preset_panel"
-		"zpos"			"20"
-		"wide"			"300"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"paintbackground"	"0"
-	}
 
 	"ItemOptionsPanel"
 	{
@@ -369,16 +397,34 @@
 		"bgcolor_override"		"69 64 63 255"
 		"PaintBackgroundType"	"2"
 	}
-
+	
+	"TauntLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TauntLabel"
+		"font"			"FuturaItalic16"
+		"labelText"		"#TF_Taunt"
+		"textAlignment"	"center"
+		"xpos"			"c-316"
+		"ypos"			"362"
+		"zpos"			"1"
+		"wide"			"300"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+	}
+	
 	"TauntHintLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"TauntHintLabel"
 		"font"			"ItemFontAttribLarge"
-		"xpos"			"c-125"
-		"ypos"			"365"
+		"xpos"			"c-316"
+		"ypos"			"375"
 		"zpos"			"1"	
-		"wide"			"250"
+		"wide"			"300"
 		"tall"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -394,11 +440,11 @@
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CharacterLoadoutButton"
 		"labelText"		""
-		"xpos"			"c-28"
-		"ypos"			"c-208"
-		"zpos"			"2"
-		"wide"			"25"
-		"tall"			"25"
+		"xpos"			"c-16"
+		"ypos"			"c-70"
+		"zpos"			"25"
+		"wide"			"24"
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -410,6 +456,7 @@
 		"Command"		"characterloadout"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"roundedcorners"        "0"
 
 		"SubImage"
 		{
@@ -432,11 +479,11 @@
 		"ControlName"	"CExImageButton"
 		"fieldName"		"TauntLoadoutButton"
 		"labelText"		""
-		"xpos"			"c0"
-		"ypos"			"c-208"
-		"zpos"			"2"
-		"wide"			"25"
-		"tall"			"25"
+		"xpos"			"c-16"
+		"ypos"			"c-46"
+		"zpos"			"25"
+		"wide"			"24"
+		"tall"			"24"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -448,6 +495,7 @@
 		"Command"		"tauntloadout"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"roundedcorners"        "0"
 
 		"SubImage"
 		{

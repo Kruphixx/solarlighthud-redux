@@ -48,24 +48,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayingTo"
-		"xpos"			"0"	[$WIN32]
-		"ypos"			"0"	[$WIN32]
-		"zpos"			"4"
-		"wide"			"200"	[$WIN32]
-		"tall"			"16"
 		"visible"		"0"
 		"enabled"		"0"
-		"labelText"		"#TF_PlayingTo"
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"font"			"Futura12"
-		"fgcolor"		"TanLight"
-		"auto_wide_tocontents"	"1"
-		
-		"pin_to_sibling"	"PlayingToAnchor"
-		"pin_corner_to_sibling"		"4"
-		"pin_to_sibling_corner"		"4"
 	}	
 	
 	"PlayingToColoredLabel"
@@ -76,18 +60,19 @@
 		"ypos"			"0"	[$WIN32]
 		"zpos"			"4"
 		"wide"			"300"	[$WIN32]
-		"tall"			"12"
+		"tall"			"20"
 		"visible"		"1"
 		"enabled"		"1"
 		"labeltext" "#TF_PlayingTo"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"font"			"Futura12"
-		"bgcolor_override"    "TanDarkerTransparent"
+		"bgcolor_override"    "0 0 0 0"
 		"auto_wide_tocontents"	"1"
 		"centerwrap"	"0"
 		"textinsetx"	"12"
-		"textAlignment"	"west"
+		"textAlignment"	"north-west"
+		"border"	"BorderTanDarkerCornersTransparentVerySmall"
 		
 		"colors"
 		{
@@ -128,7 +113,8 @@
 		"zpos"			"-10"
 		"wide"			"200"
 		"tall"			"6"
-		"fillcolor"		"TanDarkerTransparent"
+		"fillcolor"		"0 0 0 0"
+		"border"	"BorderTanDarkerCornersTransparentVerySmall"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"

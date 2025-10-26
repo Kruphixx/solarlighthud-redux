@@ -119,7 +119,7 @@
 		"font"			"Futura16"
 		"textinsetx"	"40"
 		
-		"bgcolor_override"	"TanDarkerTransparent"
+		"border"		"BorderTanDarkerCornersVerySmall"
 		"auto_wide_tocontents"	"1"
 		
 		"pin_to_sibling"	"Anchor"

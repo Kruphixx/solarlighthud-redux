@@ -43,7 +43,6 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"VSBG"
 		"xpos"			"cs-0.5"
-		"xpos"			"cs-0.5"
 		"ypos"			"16"
 		"zpos"			"-10"
 		"wide"			"60"
@@ -54,8 +53,6 @@
 		"scaleImage"	"1"	
 		"proportionaltoparent"	"1"
 	}	
-	
-	
 	
 	"blueteam"
 	{
@@ -72,10 +69,10 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"count"
-			"xpos"			"23"
+			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"2"
-			"wide"			"30"
+			"wide"			"50"
 			"tall"			"50"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -83,17 +80,17 @@
 			"enabled"		"1"
 			"font"			"SLBoldMedium"
 			"labelText"		"%blue_alive%"
-			"textAlignment"	"center"
+			"textAlignment"	"east"
 			"fgcolor"		"SolarTeamBLU"
 		}	
 		"countshadow"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"countshadow"
-			"xpos"			"23"
+			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"
-			"wide"			"30"
+			"wide"			"50"
 			"tall"			"50"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -101,7 +98,7 @@
 			"enabled"		"1"
 			"font"			"SLBoldMediumStroke"
 			"labelText"		"%blue_alive%"
-			"textAlignment"	"center"
+			"textAlignment"	"east"
 			"fgcolor"		"TanDarker"
 		}
 	}
@@ -110,7 +107,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"redteam"
-		"xpos"			"c5"
+		"xpos"			"c15"
 		"ypos"			"0"
 		"zpos"			"0"
 		"wide"			"60"
@@ -121,10 +118,10 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"count"
-			"xpos"			"8"
+			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"2"
-			"wide"			"30"
+			"wide"			"50"
 			"tall"			"50"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -132,17 +129,17 @@
 			"enabled"		"1"
 			"font"			"SLBoldMedium"
 			"labelText"		"%red_alive%"
-			"textAlignment"	"center"
+			"textAlignment"	"west"
 			"fgcolor"		"SolarTeamRED"
 		}	
 		"countshadow"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"countshadow"
-			"xpos"			"8"
+			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"
-			"wide"			"30"
+			"wide"			"50"
 			"tall"			"50"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -150,7 +147,7 @@
 			"enabled"		"1"
 			"font"			"SLBoldMediumStroke"
 			"labelText"		"%red_alive%"
-			"textAlignment"	"center"
+			"textAlignment"	"west"
 			"fgcolor"		"TaNDarker"
 		}		
 	}

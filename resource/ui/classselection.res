@@ -14,19 +14,40 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"YourTeam"
 		"xpos"			"c-100"
-		"ypos"			"45"
+		"ypos"			"40"
 		"zpos"			"-2"
 		"wide"			"200"
-		"tall"			"40"
+		"tall"			"45"
 		"autoResize"	"1"
 		"pinCorner"		"2"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#TF_Arena_Team_Layout"
-		"textAlignment"	"center"
+		"textAlignment"	"south"
 		"font"			"SLHealthAmmo"
 		"fgcolor"		"TanLight"
+	}
+	
+	"bggradient"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"bggradient"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-5"
+		"wide"			"f-20"
+		"tall"			"f-20"
+		"drawcolor"     "128 128 128 255"    
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/gradient_red"
+		"teambg_1"		"replay/thumbnails/gradient_red"
+		"teambg_2"		"replay/thumbnails/gradient_red"
+		"teambg_3"		"replay/thumbnails/gradient_blue"
+		"alpha"			"170"
 	}
 		
 	"BGDarken"
@@ -46,6 +67,43 @@
 		"alpha"			"255"
 		"draw_corner_height" "11"
 	}
+	
+	"BGBrighten"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BGBrighten"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-10"
+		"wide"			"f0"
+		"tall"			"f0"
+		"fillcolor"		"TanLightTransparent"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"alpha"			"50"
+		"draw_corner_height" "11"
+	}
+	
+	"BGClasses"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BGClasses"
+		"xpos"			"cs-0.5"
+		"ypos"			"c132"
+		"zpos"			"-5"
+		"wide"			"500"
+		"tall"			"90"
+		"fillcolor"		"0 0 0 0"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"alpha"			"255"
+		"border"		"BorderTanDarkerCornersVerySmall"
+		"proportionaltoparent"	"1"
+	}	
 	
 	"BGHeader"
 	{
@@ -68,7 +126,6 @@
 		"teambg_3"		"replay/thumbnails/ColorBLU"
 		"teambg_3_lodef"	"replay/thumbnails/ColorBLU"
 		"alpha"			"255"
-		"draw_corner_height" "11"
 	}
 	
 	"BGFooter"
@@ -493,8 +550,8 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"DrawHintBG"
-		"xpos"			"-15"
-		"ypos"			"-18"
+		"xpos"			"-10"
+		"ypos"			"16"
 		"zpos"			"-4"
 		"wide"			"110"
 		"tall"			"55"
@@ -502,10 +559,6 @@
 		"enabled"		"1"
 		"image"			"replay/thumbnails/bgshapes/SHAPES_HP_BG"
 		"scaleImage"	"1"	
-		
-		"pin_to_sibling"	"DrawHintLabel"
-		"pin_corner_to_sibling"		"8"
-		"pin_to_sibling_corner"		"8"
 	}
 	
 	"countImage0" [$WIN32]
@@ -678,7 +731,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numScoutAnchor"
 		"xpos"					"c-245"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"6"
 		"wide"					"50"
 		"tall"					"30"
@@ -696,7 +749,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numSoldierAnchor"
 		"xpos"					"c-190"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"6"
 		"wide"					"50"
 		"tall"					"30"
@@ -714,7 +767,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numPyroAnchor"
 		"xpos"					"c-135"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"5"
 		"wide"					"50"
 		"tall"					"30"
@@ -732,7 +785,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numDemomanAnchor"
 		"xpos"					"c-80"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"5"
 		"wide"					"50"
 		"tall"					"30"
@@ -750,7 +803,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numHeavyAnchor"
 		"xpos"					"c-25"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"5"
 		"wide"					"50"
 		"tall"					"30"
@@ -768,7 +821,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numEngineerAnchor"
 		"xpos"					"c30"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"5"
 		"wide"					"50"
 		"tall"					"30"
@@ -786,7 +839,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numMedicAnchor"
 		"xpos"					"c85"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"5"
 		"wide"					"50"
 		"tall"					"30"
@@ -804,7 +857,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numSniperAnchor"
 		"xpos"					"c140"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"5"
 		"wide"					"50"
 		"tall"					"30"
@@ -822,7 +875,7 @@
 		"ControlName"			"ImagePanel"
 		"fieldName"				"numSpyAnchor"
 		"xpos"					"c195"
-		"ypos"					"r181"
+		"ypos"					"r131"
 		"zpos"					"5"
 		"wide"					"50"
 		"tall"					"30"
@@ -834,6 +887,611 @@
 		"fillcolor"				"SolarTeamBLU"
 		"PaintBackgroundType"	"0"
 	}	
+	
+	"numScoutColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numScoutColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numScout%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED" //team colored? idk, leave as red for now
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumScoutAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	
+	"numScoutOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numScoutOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numScout%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+		"border"				"BorderTargetIDTanDarker"
+	
+		"pin_to_sibling"	"NumScoutAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	
+	"numSoldierColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numSoldierColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numSoldier%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED"
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumSoldierAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	
+	"numSoldierOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numSoldierOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numSoldier%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+		"border"				"BorderTargetIDTanDarker"
+	
+		"pin_to_sibling"	"NumSoldierAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	
+	"numPyroColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numPyroColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numPyro%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED"
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumPyroAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	"numPyroOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numPyroOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numPyro%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+		"border"				"BorderTargetIDTanDarker"
+	
+		"pin_to_sibling"	"NumPyroAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}	
+	
+	"numDemomanColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numDemomanColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numDemoman%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED"
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumDemomanAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	"numDemomanOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numDemomanOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numDemoman%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+		"border"				"BorderTargetIDTanDarker"
+		
+		"pin_to_sibling"	"NumDemomanAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}	
+	
+	"numHeavyColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numHeavyColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numHeavy%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED"
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumHeavyAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	"numHeavyOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numHeavyOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numHeavy%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+		"border"				"BorderTargetIDTanDarker"
+	
+		"pin_to_sibling"	"NumHeavyAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	
+	"numEngineerColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numEngineerColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numEngineer%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"border"				"BorderTargetIDTanDarker"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED"
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumEngineerAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	"numEngineerOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numEngineerOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numEngineer%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+	
+		"pin_to_sibling"	"NumEngineerAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}		
+	
+	"numMedicColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numMedicColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numMedic%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED"
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumMedicAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	"numMedicOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numMedicOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numMedic%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+		"border"				"BorderTargetIDTanDarker"
+		
+		"pin_to_sibling"	"NumMedicAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}		
+	
+	"numSniperColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numSniperColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numSniper%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED"
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumSniperAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	"numSniperOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numSniperOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numSniper%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+		"border"				"BorderTargetIDTanDarker"
+		
+		"pin_to_sibling"	"NumSniperAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+
+	"numSpyColored"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numSpyColored"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numSpy%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmall"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		
+		//define text colors
+		"colors"
+		{
+			"1" "TanLight"
+			"2" "HUDRedTeamSolid"
+			"3" "Orange"
+			"4" "SolarTeamRED"
+		}
+		
+		//Color unicode characters
+		//  = 0x01 (SOH) //Normal
+		//  = 0x02 (STX) //Full line1
+		//  = 0x03 (ETX) //Line dash 
+		//  = 0x04 (EOT) //Full line2
+		//  = 0x05 (ENQ)
+		
+		"pin_to_sibling"	"NumSpyAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	"numSpyOutline"
+	{
+		"controlname" "cautofittinglabel"
+		"fieldName"		"numSpyOutline"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"50"
+		"tall"			"30"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labeltext" "%numSpy%"
+		"textAlignment"	"south-center"
+		"font"			"SLBoldSmallStroke"
+		"centerwrap"			"1"
+		"auto_wide_tocontents"	"1"
+		"fgcolor_override"	"TanDarker"
+		"border"				"BorderTargetIDTanDarker"
+		
+		"pin_to_sibling"	"NumSpyAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}	
 
 	
 	"MvMUpgradeImageScout"
@@ -841,7 +1499,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageScout"
 		"xpos"			"c-245"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -856,7 +1514,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageSolider"
 		"xpos"			"c-190"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -871,7 +1529,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImagePyro" 
 		"xpos"			"c-135"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -886,7 +1544,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageDemoman" 
 		"xpos"			"c-80"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -901,7 +1559,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageHeavy" 
 		"xpos"			"c-25"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -916,7 +1574,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageEngineer"
 		"xpos"			"c30"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -931,7 +1589,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageMedic"
 		"xpos"			"c85"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -946,7 +1604,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageSniper"
 		"xpos"			"c140"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"
@@ -961,7 +1619,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MvMUpgradeImageSpy"
 		"xpos"			"c195"
-		"ypos"			"r150"
+		"ypos"			"r100"
 		"zpos"			"10"
 		"wide"			"10"
 		"tall"			"10"

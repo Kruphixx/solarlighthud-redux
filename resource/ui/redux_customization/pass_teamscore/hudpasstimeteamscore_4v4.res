@@ -156,18 +156,19 @@
 			"ypos"			"0"
 			"zpos"			"4"
 			"wide"			"300"	[$WIN32]
-			"tall"			"12"
+			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
 			"labeltext" "#TF_PlayingTo"
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"font"			"Futura12"
-			"bgcolor_override"    "TanDarkerTransparent"
+			"bgcolor_override"    "0 0 0 0"
 			"auto_wide_tocontents"	"1"
 			"centerwrap"	"0"
 			"textinsetx"	"12"
-			"textAlignment"	"west"
+			"textAlignment"	"north-west"
+			"border"	"BorderTanDarkerCornersTransparentVerySmall"
 			
 			"colors"
 			{

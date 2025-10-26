@@ -9,21 +9,38 @@
 		"visible"		"0"
 		"enabled"		"0"
 	}
+<<<<<<< Updated upstream
 	"NewBG"
 	{
 		"ControlName"	"ImagePanel"
+=======
+
+	
+	"NewBG"
+	{
+		"ControlName"	"CExLabel"
+>>>>>>> Stashed changes
 		"fieldName"		"NewBG"
 		"xpos"			"0"	[$WIN32]
-		"ypos"			"10"
-		"ypos_hidef"	"-100"	//off-screen
-		"ypos_lodef"	"-100"	//off-screen
+		"ypos"			"16"
 		"zpos"			"0"
 		"wide"			"f0"
+<<<<<<< Updated upstream
 		"tall"			"f0"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"replay/thumbnails/bgtransparent"
 		"scaleImage"		"1"
+=======
+		"tall"			"f16"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		""
+		"border"		"BorderTanDarkerCornersVerySmall"
+		"proportionaltoparent"	"1"
+>>>>>>> Stashed changes
 	}
 
 	"SpyIcon"
@@ -46,8 +63,8 @@
 		"tall"			"38"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"labelText"		"#Hud_Menu_Disguise_Title"
 		"textAlignment"	"center"
 		"dulltext"		"0"
@@ -67,17 +84,22 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"ToggleLabel"
 		"font"			"Default"
+<<<<<<< Updated upstream
 		"xpos"			"5"
 		"ypos"			"25"
+=======
+		"xpos"			"0"
+		"ypos"			"27"
+>>>>>>> Stashed changes
 		"zpos"			"2"
-		"wide"			"195"
+		"wide"			"150"
 		"tall"			"13"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#Hud_Menu_Spy_Minus_Toggle"
-		"textAlignment"	"Left"
+		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 	}
@@ -86,20 +108,8 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CancelLabel"
-		"font"			"Default"
-		"xpos"			"200"
-		"ypos"			"20"
-		"zpos"			"2"
-		"wide"			"195"
-		"tall"			"13"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"#Hud_Menu_Build_Cancel"
-		"textAlignment"	"east"
-		"dulltext"		"0"
-		"brighttext"	"0"
+		"visible"		"0"
+		"enabled"		"0"
 	}
 	//positioning reference
 	//row 1: xpos 5, ypos 40/70/100 EXCEPT FOR SCOUT

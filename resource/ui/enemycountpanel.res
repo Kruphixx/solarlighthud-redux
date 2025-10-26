@@ -1,3 +1,5 @@
+//minmode raises the mvm enemy count. hard-coded. had to work around it in wavestatuspanel.res
+
 "Resource/UI/EnemyCountPanel.res"
 {	
 	"EnemyCountPanel"
@@ -5,10 +7,10 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"EnemyCountPanel"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"10"
 		"zpos"			"3"
 		"wide"			"20"
-		"tall"			"34"
+		"tall"			"60"
 		"visible"		"0"
 		"enabled"		"1"
 	}

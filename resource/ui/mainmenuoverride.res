@@ -433,8 +433,7 @@
 		"paintbackground"	"0"
 		"paintborder"		"1"
 				
-		"image_drawcolor"   "TanLight"
-		"image_armedcolor"  "TanLight"
+		"image_drawcolor"	"235 226 202 255"
 
 		"border_default"	"default_rhombus"
 		"border_armed"		"armed_rhombus"
@@ -562,7 +561,7 @@
 		"noitem_textcolor"		"117 107 94 255"
 		"PaintBackgroundType"	"2"
 		"paintborder"	"1"
-		"border"		"MainMenuBGBorder"
+		"border"		"BorderTanDarkerCornersTransparentVerySmall"
 		
 		"text_ypos"			"20"
 		"text_center"		"1"
@@ -665,25 +664,6 @@
 		"scaleImage"	"1"
 		"mouseinputenabled"	"0"
 	}	
-	
-	"ReduxLogoText"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"ReduxLogoText"
-		"font"			"FuturaItalic20"
-		"labelText"		"SolarLightHUD REDUX"
-		"textAlignment"	"east"
-		"xpos"			"r250"
-		"ypos"			"r24"
-		"zpos"			"2"
-		"wide"			"250"
-		"tall"			"24"
-		"textinsetx"	"10"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-	}
 	
 	"TFCharacterImage"
 	{
@@ -1932,10 +1912,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"ReportPlayerButton"
-		"xpos"			"c-47"
-		"ypos"			"437"
+		"xpos"			"0"
+		"ypos"			"100"
 		"zpos"			"11"
-		"wide"			"30"
+		"wide"			"25"
 		"tall"			"25"
 		"visible"		"1"
 
@@ -1966,7 +1946,6 @@
 			"default"		"1"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			"RoundedCorners"	"5"
 			
 			"paintbackground"	"1"
 			
@@ -2001,8 +1980,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CallVoteButton"
-		"xpos"			"c-24"
-		"ypos"			"437"
+		"xpos"			"0"
+		"ypos"			"100"
 		"zpos"			"12"
 		"wide"			"25"
 		"tall"			"25"
@@ -2068,8 +2047,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"MutePlayersButton"
-		"xpos"			"c-1"
-		"ypos"			"437"
+		"xpos"			"0"
+		"ypos"			"125"
 		"zpos"			"12"
 		"wide"			"25"
 		"tall"			"25"
@@ -2136,68 +2115,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"RequestCoachButton"
-		"xpos"			"c22"
-		"ypos"			"437"
-		"zpos"			"12"
-		"wide"			"25"
-		"tall"			"25"
-		"visible"		"1"
-
-		"navLeft"		"MutePlayersButton"
-		"navRight"		"Notifications_ShowButtonPanel"
-		"navDown"		"QuickplayChangeButton"
-		"navToRelay"	"SubButton"
-
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"p1"
-			"tall"			"25"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"textinsetx"	"100"
-			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"west"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"default"		"1"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			
-			"paintbackground"	"1"
-			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "46 43 42 255"
-			"depressedFgColor_override" "46 43 42 255"
-			
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"235 226 202 255"
-			"proportionaltoparent"	"1"
-			
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"rs1-5"
-				"ypos"			"cs-0.5"
-				"zpos"			"1"
-				"wide"			"15"
-				"tall"			"15"
-				"visible"		"1"
-				"enabled"		"1"
-				"image"			"glyph_create"
-				"scaleImage"	"1"
-				"proportionaltoparent"	"1"
-			}				
-		}
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"visible"		"0"
 	}
 	
 	"BackgroundFooter"
@@ -2558,13 +2478,117 @@
 		"paintbackground"	"1"
 		"fgcolor_override"	"TanDark"
 	}
+	
+	"SLHRReportBugClickBlocker" //the report bug button is a weird shape so I need to block mouse-clicks on the blank area with a panel on top
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"SLHRReportBugClickBlocker"
+		"xpos"			"r190"
+		"ypos"			"r60"
+		"zpos"			"1"
+		"wide"			"160"
+		"tall"			"40"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"proportionaltoparent"	"1"
+		"fgcolor_override"	"0 0 0 0"
+	}
+	
+	"SLHRReportBugButton"
+	{
+		"ControlName"	"CExImageButton"
+		"fieldName"		"SLHRReportBugButton"
+		"xpos"			"r190"
+		"ypos"			"rs1"
+		"wide"			"190"
+		"tall"			"60"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"use_proportional_insets" "1"
+		"font"			"SLBoldSmall"
+		"textAlignment"	"south-east"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"command"		"url https://github.com/SolarLightTF2/solarlighthud-redux/issues/new"
+		"labeltext"		"#MMenu_Tooltip_ReportBug"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"proportionaltoparent"	"1"
+		"paintbackground"	"1"
+		"textinsetx"	"30"
+		
+		"border_default"	""
+		"border_armed"		""		
+		
+		"image_drawcolor"	"235 226 202 255"
+		
+		"defaultBgColor_override" 	"0 0 0 0"
+		"armedBgColor_override" 	"0 0 0 0"
+		"depressedBgColor_override" "0 0 0 0"
+		"depressedBgColor_override" "0 0 0 0"
+		
+		"defaultfgColor_override" 	"TanDarker"
+		"armedfgColor_override" 	"TanLight"
+		"depressedfgColor_override" "Orange" //clicked on
+		"depressedfgColor_override" "Orange" //clicked on
+		
+		"SubImage"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"SubImage"
+			"xpos"			"rs1"
+			"ypos"			"0"
+			"zpos"			"1"
+			"wide"			"30"
+			"tall"			"60"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"
+			"image"			"replay/thumbnails/icons/report_bug_button"
+			"proportionaltoparent"	"1"
+		}		
+	}
+	
+	"SLHRReportBugButtonOutline"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"SLHRReportBugButtonOutline"
+		"xpos"			"r190"
+		"ypos"			"rs1"
+		"zpos"			"-1"
+		"wide"			"190"
+		"tall"			"60"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"use_proportional_insets" "1"
+		"font"			"SLBoldSmallStroke"
+		"textAlignment"	"south-east"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"1"
+		"labeltext"		"#MMenu_Tooltip_ReportBug"
+		"proportionaltoparent"	"1"
+		"paintbackground"	"1"
+		"fgcolor_override"	"TanDark"
+		"textinsetx"	"30"
+	}
+
 
 	"CallVoteButton"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CallVoteButton"
-		"xpos"			"c-24"
-		"ypos"			"437"
+		"xpos"			"0"
+		"ypos"			"75"
 		"zpos"			"12"
 		"wide"			"25"
 		"tall"			"25"
@@ -2597,6 +2621,7 @@
 			"default"		"1"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
+			"RoundedCorners"	"0"
 			
 			"border_default"	"MainMenuSubButtonBorder"
 			"paintbackground"	"1"

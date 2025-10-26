@@ -3055,7 +3055,41 @@ Scheme
 
 		// SolarLightHUD Fonts //
 		
+		//SPECIAL
+		
+		"LoadoutTabFont"
+		{
+			"1"
+			{
+				"name"		"futura_extremestroke_italic"
+				"tall"		"18"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		
 		// ITALIC
+		
+		"SLItalicSmallest"
+		{
+			"1"
+			{
+				"name"		"futura_extra_black_italic"
+				"tall"		"12"
+				"antialias" 	"1"
+			}
+		}
+		
+		"SLItalicSmallestStroke"
+		{
+			"1"
+			{
+				"name"		"futurabt_extremestroke"
+				"tall"		"12"
+				"antialias" 	"1"
+			}
+		}
 		
 		"SLItalicSmall"
 		{
@@ -3081,7 +3115,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"futurabt_extremestroke"
+				"name"		"futura_extra_black_italic"
 				"tall"		"24"
 				"antialias" 	"1"
 			}
@@ -3091,7 +3125,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"futura_extra_black_italic"
+				"name"		"futurabt_extremestroke"
 				"tall"		"24"
 				"antialias" 	"1"
 			}
@@ -3185,6 +3219,16 @@ Scheme
 			{
 				"name"		"futurabt_extremestroke3"
 				"tall"		"12"
+				"antialias" 	"1"
+			}
+		}
+		
+		"SLBoldSmall"
+		{
+			"1"
+			{
+				"name"		"futurabt_extrablack"
+				"tall"		"16"
 				"antialias" 	"1"
 			}
 		}
@@ -5123,6 +5167,323 @@ Scheme
 			"image"					"replay/thumbnails/passtime/carrierpanel"
 		}
 		
+		BorderTanDarkCornersVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_tandark_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderTanLightCornersVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_tanlight_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderTanDarkerCornersLarge
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_tandarker_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"18"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"18"	
+		}
+		
+		BorderBlackCornersVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_black_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderBlackCornersLarge
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_black_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"18"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"18"	
+		}
+		
+		BorderBlackCornersVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_black_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderBlackCornersTransparentLarge
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_black_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"18"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"18"	
+		}
+		
+		BorderBlackCornersTransparentVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_black_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"	
+		}
+		
+		BorderTanDarkerCornersVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_tandarker_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderTanDarkerCornersTransparentLarge
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_tandarker_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"18"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"18"	
+		}
+		
+		BorderTanDarkerCornersTransparentVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_tandarker_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderTanDarkerCornersOutlineLarge
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_tandarker_corners_outline"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"18"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"18"	
+		}
+		
+		BorderTanDarkerCornersOutlineVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_tandarker_corners_outline"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderMatchHUD
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_matchhud"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderGreyCornersLarge
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_grey_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"18"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"18"	
+		}
+		
+		BorderGreyCornersVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_grey_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderGreyCornersTransparentLarge
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_grey_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"18"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"18"	
+		}
+		
+		BorderGreyCornersTransparentVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_grey_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderBLUCornersVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_blu_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderBLUCornersTransparentVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_blu_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderREDCornersVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_red_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		BorderREDCornersTransparentVerySmall
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_red_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
+		}
+		
+		//These are not actually used for the TargetID, they just use the same texture. TargetID loads the textures directly. These are being used for text backgrounds.
+		BorderTargetIDTanDarker
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_targetid_tandarker"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+				
+			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"20"
+		}
+		
+		BorderTargetIDBLU
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_targetid_blu"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+				
+			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"20"
+		}
+		
+		BorderTargetIDRED
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"replay/thumbnails/borders/border_targetid_red"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+				
+			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"20"
+		}
 		//End of Solar Borders
 		
 		NoBorder
@@ -5432,110 +5793,120 @@ Scheme
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorTanDarkerTransparent"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_tandarker_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		TFFatLineBorderOpaque
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorTanDarkerTransparent"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_tandarker_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		TFFatLineBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorTanDarkerTransparent"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_tandarker_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		TFFatLineBorderRedBGOpaque
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorREDTransparent"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_red_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		TFFatLineBorderRedBGOpaque_Store
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorREDTransparent"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_red_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		TFFatLineBorderRedBG
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorRED"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_red_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		TFFatLineBorderRedBGMoreOpaque
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorREDTransparent"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_red_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		TFFatLineBorderBlueBG
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorBLU"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_blu_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"			// screen size of the corners ( and sides ), proportional
 		}
 		TFFatLineBorderBlueBGMoreOpaque
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorBLUTransparent"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_blu_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"			// screen size of the corners ( and sides ), proportional
 		}
 		TFFatLineBorderBlueBGOpaque
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"replay/thumbnails/ColorBLUTransparent"
-			"src_corner_height"		"23"				// pixels inside the image
-			"src_corner_width"		"23"
-			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"0"	
+			"image"					"replay/thumbnails/borders/border_blu_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"			// screen size of the corners ( and sides ), proportional
 		}
 		TFFatLineBorderClearBG
 		{
@@ -5633,12 +6004,14 @@ Scheme
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"loadout_rect"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"image"					"replay/thumbnails/borders/border_black_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
+		
 		Econ.Button.Border.Default
 		{
 			"inset" "0 0 0 0"
@@ -5655,22 +6028,24 @@ Scheme
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"loadout_rect_mouseover"
-			"src_corner_height"		"24"				// pixels inside the image
-			"src_corner_width"		"24"
-			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+			"image"					"replay/thumbnails/borders/border_black_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		LoadoutItemPopupBorder
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"button_holder_central"
-			"src_corner_height"		"32"				// pixels inside the image
-			"src_corner_width"		"32"
-			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"image"					"replay/thumbnails/borders/border_black_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		
 		BackpackItemGrayedOut
@@ -7105,22 +7480,23 @@ Scheme
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"button_holder_central"
-			"src_corner_height"		"32"				// pixels inside the image
-			"src_corner_width"		"32"
-			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"image"					"replay/thumbnails/borders/border_tandarker_corners"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"	
 		}
 		MainMenuBGBorderAlpha
 		{
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"button_holder_central_alpha"
-			"src_corner_height"		"32"				// pixels inside the image
-			"src_corner_width"		"32"
-			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"4"	
+			"image"					"replay/thumbnails/borders/border_tandarker_corners_transparent"
+			"src_corner_height"		"20"				// pixels inside the image
+			"src_corner_width"		"20"
+
+			"draw_corner_width"		"6"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"6"
 		}
 		MainMenuBlogTabBG
 		{

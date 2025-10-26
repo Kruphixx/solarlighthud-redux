@@ -875,7 +875,7 @@
 		"separator_width"		"1"	// distance between the icons (including their backgrounds)
 		"separator_height"		"1"
 		"height_offset"			"0"	[$WIN32] // distance from the bottom of the panel
-		"height_offset_minmode"			"-9999"	[$WIN32] // distance from the bottom of the panel
+//		"height_offset_minmode"			"-9999"	[$WIN32] // distance from the bottom of the panel
 	}
 
 	HudCapturePanel
@@ -918,10 +918,11 @@
 		"fieldName"				"ArenaWinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-225"
-		"ypos"					"250"
-		"wide"					"450"
-		"tall"					"218"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"2"
+		"wide"					"f0"
+		"tall"					"f0"
 	}
 	
 	PVEWinPanel
@@ -938,16 +939,10 @@
 	StatPanel
 	{
 		"fieldName"				"StatPanel"
-		"visible"				"1"
-		"enabled"				"1"
-		"xpos"					"c-133"
-		"xpos_lodef"			"c-190"
-		"ypos"				"270"
-		"ypos_lodef"			"250"
-		"wide"					"266"
-		"wide_lodef"			"400"
-		"tall"					"120"
-		"tall_lodef"			"190"
+		"visible"				"0"
+		"enabled"				"0"
+		"xpos"					"9999"
+		"ypos"				"9999"
 	}
 	
 	FreezePanel
@@ -1065,11 +1060,15 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"cs-0.5"
+<<<<<<< Updated upstream
 		"ypos"			"c60"
+=======
+		"ypos"			"c40"
+>>>>>>> Stashed changes
 		"wide"			"150"
 		"tall"			"130"	[$WIN32]
 		"PaintBackgroundType"	"0"
-	}	
+	}
 	
 	HudDemomanPipes
 	{

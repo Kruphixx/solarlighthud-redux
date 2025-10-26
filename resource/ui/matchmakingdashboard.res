@@ -9,11 +9,11 @@
 		"ypos"					"-5"
 		"zpos"					"-3"
 		"wide"					"f0"
-		"tall"					"230"
+		"tall"					"340"
 		"keyboardinputenabled"	"0"
 
 		"collapsed_height"	"0"
-		"expanded_height"	"230"
+		"expanded_height"	"340"
 		"resize_time"		"0.0"
 	}
 
@@ -142,33 +142,18 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"SolarTopBarBG"
-			"xpos"			"cs-0.5"
+			"xpos"			"-10"
 			"ypos"			"0"
 			"zpos"			"-2"
-			"wide"			"p1.1"
-			"tall"			"30"
-			"fillcolor"		"TanLight"
+			"wide"			"198"
+			"tall"			"32"
+			"fillcolor"		"0 0 0 0"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"0"
-			"enabled"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"border"		"BorderTanDarkerCornersVerySmall"
 		}	
-		
-		"SolarTopBarBG2"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SolarTopBarBG2"
-			"xpos"			"cs-0.5"
-			"ypos"			"29"
-			"zpos"			"-1"
-			"wide"			"p1.1"
-			"tall"			"2"
-			"fillcolor"		"TanDarker"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"0"
-			"enabled"		"0"
-		}		
 
 		"OuterShadow"
 		{
@@ -381,25 +366,25 @@
 				"zpos"			"-1"
 				"wide"			"f0"
 				"tall"			"f0"
-				"visible"		"1"
+				"visible"		"0"
 				"proportionaltoparent"	"1"
 
-				"border"		"OuterShadowBorderThin"
+				"border"		"NoBorder"
 			}
 
 			"BGPanel"
 			{
 				"ControlName"	"Panel"
 				"fieldName"		"BGPanel"
-				"xpos"			"cs-0.5"
+				"xpos"			"cs-0.45"
 				"ypos"			"cs-0.5"
 				"zpos"			"0"
-				"wide"			"f4"
-				"tall"			"f4"
+				"wide"			"f20"
+				"tall"			"f20"
 				"visible"		"1"
 				"proportionaltoparent"	"1"
 
-				"border"		"ReplayDefaultBorder"
+				"border"		"BorderTanDarkCornersVerySmall"
 			}
 
 			"QueueLogoButton"
@@ -447,13 +432,14 @@
 				"velocity"		"100"
 
 				"fgcolor_override"	"TFOrange"
+				"border"		"OctagonBGTANDARKER"
 			}
 
 			"QueueText"
 			{
 				"ControlName"	"CAutoFittingLabel"
 				"fieldName"		"QueueText"
-				"xpos"			"33"
+				"xpos"			"37"
 				"ypos"			"1"
 				"wide"			"f55"
 				"zpos"			"100"
@@ -512,12 +498,12 @@
 			
 				"paintbackground"	"0"
 			
-				"defaultFgColor_override" "46 43 42 255"
-				"armedFgColor_override" "235 226 202 255"
-				"depressedFgColor_override" "46 43 42 255"
+				"defaultFgColor_override" "TanDarker"
+				"armedFgColor_override" "TanLight"
+				"depressedFgColor_override" "TanDarker"
 			
-				"image_drawcolor"	"117 107 94 255"
-				"image_armedcolor"	"200 80 60 255"
+				"image_drawcolor"	"TanDarker"
+				"image_armedcolor"	"TanLight"
 				"SubImage"
 				{
 					"ControlName"	"ImagePanel"
@@ -562,12 +548,12 @@
 			
 				"paintbackground"	"0"
 			
-				"defaultFgColor_override" "46 43 42 255"
-				"armedFgColor_override" "235 226 202 255"
-				"depressedFgColor_override" "46 43 42 255"
+				"defaultFgColor_override" "TanDarker"
+				"armedFgColor_override" "TanLight"
+				"depressedFgColor_override" "TanDarker"
 			
-				"image_drawcolor"	"117 107 94 255"
-				"image_armedcolor"	"200 80 60 255"
+				"image_drawcolor"	"TanDarker"
+				"image_armedcolor"	"TanLight"
 				"SubImage"
 				{
 					"ControlName"	"ImagePanel"
@@ -827,7 +813,7 @@
 			"keyboardinputenabled"	"0"
 			"actionsignallevel"	"2"
 			"roundedcorners"	"1"
-			"textinsety"	"5"
+			"textinsety"	"3"
 			"textinsetx"	"22"
 			"use_proportional_insets"	"1"
 			

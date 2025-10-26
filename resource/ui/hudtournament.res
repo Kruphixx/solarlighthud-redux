@@ -12,11 +12,11 @@
 		"proportionaltoparent"	"1"
 
 		"team1_player_base_offset_x"		"-75"
-		"team1_player_base_y"				"85"
+		"team1_player_base_y"				"66"
 		"team1_player_delta_x"				"-47"
 		"team1_player_delta_y"				"0"
 		"team2_player_base_offset_x"	"5"
-		"team2_player_base_y"			"66"
+		"team2_player_base_y"			"62"
 		"team2_player_delta_x"				"47"
 		"team2_player_delta_y"				"0"
 		"teams_player_delta_x_comp"			"42"
@@ -648,7 +648,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"TournamentInstructionsLabel"
-		"font"			"SLBoldSmall"
+		"font"			"SLBoldSmaller"
 		"xpos"			"c-120"
 		"ypos"			"58"
 		"wide"			"240"
@@ -657,6 +657,7 @@
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
+		"visible_minmode"	"1"
 		"enabled"		"1"
 		"wrap"			"0"
 		"labelText"		"%readylabel%"
@@ -667,9 +668,11 @@
 		if_mvm
 		{
 			"xpos"			"155"
-			"ypos"			"115"
+			"ypos"			"16"
 			"wide"			"190"
 			"zpos"			"3"
+			"font"			"SLBoldSmaller"
+			"visible_minmode"	"0"
 		}
 
 		if_competitive
@@ -685,7 +688,7 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"TournamentInstructionsLabelShadow"
-		"font"			"SLBoldSmallStroke"
+		"font"			"SLBoldSmallerStroke"
 		"xpos"			"c-120"
 		"ypos"			"58"
 		"wide"			"240"
@@ -703,10 +706,7 @@
 		
 		if_mvm
 		{
-			"xpos"			"155"
-			"ypos"			"115"
-			"wide"			"190"
-			"zpos"			"3"
+			"visible"	"0"
 		}
 
 		if_competitive

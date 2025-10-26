@@ -31,6 +31,7 @@
 			"PaintBackgroundType"	"2"
 			"paintborder"			"1"
 			"bgcolor_override"		"0 0 0 0"
+			"border"		"BorderTanDarkerCornersTransparentVerySmall"
 			
 			"model_xpos"	"0"
 			"model_center_y"	"1"
