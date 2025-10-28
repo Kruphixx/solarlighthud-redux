@@ -1060,7 +1060,7 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"cs-0.5"
-		"ypos"			"c60"
+		"ypos"			"c40"
 		"wide"			"150"
 		"tall"			"130"	[$WIN32]
 		"PaintBackgroundType"	"0"
@@ -1083,9 +1083,9 @@
 		"fieldName"				"HudTeamGoal"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"9999" //"c-80"
+		"xpos"					"c-100"
 		"ypos"					"65"
-		"wide"					"160"
+		"wide"					"180"
 		"tall"					"75"
 	}
 
@@ -1097,7 +1097,6 @@
 		"enabled"				"1"
 		"xpos"					"c-160"
 		"ypos"					"15"
-		"ypos_lodef"			"75"
 		"wide"					"320"
 		"tall"					"300"
 	}
@@ -1107,12 +1106,10 @@
 		"fieldName"				"HudTeamSwitch"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"c-160"
+		"xpos"					"c-100"
 		"ypos"					"75"
-		"ypos_hidef"				"90"
-		"ypos_lodef"			"90"
-		"wide"					"320"
-		"tall"					"100"
+		"wide"					"180"
+		"tall"					"75"
 	}
 
 	HudArenaNotification
@@ -1393,10 +1390,10 @@
 		"fieldName"		"HudAlert"
 		"visible"		"0"
 		"enable"		"1"
-		"xpos"			"c-160"
-		"ypos"			"100"
-		"wide"			"320"
-		"tall"			"150"
+		"xpos"			"c-100"
+		"ypos"			"65"
+		"wide"			"180"
+		"tall"			"75"
 	}
 
 

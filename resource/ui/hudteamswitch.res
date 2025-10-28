@@ -1,9 +1,9 @@
-"Resource/UI/HudTeamGoal.res"
+"Resource/UI/HudTeamSwitch.res"
 {
-	"HudTeamGoalBG"
+	"HudTeamSwitchBG"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"		"HudTeamGoalBG"
+		"fieldName"		"HudTeamSwitchBG"
 		"xpos"			"20"
 		"ypos"			"4"
 		"zpos"			"-1"
@@ -25,10 +25,10 @@
 		"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 	"20"
 	}
-	"GoalLabel"
+	"SwitchLabel"
 	{	
 		"ControlName"		"Label"
-		"fieldName"		"GoalLabel"
+		"fieldName"		"SwitchLabel"
 		"font"			"Futura8"
 		"xpos"			"57"
 		"ypos"			"15"
@@ -40,13 +40,13 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"1"
-		"labelText"		""
-		"textAlignment"		"center"
+		"labelText"		"#TF_teambalanced"
+		"textAlignment"		"Center"
 	}
-	"SwitchLabel"
+	"BalanceLabel"
 	{	
 		"ControlName"		"Label"
-		"fieldName"		"SwitchLabel"
+		"fieldName"		"BalanceLabel"
 		"font"			"Futura8"
 		"xpos"			"57"
 		"ypos"			"30"
@@ -58,13 +58,13 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"1"
-		"labelText"		"#TF_teamswitch_attackers"
-		"textAlignment"		"center"
+		"labelText"		""
+		"textAlignment"		"Center"
 	}
-	"GoalImage"
+	"SwitchImage"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"		"GoalImage"
+		"fieldName"		"SwitchImage"
 		"xpos"			"14"
 		"ypos"			"14"
 		"zpos"			"1"
@@ -74,14 +74,13 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/hud_icon_attack"
+		"image"			"../hud/ico_teambalance"
 		"scaleImage"		"1"
-		"border"		"NoBorder"
 	}
-	"GoalImageBG"
+	"SwitchImageBG"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"		"GoalImageBG"
+		"fieldName"		"SwitchImageBG"
 		"xpos"			"6"
 		"ypos"			"6"
 		"zpos"			"1"
