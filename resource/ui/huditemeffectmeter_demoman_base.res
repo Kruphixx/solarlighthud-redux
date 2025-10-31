@@ -42,6 +42,7 @@
 		"wide"			"40"
 		"tall"			"20"
 		"visible"		"1"
+		"visible_minmode"	"0"
 		"enabled"		"1"
 		"image"			"replay/thumbnails/pd/pd_timer_bg_normal"
 		"scaleImage"	"1"	
