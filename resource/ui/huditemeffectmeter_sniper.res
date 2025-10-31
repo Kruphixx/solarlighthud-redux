@@ -3,6 +3,6 @@
 {
 	"EyelanderIcon"
 	{
-		"image"			"../hud/leaderboard_class_sniper.vtf"
+		"image"			"../hud/leaderboard_class_sniper"
 	}
 }

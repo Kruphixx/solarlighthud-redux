@@ -1,3 +1,4 @@
+//manmelter and frontier justice crits counter
 #base "huditemeffectmeter_demoman.res"
 "Resource/UI/HudItemEffectMeter_engineer.res"
 {

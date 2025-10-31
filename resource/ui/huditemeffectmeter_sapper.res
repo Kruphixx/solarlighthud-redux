@@ -1,20 +1,3 @@
-#base "redux_base/HudItemEffectMeter_meter_base.res"
+#base "huditemeffectmeter_#middle.res"
 
-"Resource/UI/HudItemEffectMeter_Sapper.res"
-{
-	HudItemEffectMeter
-	{
-		"fieldName"		"HudItemEffectMeter"
-	}
-	
-	"ItemEffectMeterLabelNew"
-	{
-		"fieldName"				"ItemEffectMeterLabelNew"
-		"labelText"				"#TF_Sapper"
-	}
-	"ItemEffectMeterLabelOutline"
-	{
-		"fieldName"				"ItemEffectMeterLabelOutline"
-		"labelText"				"#TF_Sapper"
-	}
-}
+#base "huditemeffectmeter_base.res"

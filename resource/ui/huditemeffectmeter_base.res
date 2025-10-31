@@ -1,0 +1,69 @@
+//todo later down the line: move this to a _base for logbasing purposes (modifying meter positions based on hud style selected?)
+"Resource/UI/HudItemEffectMeter.res"
+{
+	HudItemEffectMeter
+	{
+		"fieldName"		"HudItemEffectMeter"
+		"visible"		"1"
+		"enabled"		"1"
+		"xpos"			"c190"
+		"ypos"			"r62"
+		//"xpos_minmode"	"r52"
+		//"ypos_minmode"	"r54"
+		"wide"			"100"
+		"tall"			"50"
+		"MeterFG"		"White"
+		"MeterBG"		"Gray"
+	}
+
+	"ItemEffectMeterLabel"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterLabel"
+		"xpos"					"20"
+		"ypos"					"33"
+		"zpos"					"6"
+		"wide"					"80"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"#TF_Ball"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"SLBoldSmallestish"
+		"fgcolor_override"		"TanDark"
+	}
+	"ItemEffectMeter"
+	{
+		"ControlName"			"ContinuousProgressBar"
+		"fieldName"				"ItemEffectMeter"
+		"font"					"Default"
+		"xpos"					"47"
+		"ypos"					"28"
+		"zpos"					"2"
+		"wide"					"30"
+		"tall"					"5"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"textAlignment"			"Left"
+		"dulltext"				"0"
+		"brighttext"			"0"
+	}
+	"coolborder"
+	{
+		"ControlName"			"ImagePanel"
+		"fieldName"				"coolborder"
+		"image"					"replay/thumbnails/borders/border_tandarker_corners"
+		"xpos"					"36"
+		"ypos"					"23"
+		"wide"					"50"
+		"tall"					"25"
+		"scaleImage"			"1"
+	}
+}
