@@ -1,5 +1,5 @@
-//used for demoman eyelander head count and airstrike heads
-"Resource/UI/HudItemEffectMeter_demoman.res"
+//used for demoman eyelander head count
+"resource/ui/huditemeffectmeter_demoman.res"
 {
 	//* TEMPORARY POSITION, will change later -techno
 	//*	default positions pre-this update are in hudmeters_classic.res in redux_customization folder

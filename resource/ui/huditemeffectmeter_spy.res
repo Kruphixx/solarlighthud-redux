@@ -1,6 +1,6 @@
-//spy heads counter
+//Counter for: Diamondback
 #base "huditemeffectmeter_demoman.res"
-"Resource/UI/HudItemEffectMeter_spy.res"
+"resource/ui/huditemeffectmeter_spy.res"
 {
 	"EyelanderIcon"
 	{

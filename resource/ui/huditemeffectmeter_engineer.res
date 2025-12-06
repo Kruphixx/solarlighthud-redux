@@ -1,6 +1,6 @@
-//manmelter and frontier justice crits counter
+//Counter for: Frontier Justice and Manmelter
 #base "huditemeffectmeter_demoman.res"
-"Resource/UI/HudItemEffectMeter_engineer.res"
+"resource/ui/huditemeffectmeter_engineer.res"
 {
 	"EyelanderIcon"
 	{

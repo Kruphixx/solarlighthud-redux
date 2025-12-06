@@ -1,4 +1,6 @@
+//Charge meter for: Cow Mangler
 #base "../../cfg/redux_customization/redux_meterposition.txt"
-#base "huditemeffectmeter_#middle.res"
+#base "huditemeffectmeter_#bottom.res"
 
+//go here to edit appearance
 #base "huditemeffectmeter_base.res"

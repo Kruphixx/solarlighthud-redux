@@ -1,6 +1,7 @@
-#base "HudItemEffectMeter.res"
+//todo: fix this (probably)
+#base "huditemeffectmeter.res"
 
-"Resource/UI/HudRocketPack.res"
+"resource/ui/hudrocketpack.res"
 {
 	HudItemEffectMeter
 	{

@@ -1,6 +1,8 @@
+//Counter for: PowerUp Canteen in MvM
+//todo: clean this up
 #base "hudsolarcountbase.res"
 
-"Resource/UI/HudItemEffectMeter_PowerupBottles.res"
+"resource/ui/huditemeffectmeter_powerupbottles.res"
 {
 	HudItemEffectMeter
 	{

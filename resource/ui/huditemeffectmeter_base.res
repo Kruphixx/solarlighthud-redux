@@ -1,3 +1,6 @@
+//main file used for every meter (bg, meter itself, labels etc)
+//to change height of meters, check out huditemeffectmeter_#bottom/#middle/#top and change ypos (not the -20's!)
+
 "Resource/UI/HudItemEffectMeter.res"
 {
 	HudItemEffectMeter
@@ -54,7 +57,7 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 	}
-	"modulate"
+	"modulate" //discolors meter bg a bit, maybe needs work before making visible? -techno
 	{
 		"ControlName"				"ImagePanel"
 		"fieldName"					"modulate"

@@ -1,5 +1,6 @@
+//Counter for: Bazaar Bargain
 #base "huditemeffectmeter_demoman.res"
-"Resource/UI/HudItemEffectMeter_sniper.res"
+"resource/ui/huditemeffectmeter_sniper.res"
 {
 	"EyelanderIcon"
 	{
