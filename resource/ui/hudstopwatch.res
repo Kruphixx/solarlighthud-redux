@@ -191,16 +191,10 @@
 	{
 		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"HudStopWatchDescriptionBG"
-		"xpos"			"15"
-		"ypos"			"0"
-		"zpos"			"-1"
-		"wide"			"60"
-		"tall"			"15"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/ColorTanDarkerTransparent"
+		"xpos"			"9999"
+		"ypos"			"9999"
+		"visible"		"0"
+		"enabled"		"0"
 	}
 
 	"StopWatchDescriptionLabel"
