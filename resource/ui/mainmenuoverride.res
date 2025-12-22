@@ -648,10 +648,49 @@
 		"tall"			"64"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../logo/new_tf2_logo"
+		"image"			"replay/thumbnails/tf2logo/tf2_title_logo_reduxed"
 		"scaleImage"	"1"
 		"mouseinputenabled"	"0"
 	}	
+	
+	"TFLogoOctagon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TFLogoOctagon"
+		"xpos"			"-47"
+		"ypos"			"-14"
+		"zpos"			"2"
+		"wide"			"22"
+		"tall"			"22"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/bgshapes/octagon_tandarker"
+		"scaleImage"	"1"
+		"mouseinputenabled"	"0"
+		"pin_to_sibling"	"TFLogoImage"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}	
+	"TFLogoSpinner"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TFLogoSpinner"
+		"xpos"			"0"
+		"ypos"			"-2"
+		"zpos"			"3"
+		"wide"			"19"
+		"tall"			"19"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/tf2logo/tf2_logo_spinner"
+		"scaleImage"	"1"
+		"mouseinputenabled"	"0"
+		"drawcolor"		"TanLight"
+		
+		"pin_to_sibling"	"TFLogoOctagon"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
 	
 	"TFCharacterImage"
 	{
