@@ -1,20 +1,6 @@
-#base "redux_base/huditemeffectmeter_meter_base.res"
+//Charge meter for: Hitman's Heatmaker
+#base "../../../../cfg/redux_customization/redux_meterposition.txt"
+#base "huditemeffectmeter_#middle.res"
 
-"resource/ui/huditemeffectmeter_sniperfocus.res"
-{
-	HudItemEffectMeter
-	{
-		"fieldName"		"HudItemEffectMeter"
-	}
-	
-	"ItemEffectMeterLabelNew"
-	{
-		"fieldName"				"ItemEffectMeterLabelNew"
-		"labelText"				"#TF_SniperRage"
-	}
-	"ItemEffectMeterLabelOutline"
-	{
-		"fieldName"				"ItemEffectMeterLabelOutline"
-		"labelText"				"#TF_SniperRage"
-	}
-}
+//go here to edit appearance
+#base "huditemeffectmeter_base.res"

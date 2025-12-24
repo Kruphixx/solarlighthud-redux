@@ -1,20 +1,6 @@
-#base "redux_base/huditemeffectmeter_meter_base.res"
+//Charge meter for: Sapper
+//only used in mvm and freaky fair afaik
+#base "../../../../cfg/redux_customization/redux_meterposition.txt"
+#base "huditemeffectmeter_#top.res"
 
-"resource/ui/huditemeffectmeter_sapper.res"
-{
-	HudItemEffectMeter
-	{
-		"fieldName"		"HudItemEffectMeter"
-	}
-	
-	"ItemEffectMeterLabelNew"
-	{
-		"fieldName"				"ItemEffectMeterLabelNew"
-		"labelText"				"#TF_Sapper"
-	}
-	"ItemEffectMeterLabelOutline"
-	{
-		"fieldName"				"ItemEffectMeterLabelOutline"
-		"labelText"				"#TF_Sapper"
-	}
-}
+#base "huditemeffectmeter_base.res"

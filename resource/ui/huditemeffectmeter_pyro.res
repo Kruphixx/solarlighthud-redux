@@ -1,20 +1,5 @@
-#base "redux_base/huditemeffectmeter_meter_base.res"
+//Charge meter for: Phlogistinator
+#base "../../../../cfg/redux_customization/redux_meterposition.txt"
+#base "huditemeffectmeter_#middle.res"
 
-"resource/ui/huditemeffectmeter_pyro.res"
-{
-	HudItemEffectMeter
-	{
-		"fieldName"		"HudItemEffectMeter"
-	}
-	
-	"ItemEffectMeterLabelNew"
-	{
-		"fieldName"				"ItemEffectMeterLabelNew"
-		"labelText"				"#TF_PyroRage"
-	}
-	"ItemEffectMeterLabelOutline"
-	{
-		"fieldName"				"ItemEffectMeterLabelOutline"
-		"labelText"				"#TF_PyroRage"
-	}
-}
+#base "huditemeffectmeter_base.res"

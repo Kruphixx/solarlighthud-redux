@@ -3209,7 +3209,24 @@ Scheme
 				"antialias" 	"1"
 			}
 		}
-		
+		"SLBoldSmallestish"
+		{
+			"1"
+			{
+				"name"		"futurabt_extrablack"
+				"tall"		"10"
+				"antialias" 	"1"
+			}
+		}
+		"SLBoldSmallestishStroke"
+		{
+			"1"
+			{
+				"name"		"futurabt_extrablack"
+				"tall"		"10"
+				"antialias" 	"1"
+			}
+		}
 		"SLBoldSmaller"
 		{
 			"1"

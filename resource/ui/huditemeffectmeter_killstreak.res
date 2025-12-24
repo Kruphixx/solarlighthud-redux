@@ -13,15 +13,15 @@
 		"MeterFG"		"TanLight"
 		"MeterBG"		"Gray"
 	}
-	
+
 	"ItemEffectMeterBG"
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"ItemEffectMeterBG"
 		"xpos"			"9999"
-		"ypos"			"9999"			
+		"ypos"			"9999"
 	}
-	
+
 	"BackgroundNew"
 	{
 		"ControlName"	"ImagePanel"
@@ -34,10 +34,10 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"replay/thumbnails/pd/pd_timer_bg_normal"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"proportionalToParent"	"1"
 	}
-		
+
 	"SkullIcon"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -50,9 +50,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/leaderboard_streak"
-		"scaleImage"	"1"				
+		"scaleImage"	"1"
 	}
-	
+
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
@@ -60,7 +60,7 @@
 		"visible"				"0"
 		"enabled"				"0"
 	}
-	
+
 	"ItemEffectMeterLabelNew"
 	{
 		"ControlName"			"CExLabel"
@@ -84,13 +84,13 @@
 	}
 
 	"ItemEffectMeter"
-	{	
+	{
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ItemEffectMeter"
 		"visible"				"0"
 		"enabled"				"0"
-	}					
-	
+	}
+
 	"ItemEffectMeterCount"
 	{
 		"ControlName"			"CExLabel"
@@ -99,7 +99,7 @@
 		"ypos"					"0"
 		"zpos"					"3"
 		"wide"					"60"
-		"tall"					"28"	
+		"tall"					"28"
 		"pinCorner"				"2"
 		"visible"				"1"
 		"enabled"				"1"
@@ -111,7 +111,7 @@
 		"font"					"SLBoldMediumSmall"
 		"fgcolor_override"		"TanLight"
 	}
-	
+
 	"ItemEffectMeterCountOutline"
 	{
 		"ControlName"			"CExLabel"
@@ -120,7 +120,7 @@
 		"ypos"					"0"
 		"zpos"					"2"
 		"wide"					"60"
-		"tall"					"28"	
+		"tall"					"28"
 		"pinCorner"				"2"
 		"visible"				"1"
 		"enabled"				"1"

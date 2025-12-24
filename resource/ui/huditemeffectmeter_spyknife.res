@@ -1,19 +1,6 @@
-#base "redux_base/huditemeffectmeter_meter_base.res"
+//Charge meter for: Spy-cicle
+#base "../../../../cfg/redux_customization/redux_meterposition.txt"
+#base "huditemeffectmeter_#middle.res"
 
-"resource/ui/huditemeffectmeter_spyknife.res"
-{
-	HudItemEffectMeter
-	{
-		"fieldName"		"HudItemEffectMeter"
-	}
-	"ItemEffectMeterLabelNew"
-	{
-		"fieldName"				"ItemEffectMeterLabelNew"
-		"labelText"				"#TF_KNIFE"
-	}
-	"ItemEffectMeterLabelOutline"
-	{
-		"fieldName"				"ItemEffectMeterLabelOutline"
-		"labelText"				"#TF_KNIFE"
-	}
-}
+//go here to edit appearance
+#base "huditemeffectmeter_base.res"
