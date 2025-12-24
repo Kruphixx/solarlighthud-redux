@@ -27,7 +27,7 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ArrowIcon"
 		"xpos"			"20"
-		"ypos"			"35"
+		"ypos"			"40"
 		"zpos"			"3"
 		"wide"			"20"
 		"tall"			"10"

@@ -122,7 +122,7 @@
 			"ControlName"	"CTFFreezePanelHealth"
 			"fieldName"		"FreezePanelHealth"
 			"xpos"			"c105"		[$WIN32]
-			"ypos"			"c0"	[$WIN32]
+			"ypos"			"210"	[$WIN32]
 			"zpos"			"1"
 			"wide"			"250"
 			"tall"			"120"
@@ -152,9 +152,9 @@
 			"fgcolor_override"		"TanLight"
 			"labelText"		"%killername%"
 			"textAlignment"		"center"
-			"border"		"BorderTanDarkerCornersTransparentVerySmall"
+			"border"		"BorderTanDarkerCornersVerySmall"
 			"auto_wide_tocontents"	"1"
-			"textinsetx"	"20"
+			"textinsetx"	"40"
 			
 			"pin_to_sibling" "MoveKillerName"
 			"pin_corner_to_sibling" "PIN_TOPLEFT"
@@ -166,8 +166,8 @@
 		{
 			"ControlName"		"ImagePanel"
 			"fieldName"		"MoveKillerName"
-			"xpos"			"c-443"
-			"ypos"			"239"
+			"xpos"			"c-453"
+			"ypos"			"199"
 			"zpos"			"1"
 			"wide"			"20"
 			"tall"			"20"
@@ -179,24 +179,45 @@
 		{
 			"ControlName"		"CAvatarImagePanel"
 			"fieldName"		"AvatarImage"
-			"xpos"			"c127"
-			"ypos"			"c0"
-			"zpos"			"1"
-			"wide"			"20"
-			"tall"			"20"
+			"xpos"			"c124"
+			"ypos"			"195"
+			"zpos"			"3"
+			"wide"			"28"
+			"tall"			"28"
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			""
 			"scaleImage"		"1"	
 			"color_outline"		"TanLight"
+			"border"		"BorderTanDarkCornersVerySmall"
+		}	
+		
+		"AvatarImageBorder"
+		{
+			"ControlName"		"CAvatarImagePanel"
+			"fieldName"		"AvatarImageBorder"
+			"xpos"			"-30"
+			"ypos"			"2"
+			"zpos"			"2"
+			"wide"			"32"
+			"tall"			"32"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			""
+			"scaleImage"		"1"	
+			"color_outline"		"TanLight"
+			"border"		"BorderTanDarkCornersVerySmall"
+			"pin_to_sibling" "AvatarImage"
+			"pin_corner_to_sibling" "PIN_TOPLEFT"
+			"pin_to_sibling_corner" "PIN_TOPRIGHT"
 		}	
 		
 		"NemesisSubPanel"
 		{
 			"ControlName"		"EditablePanel"
 			"fieldName"		"NemesisSubPanel"
-			"xpos"			"c75"		// FIXME
-			"ypos"			"190"
+			"xpos"			"c55"		// FIXME
+			"ypos"			"160"
 			"zpos"			"4"
 			"wide"			"306"
 			"tall"			"38"

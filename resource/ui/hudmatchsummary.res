@@ -33,9 +33,9 @@
 		"AnimStatsLabelPanel6v6YPos"		"75"
 		"AnimBlueTeamLabel6v6YPos"			"107"
 		"AnimRedTeamLabel6v6YPos"			"107"
-		"AnimStatsLabelPanel12v12YPos"		"20"
-		"AnimBlueTeamLabel12v12YPos"		"47"
-		"AnimRedTeamLabel12v12YPos"			"47"
+		"AnimStatsLabelPanel12v12YPos"		"73"
+		"AnimBlueTeamLabel12v12YPos"		"100"
+		"AnimRedTeamLabel12v12YPos"			"100"
 		"AnimStatsContainer12v12YPos"		"-20"
 
 		if_large
@@ -437,14 +437,14 @@
 					"ypos"			"137"
 					"zpos"			"1"
 					"wide"			"p.193"
-					"tall"			"215"
+					"tall"			"140"
 					"visible"		"1"
 					"enabled"		"1"
 
 					if_large
 					{
 						"ypos"			"77"
-						"tall"			"340"
+						"tall"			"280"
 					}
 
 					"BluePlayerList"
@@ -455,7 +455,7 @@
 						"ypos"			"0"
 						"zpos"			"1"
 						"wide"			"p.465"
-						"tall"			"205"
+						"tall"			"140"
 						"visible"		"1"
 						"enabled"		"1"
 						"tabPosition"	"0"
@@ -475,7 +475,7 @@
 
 						if_large
 						{
-							"tall"			"340"
+							"tall"			"280"
 							"linegap"		"1"
 						}
 					}
@@ -488,17 +488,17 @@
 					"ypos"			"117"
 					"zpos"			"0"
 					"wide"			"p.2"
-					"tall"			"225"
+					"tall"			"135"
 					"autoResize"	"0"
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
-					"border"		"TFFatLineBorderClearBG"
+					"border"		"BorderTanDarkerCornersTransparentVerySmall"
 
 					if_large
 					{
 						"ypos"			"57"
-						"tall"			"360"
+						"tall"			"270"
 					}
 				}
 			}
@@ -531,7 +531,7 @@
 
 					if_large
 					{
-						"ypos"			"39"
+						"ypos"			"99"
 					}
 				}						
 				"RedTeamScore"
@@ -553,7 +553,7 @@
 
 					if_large
 					{
-						"ypos"			"43"
+						"ypos"			"103"
 					}
 				}
 				"RedTeamScoreDropshadow"
@@ -576,7 +576,7 @@
 
 					if_large
 					{
-						"ypos"			"44"
+						"ypos"			"104"
 					}
 				}
 				"RedTeamWinner"
@@ -598,7 +598,7 @@
 
 					if_large
 					{
-						"ypos"			"43"
+						"ypos"			"103"
 					}
 				}
 				"RedTeamWinnerDropshadow"
@@ -621,7 +621,7 @@
 
 					if_large
 					{
-						"ypos"			"44"
+						"ypos"			"104"
 					}
 				}
 				"RedTeamImage"
@@ -640,7 +640,7 @@
 
 					if_large
 					{
-						"ypos"			"20"
+						"ypos"			"80"
 					}
 				}
 				"RedTeamLabel"
@@ -677,7 +677,7 @@
 
 					if_large
 					{
-						"ypos"			"40"
+						"ypos"			"100"
 					}
 				}
 				"RedLeaderAvatarBG"
@@ -695,7 +695,7 @@
 
 					if_large
 					{
-						"ypos"			"38"
+						"ypos"			"98"
 					}
 				}
 				"RedPlayerListParent"
@@ -712,8 +712,8 @@
 
 					if_large
 					{
-						"ypos"			"77"
-						"tall"			"340"
+						"ypos"			"137"
+						"tall"			"280"
 					}
 			
 					"RedPlayerList"
@@ -724,7 +724,7 @@
 						"ypos"			"0"
 						"zpos"			"1"
 						"wide"			"p.465"
-						"tall"			"205"
+						"tall"			"140"
 						"visible"		"1"
 						"enabled"		"1"
 						"tabPosition"	"0"
@@ -744,7 +744,7 @@
 
 						if_large
 						{
-							"tall"			"340"
+							"tall"			"280"
 							"linegap"		"1"
 						}
 					}
@@ -757,17 +757,17 @@
 					"ypos"			"117"
 					"zpos"			"0"
 					"wide"			"p.2"
-					"tall"			"215"
+					"tall"			"135"
 					"autoResize"	"0"
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
-					"border"		"TFFatLineBorderClearBG"
+					"border"		"BorderTanDarkerCornersTransparentVerySmall"
 
 					if_large
 					{
-						"ypos"			"57"
-						"tall"			"360"
+						"ypos"			"117"
+						"tall"			"270"
 					}
 				}
 			}

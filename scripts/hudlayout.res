@@ -10,7 +10,22 @@
 			"wide"					"f0"
 			"tall"					"f0"
 			"paintbackground"		"1"
-    	}
+    	}	
+	}
+	
+	"CustomShaderOverlayHudLayout"
+	{
+		"ControlName"   "ImagePanel"
+		"fieldName" "CustomShaderOverlayHudLayout"
+		"xpos"          "0"
+		"ypos"          "0"
+		"zpos"          "-10000"
+		"wide"          "f0"
+		"tall"          "480"
+		"scaleimage"    "1"
+		"image"         "replay/thumbnails/shaders/sepia_with_viewmodel"
+		"visible"       "0"
+		"enabled"       "1"
 	}
 	
 	"speed1"
@@ -1181,7 +1196,7 @@
 		"xpos"					"c-150" //move stuff over to the right by 60
 		"ypos"					"0"
 		"wide"					"300"
-		"tall"					"70"
+		"tall"					"100"
 	}
 	
 	NotificationPanel

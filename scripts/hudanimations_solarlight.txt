@@ -58,6 +58,7 @@ event CompetitiveGame_RestoreChatWindow
     RunEventChild HudPlayerHealth HPSpawnAnim 0.1
 	RunEventChild HudPlayerClass ClassSpawnAnim 0.1
     RunEventChild HudWeaponAmmo AmmoSpawnAnim 0.1
+	RunEventChild HudMatchStatus HudTournament_DoorsCleanup 0 //this animation freezes when respawning, make everything invis
 }
 
 event HPSpawnAnim
@@ -396,15 +397,50 @@ event HudTournament_HideTimer
 }
 
 
+
+//Required for shader effects to work
+
+event EnableUpscale
+{
+
+    RunEvent        EnableUpscale2            0.0
+}
+
+event EnableUpscale2
+{
+
+}
+
+//Revert for when we do not need shaders
+
+event DisableUpscale
+{
+
+}
+
+event DisableUpscale2
+{
+
+}
+
+
 //CASUAL MODE DOORS
 
 
 event HudMatchStatus_ShowMatchStartDoors //COMP MATCH STARTS, CLOSE DOORS AND SHOW TEAMS+NAMES, RE-OPEN AFTER DELAY
 {
-	
-	//leftbar, rightbar
+
+//TOGGLE SHADER IN HUDLAYOUT.
+//Unfortunately scrapped this because I couldn't get FireCommand to work in Casual
+//(for toggling viewport commands because 0.9999999 sucks), it only worked with testhudanim
+//	SetVisible CustomShaderOverlayHudLayout 1 2
+//	SetVisible CustomShaderOverlayHudLayout 0 10
+
+//////LEFTBAR, RIGHTBAR//
 	SetVisible	PreGameLeftBar	1	0
 	SetVisible	PreGameRightBar	1	0
+	SetVisible	PreGameLeftBarEdge	1	0
+	SetVisible	PreGameRightBarEdge	1	0
 	
 	//Cleanup
 	Animate PreGameLeftBar xpos "c-2000" Linear 0 0
@@ -415,9 +451,36 @@ event HudMatchStatus_ShowMatchStartDoors //COMP MATCH STARTS, CLOSE DOORS AND SH
 	Animate PreGameRightBar xpos "c0" Linear 0 0.3
 
 	//Slide out
-	Animate PreGameLeftBar xpos "c-2000" Linear 2.2 0.3
-	Animate PreGameRightBar xpos "c1000" Linear 2.2 0.3
+	Animate PreGameLeftBar xpos "c-2000" Accel 2.2 0.3
+	Animate PreGameRightBar xpos "c1000" Accel 2.2 0.3
+//////LEFTBAR, RIGHTBAR//
+
+	SetVisible	PreGameVSStar	1	0
+	SetVisible	PreGameVSTextOnly	1	0
+	SetVisible	PreGameVSStarTanDarker	0	0
+	//Cleanup
+	Animate PreGameVSStar xpos "c875" Linear 0 0
+	Animate PreGameVSStarTanDarker wide "250" Linear 0 0
+	Animate PreGameVSStarTanDarker tall "250" Linear 0 0
+	Animate PreGameVSStarTanDarker xpos "c-125" Linear 0 0
+	Animate PreGameVSStarTanDarker ypos "c-125" Linear 0 0
+	Animate PreGameVSStarTanDarker alpha "255" Linear 0 0
 	
+	//Slide in
+	Animate PreGameVSStar xpos "c-125" Linear 0 0.3
+	
+	//Slide out
+	Animate PreGameVSStar xpos "c-1125" Accel 2.2 0.3
+	
+	//Expand the brown background star and make it transparent as it expands
+	SetVisible	PreGameVSStarTanDarker	1	0.3
+	Animate PreGameVSStarTanDarker wide "400" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker tall "400" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker xpos "c-200" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker ypos "c-200" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker alpha "0" Linear 0.3 0.7	
+	SetVisible	PreGameVSStarTanDarker	0	1
+
 	
 	//countdown stuff.
 	//disable it frame 1, re-enable 2 seconds later
@@ -430,15 +493,15 @@ event HudMatchStatus_ShowMatchStartDoors //COMP MATCH STARTS, CLOSE DOORS AND SH
 	Animate CountdownLabel ypos 0 Linear 0 0
 	Animate CountdownLabelShadow ypos 0 Linear 0 0
 	
-	//hide countdown
+	//hide countdown and everything else
 	SetVisible CountdownLabel 0 9.9
 	SetVisible CountdownLabelShadow 0 9.9
 
 	RunEvent HudTournament_DoorsCleanup 10
 	
 	PlaySound 0 "ui/trade_changed.wav"
-	PlaySound 0.25 "ui/itemcrate_smash_common.wav"
-	PlaySound 2 "ui/trade_changed.wav"
+	PlaySound 0.28 "ui/mm_door_close.wav"
+	PlaySound 2.12 "ui/mm_comp_banner_up.wav"
 }
 
 //COMP MODE GAME WIN, DOORS CLOSE THEN RE-OPEN
@@ -496,7 +559,7 @@ event HudMatchStatus_ShowCountdown
 	SetVisible CountdownLabelShadow 1 0
 	Animate CountdownLabel ypos 150 Linear 0 0
 	Animate CountdownLabelShadow ypos 150 Linear 0 0
-	Animate CountdownLabel ypos c-3 Gain 0.75 0 0.4
+	Animate CountdownLabel ypos c0 Gain 0.75 0 0.4
 	Animate CountdownLabelShadow ypos c-0 Gain 0.75 0 0.4
 	SetVisible CountdownLabel 0 9.9
 	SetVisible CountdownLabelShadow 0 9.9
@@ -506,6 +569,15 @@ event HudTournament_DoorsCleanup
 {
 	SetVisible	PostGameTopBar	0	0
 	SetVisible	PostGameBottomBar	0	0
+	
+	SetVisible	PreGameLeftBar	0	0
+	SetVisible	PreGameRightBar	0	0
+	SetVisible	PreGameLeftBarEdge	0	0
+	SetVisible	PreGameRightBarEdge	0	0
+	
+	SetVisible	PreGameVSStar	0	0
+	SetVisible	PreGameVSTextOnly	0	0
+	SetVisible	PreGameVSStarTanDarker	0	0
 	
 	Animate PostGameTopBar ypos 0 Linear 0 0
 	Animate PostGameBottomBar ypos r50 Linear 0 0
