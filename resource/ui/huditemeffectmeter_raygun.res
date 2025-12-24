@@ -1,20 +1,6 @@
-#base "redux_base/huditemeffectmeter_meter_base.res"
+//Charge meter for: Righteous Bison
+#base "../../../../cfg/redux_customization/redux_meterposition.txt"
+#base "huditemeffectmeter_#middle.res"
 
-"resource/ui/huditemeffectmeter_raygun.res"
-{
-	HudItemEffectMeter
-	{
-		"fieldName"		"HudItemEffectMeter"
-	}
-	
-	"ItemEffectMeterLabelNew"
-	{
-		"fieldName"				"ItemEffectMeterLabelNew"
-		"labelText"				"#TF_Bison"
-	}
-	"ItemEffectMeterLabelOutline"
-	{
-		"fieldName"				"ItemEffectMeterLabelOutline"
-		"labelText"				"#TF_Bison"
-	}
-}
+//go here to edit appearance
+#base "huditemeffectmeter_base.res"
