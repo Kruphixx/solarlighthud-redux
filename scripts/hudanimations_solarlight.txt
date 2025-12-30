@@ -55,10 +55,17 @@ event CompetitiveGame_LowerChatWindow
 
 event CompetitiveGame_RestoreChatWindow
 {
+    RunEvent SpawnAnim 0
     RunEventChild HudPlayerHealth HPSpawnAnim 0.1
 	RunEventChild HudPlayerClass ClassSpawnAnim 0.1
     RunEventChild HudWeaponAmmo AmmoSpawnAnim 0.1
 	RunEventChild HudMatchStatus HudTournament_DoorsCleanup 0 //this animation freezes when respawning, make everything invis
+}
+
+event SpawnAnim
+{
+//	SetVisible CustomShaderOverlayHudLayout 1 0
+//	SetVisible CustomShaderOverlayHudLayout 0 0.25
 }
 
 event HPSpawnAnim
