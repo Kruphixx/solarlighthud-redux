@@ -96,6 +96,30 @@
 		"fgcolor"		"TanDarker"
 	}	
 	
+	//Purpose: Fill in the empty areas of text with solid color whenever HP exceeds 1000 (VSH), using a specialized border (currently using targetid border as placeholder)
+	//Modifying the above shadow to include auto_wide_tocontents would cause the text to cut off due to the textinsetx, so make a new element instead
+	//todo - fix a slight color mismatch between the border and HP BG texture. the border seems to match the font, so it's the HP BG that is wrong? need to check with color picker tool
+	//if changing the border shape (to add the pointy corner, mainly), just mess with xpos and textinsetx until it's positioned right
+	"PlayerStatusHealthValueTextFill"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueTextFill"
+		"xpos"			"108"
+		"ypos"			"r50"	[$WIN32]
+		"zpos"			"4"
+		"wide"			"200"
+		"tall"			"45"
+		"visible"		"1"
+		"enabled"		"1"
+		"textinsetx"	"-18"
+		"labelText"		"%Health%"
+		"textAlignment"	"west"	
+		"font"			"SLHealthAmmoEXTREMESTROKE"
+		"fgcolor"		"0 0 0 0"
+		"border"		"BorderTargetIDTanDarker"
+		"auto_wide_tocontents" "1"
+	}	
+	
 	"PlayerStatusMaxHealthValue"
 	{
 		"ControlName"	"CExLabel"

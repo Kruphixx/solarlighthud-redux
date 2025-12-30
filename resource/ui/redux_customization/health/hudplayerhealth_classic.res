@@ -92,6 +92,14 @@
 		"fgcolor"		"TanDarker"
 	}	
 	
+	"PlayerStatusHealthValueTextFill"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueTextFill"
+		"visible"		"0"
+		"enabled"		"0"
+	}	
+	
 	"PlayerStatusMaxHealthValue"
 	{
 		"ControlName"	"CExLabel"
