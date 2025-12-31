@@ -233,12 +233,19 @@ event RDNegativeScorePulse
 
 //OVERTIME
 
+// Show the Overtime panel
+event OvertimeShow
+{
+	Animate OvertimeLabel				Alpha		"255"			Linear 0.0 0.1	
+	Animate OvertimeBG					Alpha		"255"			Linear 0.0 0.1	
+}
+
 event OvertimeLabelPulseRed
 {
-	Animate	OvertimeLabel 	FgColor		"161 0 0 255"	Linear 0.0 0.75
-	Animate	OvertimeLabel 	FgColor		"211 137 127 255"	Linear 0.85 0.75
+	Animate	OvertimeLabel 	FgColor		"TanLight"	Linear 0.0 0
+	Animate	OvertimeLabel 	FgColor		"TimerProgress.Warning"	Linear 0.3 0
 
-	RunEvent OvertimeLabelPulseRed 1.70
+	RunEvent OvertimeLabelPulseRed 0.6
 }
 
 //MATCH STATUS

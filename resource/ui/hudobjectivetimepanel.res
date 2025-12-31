@@ -95,26 +95,26 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"OvertimeLabel"
-		"xpos"			"c-34"
-		"ypos"			"0"
+		"xpos"			"cs-0.5"
+		"ypos"			"38"
 		"zpos"			"5"
-		"wide"			"25"
-		"tall"			"25"
+		"wide"			"40"
+		"tall"			"12"
 		"visible"		"0"
 		"enabled"		"1"
-		"labelText"		"!"
+		"labelText"		"#game_Overtime"
 		"textAlignment"		"center"
 		"dulltext"		"0"
 		"brighttext"		"0"
 		"wrap"			"0"
-		"font"			"SLItalicMediumSmall"
-		"fgcolor_override"	"SolarTeamRED"
+		"font"			"SLBoldSmallestish"
+		"fgcolor_override"	"TanLight"
 		"proportionaltoparent"	"1"
 
 		if_match
 		{
 		}
-	}			
+	}		
 	"OvertimeBG" //doesn't work anyway
 	{
 		"ControlName"		"CTFImagePanel"
