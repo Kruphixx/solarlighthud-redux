@@ -49,6 +49,29 @@
 		"pin_to_sibling_corner" "PIN_CENTER_RIGHT"
 	}
 	
+	"PreGameLeftBarCrack"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PreGameLeftBarCrack"
+		"xpos"			"50"
+		"ypos"			"0"
+		"zpos"			"14"
+		"wide"			"100"
+		"tall"			"480"
+		"fillcolor"		"0 0 0 0"
+		"scaleImage"	"1"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"proportionaltoparent"	"1"
+		"image"			"replay/thumbnails/bgshapes/postgame_gap"
+		
+		"pin_to_sibling"	"PreGameLeftBar"
+		"pin_corner_to_sibling" "PIN_CENTER_RIGHT"
+		"pin_to_sibling_corner" "PIN_CENTER_RIGHT"
+	}
+	
 	"PreGameRightBar"
 	{
 		"ControlName"	"ImagePanel"
@@ -87,13 +110,36 @@
 		"pin_to_sibling_corner" "PIN_CENTER_LEFT"
 	}
 	
+	"PreGameRightBarCrack"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PreGameRightBarCrack"
+		"xpos"			"50"
+		"ypos"			"0"
+		"zpos"			"14"
+		"wide"			"100"
+		"tall"			"480"
+		"fillcolor"		"0 0 0 0"
+		"scaleImage"	"1"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"proportionaltoparent"	"1"
+		"image"			"replay/thumbnails/bgshapes/postgame_gap"
+		
+		"pin_to_sibling"	"PreGameRightBar"
+		"pin_corner_to_sibling" "PIN_CENTER_LEFT"
+		"pin_to_sibling_corner" "PIN_CENTER_LEFT"
+	}
+	
 	"PreGameVSStar"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PreGameVSStar"
 		"xpos"			"c1000"
 		"ypos"			"c-125"
-		"zpos"			"14"
+		"zpos"			"18"
 		"wide"			"250"
 		"tall"			"250"
 		"fillcolor"		"Blank"
@@ -112,7 +158,7 @@
 		"fieldName"		"PreGameVSTextOnly"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"15"
+		"zpos"			"19"
 		"wide"			"250"
 		"tall"			"250"
 		"fillcolor"		"Blank"
@@ -135,7 +181,7 @@
 		"fieldName"		"PreGameVSStarTanDarker"
 		"xpos"			"c-125"
 		"ypos"			"c-125"
-		"zpos"			"14"
+		"zpos"			"17"
 		"wide"			"250"
 		"tall"			"250"
 		"fillcolor"		"Blank"
@@ -253,54 +299,6 @@
 	}
 	
 //casual post-game summary stuff
-	"PostGameTopBar"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PostGameTopBar"
-		"xpos"			"0"
-		"ypos"			"-55" //0
-		"zpos"			"12"
-		"wide"			"f0"
-		"tall"			"50"
-		"fillcolor"		"Black"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-	}	
-	
-	"PostGameBottomBar"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PostGameBottomBar"
-		"xpos"			"0"
-		"ypos"			"r-5" //r50
-		"zpos"			"12"
-		"wide"			"f0"
-		"tall"			"50"
-		"fillcolor"		"Black"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-	}	
-	
-	"PostGameBGLine"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"PostGameBGLine"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"-130"
-		"wide"			"f0"
-		"tall"			"f0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/linebg_transparent"
-		"scaleImage"	"1"
-		"alpha"			"0" //100
-		"mouseinputenabled"	"0"
-	}	
 
 	"PostGameBGColor"
 	{
@@ -308,15 +306,17 @@
 		"fieldName"		"PostGameBGColor"
 		"xpos"			"0"
 		"ypos"			"0" //0
-		"zpos"			"-131"
+		"zpos"			"5"
 		"wide"			"f0"
 		"tall"			"f0"
-		"fillcolor"		"TanDarker"
-		"autoResize"	"0"
+		"fillcolor"		"0 0 0 0"
+		"autoResize"	"1"
+		"scaleImage"	"1"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
-		"alpha"			"0"
+		"image"			"replay/thumbnails/menu_bg/mann_co_store_gap_color_only"
+		"alpha"			"255"
 	}	
 	
 	"RoundSignModel"

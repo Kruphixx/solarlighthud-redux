@@ -23,7 +23,7 @@
 		"AnimRedTeamScoreWide"				"p.46"
 		"AnimRedTeamScoreXPos"				"r5-p.46"
 		"AnimRedTeamScoreDropshadowWide"	"p.46"
-		"AnimRedTeamScoreDropshadowXPos"	"r4-p.46"
+		"AnimRedTeamScoreDropshadowXPos"	"r5-p.46"
 		"AnimRedPlayerListParentWide"		"p.47"
 		"AnimRedPlayerListParentXPos"		"r7-p.47"
 		"AnimRedPlayerListBGWide"			"p.47"
@@ -220,7 +220,7 @@
 			}
 		}
 
-		"TeamScoresPanel"
+		"TeamScoresPanel" //edit if_large ypos to raise/lower
 		{
 			"ControlName"		"EditablePanel"
 			"fieldName"		"TeamScoresPanel"
@@ -232,7 +232,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 
-			"BlueTeamPanel"
+			"BlueTeamPanel" 
 			{
 	 			"ControlName"		"EditablePanel"
 				"fieldName"		"BlueTeamPanel"
@@ -261,14 +261,14 @@
 
 					if_large
 					{
-						"ypos"			"39"
+						"ypos"			"99"
 					}
 				}
 				"BlueTeamScore"
 				{
 					"ControlName"		"CExLabel"
 					"fieldName"		"BlueTeamScore"
-					"font"			"MatchSummaryTeamScores"
+					"font"			"SLBoldMedium"
 					"labelText"		"%blueteamscore%"
 					"textAlignment"		"east"
 					"xpos"			"5"
@@ -280,10 +280,11 @@
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
+					"textinsetx"	"10"
 
 					if_large
 					{
-						"ypos"			"43"
+						"ypos"			"103"
 					}
 
 				}
@@ -291,12 +292,12 @@
 				{
 					"ControlName"		"CExLabel"
 					"fieldName"		"BlueTeamScoreDropshadow"
-					"font"			"MatchSummaryTeamScores"
+					"font"			"SLBoldMediumStroke"
 					"fgcolor"		"Black"
 					"labelText"		"%blueteamscore%"
 					"textAlignment"		"east"
-					"xpos"			"6"
-					"ypos"			"104"
+					"xpos"			"5"
+					"ypos"			"103"
 					"zpos"			"3"
 					"wide"			"p.19"
 					"tall"			"30"
@@ -304,17 +305,19 @@
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
+					"fgcolor"	"SolarTeamBLU"
+					"textinsetx"	"10"
 
 					if_large
 					{
-						"ypos"			"44"
+						"ypos"			"103"
 					}
 				}
 				"BlueTeamWinner"
 				{
 					"ControlName"		"CExLabel"
 					"fieldName"		"BlueTeamWinner"
-					"font"			"MatchSummaryWinner"
+					"font"			"SLBoldMedium"
 					"labelText"		"%blueteamwinner%"
 					"textAlignment"		"east"
 					"xpos"			"5"
@@ -329,19 +332,19 @@
 
 					if_large
 					{
-						"ypos"			"43"
+						"ypos"			"103"
 					}
 				}
 				"BlueTeamWinnerDropshadow"
 				{
 					"ControlName"		"CExLabel"
 					"fieldName"		"BlueTeamWinnerDropshadow"
-					"font"			"MatchSummaryWinner"
+					"font"			"SLBoldMediumStroke"
 					"fgcolor"		"Black"
 					"labelText"		"%blueteamwinner%"
 					"textAlignment"		"east"
-					"xpos"			"6"
-					"ypos"			"104"
+					"xpos"			"5"
+					"ypos"			"103"
 					"zpos"			"3"
 					"wide"			"p.19"
 					"tall"			"30"
@@ -349,10 +352,11 @@
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
+					"fgcolor"		"SolarTeamBLU"
 
 					if_large
 					{
-						"ypos"			"44"
+						"ypos"			"104"
 					}
 				}
 				"BlueTeamImage"
@@ -371,7 +375,7 @@
 
 					if_large
 					{
-						"ypos"			"29"
+						"ypos"			"80"
 					}
 				}
 				"BlueTeamLabel"
@@ -408,7 +412,7 @@
 
 					if_large
 					{
-						"ypos"			"40"
+						"ypos"			"100"
 					}
 				}
 				"BlueLeaderAvatarBG"
@@ -426,7 +430,7 @@
 
 					if_large
 					{
-						"ypos"			"38"
+						"ypos"			"98"
 					}
 				}
 				"BluePlayerListParent"
@@ -443,7 +447,7 @@
 
 					if_large
 					{
-						"ypos"			"77"
+						"ypos"			"137"
 						"tall"			"280"
 					}
 
@@ -497,7 +501,7 @@
 
 					if_large
 					{
-						"ypos"			"57"
+						"ypos"			"117"
 						"tall"			"270"
 					}
 				}
@@ -538,7 +542,7 @@
 				{
 					"ControlName"		"CExLabel"
 					"fieldName"		"RedTeamScore"
-					"font"			"MatchSummaryTeamScores"
+					"font"			"SLBoldMedium"
 					"labelText"		"%redteamscore%"
 					"textAlignment"		"west"
 					"xpos"			"r5-p.19"
@@ -550,6 +554,7 @@
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
+					"textinsetx"	"10"
 
 					if_large
 					{
@@ -560,12 +565,12 @@
 				{
 					"ControlName"		"CExLabel"
 					"fieldName"		"RedTeamScoreDropshadow"
-					"font"			"MatchSummaryTeamScores"
+					"font"			"SLBoldMediumStroke"
 					"fgcolor"		"Black"
 					"labelText"		"%redteamscore%"
 					"textAlignment"		"west"
-					"xpos"			"r4-p.19"
-					"ypos"			"104"
+					"xpos"			"r5-p.19"
+					"ypos"			"103"
 					"zpos"			"3"
 					"wide"			"p.19"
 					"tall"			"30"
@@ -573,17 +578,19 @@
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
+					"fgcolor"	"SolarTeamRED"
+					"textinsetx"	"10"
 
 					if_large
 					{
-						"ypos"			"104"
+						"ypos"			"103"
 					}
 				}
 				"RedTeamWinner"
 				{
 					"ControlName"		"CExLabel"
 					"fieldName"		"RedTeamWinner"
-					"font"			"MatchSummaryWinner"
+					"font"			"SLBoldMedium"
 					"labelText"		"%redteamwinner%"
 					"textAlignment"		"west"
 					"xpos"			"r5-p.19"
@@ -605,12 +612,12 @@
 				{
 					"ControlName"		"CExLabel"
 					"fieldName"		"RedTeamWinnerDropshadow"
-					"font"			"MatchSummaryWinner"
+					"font"			"SLBoldMediumStroke"
 					"fgcolor"		"Black"
 					"labelText"		"%redteamwinner%"
 					"textAlignment"		"west"
-					"xpos"			"r4-p.19"
-					"ypos"			"104"
+					"xpos"			"r5-p.19"
+					"ypos"			"103"
 					"zpos"			"3"
 					"wide"			"p.19"
 					"tall"			"30"
@@ -618,6 +625,7 @@
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
+					"fgcolor"		"SolarTeamRED"
 
 					if_large
 					{

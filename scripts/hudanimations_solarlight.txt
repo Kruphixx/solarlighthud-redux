@@ -53,13 +53,18 @@ event CompetitiveGame_LowerChatWindow
 {
 }
 
-event CompetitiveGame_RestoreChatWindow
+event CompetitiveGame_RestoreChatWindow //runs on every spawn
 {
     RunEvent SpawnAnim 0
     RunEventChild HudPlayerHealth HPSpawnAnim 0.1
 	RunEventChild HudPlayerClass ClassSpawnAnim 0.1
     RunEventChild HudWeaponAmmo AmmoSpawnAnim 0.1
-	RunEventChild HudMatchStatus HudTournament_DoorsCleanup 2.6 //this animation freezes when respawning, make everything invis
+	RunEventChild HudMatchStatus HudTournament_DoorsCleanup 2.6 //this animation freezes when respawning, make everything invis. but not immediately, since players respawn during the door shut sequence
+}
+
+event FlagOutlineHide //runs on every map load?
+{
+	Animate OutlineImage	Alpha		"0"				Linear 0.0 0.1
 }
 
 event SpawnAnim
@@ -268,27 +273,27 @@ event TeamStatus_PlayerAlive
 //	Animate respawntime ypos 2 Accel 0 0.2
 }
 
-event ActiveTimerBGPulse
-{
-	RunEventChild RedTimer KOTHTimerAppearRed 0
-	RunEventChild BlueTimer KOTHTimerAppearBlue 0
-}
+//event ActiveTimerBGPulse		//this broke when adding overtime labels
+//{
+//	RunEventChild RedTimer KOTHTimerAppearRed 0
+//	RunEventChild BlueTimer KOTHTimerAppearBlue 0
+//}
 
-event KOTHTimerAppearBlue
-{
-	Animate	TimePanelProgressBar 	xpos			"0"							Linear 0 0
-	Animate	TimePanelProgressBar 	zpos			"-100"						Linear 0 0
-	Animate TimePanelProgressBar	color_active	"SolarTeamBLU"				Linear 0 0
-	Animate TimePanelProgressBar	color_inactive	"SolarTeamBLUDark"			Linear 0 0
-}
+//event KOTHTimerAppearBlue		//this broke when adding overtime labels
+//{
+//	Animate	TimePanelProgressBar 	xpos			"0"							Linear 0 0
+//	Animate	TimePanelProgressBar 	zpos			"-100"						Linear 0 0
+//	Animate TimePanelProgressBar	color_active	"SolarTeamBLU"				Linear 0 0
+//	Animate TimePanelProgressBar	color_inactive	"SolarTeamBLUDark"			Linear 0 0
+//}
 
-event KOTHTimerAppearRed
-{
-	Animate	TimePanelProgressBar 	xpos			"31"						Linear 0 0
-	Animate	TimePanelProgressBar 	zpos			"-100"						Linear 0 0
-	Animate TimePanelProgressBar	color_active	"SolarTeamRED"				Linear 0 0
-	Animate TimePanelProgressBar	color_inactive	"SolarTeamREDDark"			Linear 0 0
-}
+//event KOTHTimerAppearRed		//this broke when adding overtime labels
+//{
+//	Animate	TimePanelProgressBar 	xpos			"31"						Linear 0 0
+//	Animate	TimePanelProgressBar 	zpos			"-100"						Linear 0 0
+//	Animate TimePanelProgressBar	color_active	"SolarTeamRED"				Linear 0 0
+//	Animate TimePanelProgressBar	color_inactive	"SolarTeamREDDark"			Linear 0 0
+//}
 
 event ActiveTimerHighlight
 {	
@@ -411,50 +416,92 @@ event HudTournament_HideTimer
 }
 
 
-
-//Required for shader effects to work
-
-event EnableUpscale
-{
-
-    RunEvent        EnableUpscale2            0.0
-}
-
-event EnableUpscale2
-{
-
-}
-
-//Revert for when we do not need shaders
-
-event DisableUpscale
-{
-
-}
-
-event DisableUpscale2
-{
-
-}
-
-
 //CASUAL MODE DOORS
 
 
-event HudMatchStatus_ShowMatchStartDoors //COMP MATCH STARTS, CLOSE DOORS AND SHOW TEAMS+NAMES, RE-OPEN AFTER DELAY
+event HudMatchStatus_ShowMatchStartDoors //CASUAL MATCH STARTS, CLOSE DOORS AND SHOW TEAMS+NAMES, RE-OPEN AFTER DELAY
 {
-
-//TOGGLE SHADER IN HUDLAYOUT.
-//Unfortunately scrapped this because I couldn't get FireCommand to work in Casual
-//(for toggling viewport commands because 0.9999999 sucks), it only worked with testhudanim
-//	SetVisible CustomShaderOverlayHudLayout 1 2
-//	SetVisible CustomShaderOverlayHudLayout 0 10
 
 //////LEFTBAR, RIGHTBAR//
 	SetVisible	PreGameLeftBar	1	0
 	SetVisible	PreGameRightBar	1	0
 	SetVisible	PreGameLeftBarEdge	1	0
 	SetVisible	PreGameRightBarEdge	1	0
+	
+	//Cleanup
+	Animate PreGameLeftBar xpos "c-2000" Linear 0 0
+	Animate PreGameRightBar xpos "c1000" Linear 0 0
+	
+	//Slide in
+	Animate PreGameLeftBar xpos "c-1000" Linear 0 0.3
+	Animate PreGameRightBar xpos "c0" Linear 0 0.3
+
+	//Slide out
+	Animate PreGameLeftBar xpos "c-2000" Accel 2.2 0.3
+	Animate PreGameRightBar xpos "c1000" Accel 2.2 0.3
+//////LEFTBAR, RIGHTBAR//
+
+	SetVisible	PreGameVSStar	1	0
+	SetVisible	PreGameVSTextOnly	1	0
+	SetVisible	PreGameVSStarTanDarker	0	0
+	//Cleanup
+	Animate PreGameVSStar xpos "c875" Linear 0 0
+	Animate PreGameVSStar ypos "c-125" Linear 0 0
+	Animate PreGameVSStarTanDarker wide "250" Linear 0 0
+	Animate PreGameVSStarTanDarker tall "250" Linear 0 0
+	Animate PreGameVSStarTanDarker xpos "c-125" Linear 0 0
+	Animate PreGameVSStarTanDarker ypos "c-125" Linear 0 0
+	Animate PreGameVSStarTanDarker alpha "255" Linear 0 0
+	
+	//Slide in
+	Animate PreGameVSStar xpos "c-125" Linear 0 0.3
+	
+	//Slide out
+	Animate PreGameVSStar xpos "c-1125" Accel 2.2 0.3
+	
+	//Expand the brown background star and make it transparent as it expands
+	SetVisible	PreGameVSStarTanDarker	1	0.3
+	Animate PreGameVSStarTanDarker wide "400" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker tall "400" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker xpos "c-200" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker ypos "c-200" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker alpha "0" Linear 0.3 0.7	
+	SetVisible	PreGameVSStarTanDarker	0	1
+
+	
+	//countdown stuff.
+	//disable it frame 1, re-enable 2 seconds later
+	SetVisible CountdownLabel 0 0
+	SetVisible CountdownLabelShadow 0 0
+	SetVisible CountdownLabel 1 2
+	SetVisible CountdownLabelShadow 1 2
+	
+	//reset countdown position
+	Animate CountdownLabel ypos 0 Linear 0 0
+	Animate CountdownLabelShadow ypos 0 Linear 0 0
+	
+	//hide countdown and everything else
+	SetVisible CountdownLabel 0 9.9
+	SetVisible CountdownLabelShadow 0 9.9
+
+	RunEvent HudTournament_DoorsCleanup 10
+	
+	PlaySound 0 "ui/trade_changed.wav"
+	PlaySound 0.28 "ui/mm_door_close.wav"
+	PlaySound 2.12 "ui/mm_comp_banner_up.wav"
+}
+
+//COMP MODE GAME WIN, DOORS CLOSE THEN RE-OPEN
+event HudMatchStatus_ShowMatchWinDoors
+{
+	StopEvent CompetitiveGame_RestoreChatWindow 0.0
+//////LEFTBAR, RIGHTBAR//
+	SetVisible	PreGameLeftBar	1	0
+	SetVisible	PreGameRightBar	1	0
+	SetVisible	PreGameLeftBarEdge	1	0
+	SetVisible	PreGameRightBarEdge	1	0
+	SetVisible	PreGameLeftBarCrack	0	0
+	SetVisible	PreGameRightBarCrack	0	0
 	
 	//Cleanup
 	Animate PreGameLeftBar xpos "c-2000" Linear 0 0
@@ -517,24 +564,6 @@ event HudMatchStatus_ShowMatchStartDoors //COMP MATCH STARTS, CLOSE DOORS AND SH
 	PlaySound 0.28 "ui/mm_door_close.wav"
 	PlaySound 2.12 "ui/mm_comp_banner_up.wav"
 }
-
-//COMP MODE GAME WIN, DOORS CLOSE THEN RE-OPEN
-event HudMatchStatus_ShowMatchWinDoors
-{
-	SetVisible	PostGameTopBar	1	0
-	SetVisible	PostGameBottomBar	1	0
-	
-	//Cleanup
-	Animate PostGameTopBar ypos -55 Linear 0 0
-	Animate PostGameBottomBar ypos r-5 Linear 0 0
-	
-	//Slide in
-	Animate PostGameTopBar ypos 0 Deaccel 0 1.5
-	Animate PostGameBottomBar ypos r50 Deaccel 0 1.5
-	
-	Animate PostGameTopBar ypos -55 Accel 4.5 1.5
-	Animate PostGameBottomBar ypos r-5 Accel 4.5 1.5
-}
 	
 
 //CASUAL MODE GAME WIN, DOORS CLOSE AND DO NOT RE-OPEN
@@ -544,26 +573,82 @@ event HudMatchStatus_ShowMatchWinDoors
 
 event HudMatchStatus_ShowMatchWinDoors_NoOpen
 {
-	SetVisible	PostGameTopBar	1	0
-	SetVisible	PostGameBottomBar	1	0
+	StopEvent CompetitiveGame_RestoreChatWindow 0.0
+//////LEFTBAR, RIGHTBAR//
+	SetVisible	PreGameLeftBar	1	0
+	SetVisible	PreGameRightBar	1	0
+	SetVisible	PreGameLeftBarEdge	1	0
+	SetVisible	PreGameRightBarEdge	1	0
+	SetVisible	PreGameLeftBarCrack	0	0
+	SetVisible	PreGameRightBarCrack	0	0
 	
 	//Cleanup
-	Animate PostGameTopBar ypos -55 Linear 0 0
-	Animate PostGameBottomBar ypos r-5 Linear 0 0
-	Animate PostGameBGLine alpha 0 Linear 0 0
-	Animate PostGameBGColor alpha 0 Linear 0 0
+	Animate PreGameLeftBar xpos "c-2000" Linear 0 0
+	Animate PreGameRightBar xpos "c1000" Linear 0 0
 	
 	//Slide in
-	Animate PostGameTopBar ypos 0 Deaccel 0 1.5
-	Animate PostGameBottomBar ypos r50 Deaccel 0 1.5
-	Animate PostGameBGLine alpha 255 Spline 0 1.5
-	Animate PostGameBGColor alpha 255 Spline 0 1.5
+	Animate PreGameLeftBar xpos "c-1000" Linear 0 0.3
+	Animate PreGameRightBar xpos "c0" Linear 0 0.3
 	
-	//Cleanup, again
-	Animate PostGameTopBar ypos -55 Linear 30 0
-	Animate PostGameBottomBar ypos r-5 Linear 30 0
-	Animate PostGameBGLine alpha 0 Linear 25 0
-	Animate PostGameBGColor alpha 0 Linear 25 0
+	//Make cracked portions visible
+	SetVisible	PreGameLeftBarCrack	1	1
+	SetVisible	PreGameRightBarCrack	1	1
+
+	//Break
+	Animate PreGameLeftBar xpos "c-1100" Accel 1 0.1
+	Animate PreGameRightBar xpos "c100" Accel 1 0.1
+	SetVisible	PreGameLeftBarEdge	0	1
+	SetVisible	PreGameRightBarEdge	0	1
+	
+	//Slide out
+	Animate PreGameLeftBar xpos "c-2000" Accel 2 0.3
+	Animate PreGameRightBar xpos "c1000" Accel 2 0.3
+//////LEFTBAR, RIGHTBAR//
+
+	SetVisible	PreGameVSStar	1	0
+	SetVisible	PreGameVSTextOnly	1	0
+	SetVisible	PreGameVSStarTanDarker	0	0
+	//Cleanup
+	Animate PreGameVSStar xpos "c875" Linear 0 0
+	Animate PreGameVSStar ypos "c-125" Linear 0 0
+	Animate PreGameVSStarTanDarker wide "250" Linear 0 0
+	Animate PreGameVSStarTanDarker tall "250" Linear 0 0
+	Animate PreGameVSStarTanDarker xpos "c-125" Linear 0 0
+	Animate PreGameVSStarTanDarker ypos "c-125" Linear 0 0
+	Animate PreGameVSStarTanDarker alpha "255" Linear 0 0
+	Animate PreGameVSTextOnly xpos "0"	Linear 0 0
+	Animate PreGameVSTextOnly ypos "0"	Linear 0 0
+	SetVisible	PostGameBGColor	0	0
+	
+	//Slide in
+	Animate PreGameVSStar xpos "c-125" Linear 0 0.3
+	
+	//Break
+	Animate PreGameVSStar xpos "c-120" Accel 1 0.1
+	Animate PreGameVSTextOnly xpos "4"	Accel 1 0.1
+	Animate PreGameVSTextOnly ypos "4"	Accel 1 0.1
+	SetVisible	PostGameBGColor	1	1
+	
+	//Slide out
+	Animate PreGameVSStar ypos "480" Accel 1.6 0.2
+	
+	//Expand the brown background star and make it transparent as it expands
+	SetVisible	PreGameVSStarTanDarker	1	0.3
+	Animate PreGameVSStarTanDarker wide "400" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker tall "400" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker xpos "c-200" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker ypos "c-200" Linear 0.3 0.7	
+	Animate PreGameVSStarTanDarker alpha "0" Linear 0.3 0.7	
+	SetVisible	PreGameVSStarTanDarker	0	1
+	
+	
+	PlaySound 0 "ui/trade_changed.wav"
+	PlaySound 0.28 "ui/mm_door_close.wav"
+	PlaySound 0.98 "weapons/bottle_break.wav"
+	PlaySound 1.92 "ui/mm_comp_banner_up.wav"
+	
+	//do a cleanup after 30 seconds or on the next map load with that flaghide anim
+	//	RunEvent HudTournament_DoorsCleanup 10
 }
 
 //ONLY THE TIMER - BETWEEN ROUNDS
@@ -593,14 +678,13 @@ event HudTournament_DoorsCleanup
 	SetVisible	PreGameVSTextOnly	0	0
 	SetVisible	PreGameVSStarTanDarker	0	0
 	
+	SetVisible	PreGameLeftBarCrack	0	0
+	SetVisible	PreGameRightBarCrack	0	0
+	SetVisible	PostGameBGColor	0	0
+	
 	Animate PostGameTopBar ypos 0 Linear 0 0
 	Animate PostGameBottomBar ypos r50 Linear 0 0
 
 	Animate RedTeamPanel xpos r-5 Accel 0 0
 	Animate BlueTeamPanel xpos -155 Accel 0 0
-	
-	Animate PostGameTopBar ypos -55 Linear 0 0
-	Animate PostGameBottomBar ypos r-5 Linear 0 0
-	Animate PostGameBGLine alpha 0 Linear 0 0
-	Animate PostGameBGColor alpha 0 Linear 0 0
 }
