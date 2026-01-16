@@ -329,6 +329,7 @@
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
+					"textinsetx"	"10"
 
 					if_large
 					{
@@ -353,6 +354,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"fgcolor"		"SolarTeamBLU"
+					"textinsetx"	"10"
 
 					if_large
 					{
@@ -602,6 +604,7 @@
 					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
+					"textinsetx"	"10"
 
 					if_large
 					{
@@ -626,6 +629,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"fgcolor"		"SolarTeamRED"
+					"textinsetx"	"10"
 
 					if_large
 					{
