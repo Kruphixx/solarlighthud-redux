@@ -107,5 +107,6 @@
 		"label"			"#MainMenu_Video"
 		"Command"		"engine playvideo redux_intro"
 		"tooltip" 		"#MainMenu_Video"
+		"OnlyAtMenu"	"1"
 	}
 }
