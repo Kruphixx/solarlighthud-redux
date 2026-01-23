@@ -491,7 +491,7 @@
 		"tall"			"300"
 		"visible"		"0"
 		"bgcolor_override"		"0 0 0 0"
-		"noitem_textcolor"		"117 107 94 255"
+		"noitem_textcolor"		"TanLight"
 		"PaintBackgroundType"	"2"
 		"paintborder"	"1"
 		
