@@ -160,7 +160,7 @@
 		"fieldName"		"bg"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"-15"
+		"zpos"			"-16"
 		"wide"			"f0"
 		"tall"			"f0"
 		"visible"		"1"
@@ -168,6 +168,25 @@
 		"image"			"replay/thumbnails/menu_bg/backpack_gradient"
 		"scaleImage"	"1"
 		"mouseinputenabled"	"0" 
+	}	
+	
+	"bglines"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"bglines"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-15"
+		"wide"			"f0"
+		"tall"			"f0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/menu_bg/backpack_lines"
+		"scaleImage"	"0"
+		"tileImage"	"1"
+		"mouseinputenabled"	"0"
+		"drawcolor"     "Black"
+		"alpha"			"100"
 	}	
 	
 	"bg_shape_topleft"
