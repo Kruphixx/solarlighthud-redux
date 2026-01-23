@@ -108,6 +108,8 @@ To fix, or not to fix? That is the question.
 * Matchmaking menus have been replaced with full-screen menus.
 * New scrolling background patterns for the loadout screen, backpack, class selection and other places.
 * Loadout screen now uses "allow\_manip", like many other custom HUDs. The layout has also been changed with vertical preset panels, and the class preview is larger.
+* New war paint inspection menus and redeem menus
+* New trade-up screen
 * Moved Casual rank display to the Stats screen. Thanks to DarSitam for letting me "borrow"...
 * Added the new Mann Co. Catalog buttons from that one October 2025 GitHub patch.
 * Added custom war paint inspection menu. Some buttons were "borrowed" from Wiethoofd's greenscreen war paint menu and then edited to not be too derivative.
