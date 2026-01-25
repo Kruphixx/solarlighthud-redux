@@ -1,5 +1,23 @@
 "GameMenu" [$WIN32]
 {
+	//REDUX backgrounds
+	
+	"DiagonalLineBGInGame"
+	{
+		"label"			"#MainMenu_Video"
+		"Command"		"engine echo this shouldn't be possible to click"
+		"OnlyInGame"	"1"
+	}
+	
+	
+	"LineBGAtMenu"
+	{
+		"label"			"#MainMenu_Video"
+		"Command"		"engine echo this shouldn't be possible to click"
+		"OnlyAtMenu"	"1"
+	}
+	
+	
 	"VRModeButton"
 	{
 		"label" "#MMenu_VRMode_Activate"
