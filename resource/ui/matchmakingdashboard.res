@@ -32,26 +32,6 @@
 		"pinCorner"		"2"
 		"autoResize"	"1"
 
-		"Gradient"
-		{
-			"ControlName"		"ImagePanel"
-			"fieldName"		"Gradient"
-			"xpos"		"0"
-			"ypos"		"0"
-			"wide"		"p0.5"
-			"tall"		"f6"
-			"zpos"	"0"
-			"visible"		"0"
-			"enabled"		"0"
-			"rotation"		"2"
-			"proportionaltoparent"	"1"
-			"scaleimage"	"1"
-			"mouseinputenabled"	"0"
-			"alpha"		"100"
-
-			"image"		"gradient_pure_black"
-		}
-
 		"SolarTopBarBG"
 		{
 			"ControlName"	"ImagePanel"
@@ -498,21 +478,6 @@
 			"visible"		"1"
 			"proportionaltoparent"	"1"
 
-			"OuterShadow"
-			{
-				"ControlName"	"Panel"
-				"fieldName"		"OuterShadow"
-				"xpos"			"0"
-				"ypos"			"0"
-				"zpos"			"-1"
-				"wide"			"f0"
-				"tall"			"f0"
-				"visible"		"1"
-				"proportionaltoparent"	"1"
-
-				"border"		"OuterShadowBorderThin"
-			}
-
 			"BGPanel"
 			{
 				"ControlName"	"Panel"
@@ -525,7 +490,7 @@
 				"visible"		"1"
 				"proportionaltoparent"	"1"
 
-				"border"		"ReplayDefaultBorder"
+				"border"		"BorderTanDarkCornersVerySmall"
 			}
 
 			"PromptText"
@@ -596,31 +561,6 @@
 			"zpos"			"100"
 			"wide"			"0"
 			"tall"			"f6"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"0"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"west"
-			"textinsetx"	"0"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"proportionaltoparent"	"1"
-			"labeltext"		""
-			"mouseinputenabled"	"1"
-			"keyboardinputenabled"	"0"
-			"actionsignallevel"	"0"
-			"RoundedCorners"	"0"
-
-			"armedBgColor_override"		"Blank"
-			"defaultBgColor_override"	"Blank"
-
-			"defaultFgColor_override" "Blank"
-			"armedFgColor_override" "Blank"
-
-			"image_drawcolor"	"Blank"
-			"image_armedcolor"	"Blank"
 		}
 
 		"DisconnectButton" //used to move find a game button while in a match. is set to 0 width to be impossible to click
@@ -632,54 +572,6 @@
 			"zpos"			"100"
 			"wide"			"0"
 			"tall"			"f6"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"west"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"Command"		"quit"
-			"proportionaltoparent"	"1"
-			"labeltext"		"#TF_Disconnect"
-			"mouseinputenabled"	"1"
-			"keyboardinputenabled"	"0"
-			"actionsignallevel"	"2"
-			"RoundedCorners"	"0"
-			"textinsety"	"5"
-			"textinsetx"	"22"
-			"use_proportional_insets"	"1"
-
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-
-			"armedBgColor_override"		"192 28 0 150"
-			"defaultBgColor_override"	"192 28 0 50"
-
-			"defaultFgColor_override" "TanLight"
-			"armedFgColor_override" "TanLight"
-
-			"image_drawcolor"	"TanLight"
-			"image_armedcolor"	"TanLight"
-
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"6"
-				"ypos"			"rs1-5"
-				"zpos"			"1"
-				"wide"			"14"
-				"tall"			"14"
-				"visible"		"1"
-				"enabled"		"1"
-				"scaleImage"	"1"
-				"proportionaltoparent"	"1"
-				"image"			"glyph_disconnect"
-				"drawcolor_override" "TanLight"
-			}
 		}
 
 		"ResumeButton"
