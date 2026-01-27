@@ -2,11 +2,12 @@
 {		
 	HudSpellMenu
 	{
-		"xpos"			"156"
+		"xpos"			"r210"
+		"ypos"			"r73"
 
 		"if_killstreak_visible"
 		{
-			"xpos"			"156"
+			"xpos"			"r210"
 		}
 	}
 			
@@ -29,9 +30,10 @@
 		"tall"			"30"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/pd/pd_timer_bg_normal"
+		"image"			"replay/thumbnails/pd/pd_timer_bg_white_mirrored"
 		"scaleImage"	"1"	
 		"proportionalToParent"	"1"
+		"drawcolor"		"TanDarker"
 	}
 	
 	"Spellbook"
@@ -49,7 +51,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"SpellIcon"
-		"xpos"			"18"
+		"xpos"			"38"
 		"ypos"			"34"
 		"zpos"			"7"
 		"wide"			"23"
@@ -83,7 +85,7 @@
 		"font"			"SLBoldMediumStroke"
 		"labelText"		"%counttext%"
 		"textAlignment" "center"
-		"xpos"			"42"
+		"xpos"			"6"
 		"ypos"			"33"
 		"zpos"			"2"
 		"wide"			"30"
@@ -98,7 +100,7 @@
 		"font"			"SLBoldMedium"
 		"labelText"		"%counttext%"
 		"textAlignment" "center"
-		"xpos"			"42"
+		"xpos"			"6"
 		"ypos"			"33"
 		"zpos"			"3"
 		"wide"			"30"

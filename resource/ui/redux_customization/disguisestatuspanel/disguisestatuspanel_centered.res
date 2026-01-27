@@ -6,7 +6,7 @@
 		"visible"	"1"
 		"enabled"	"1"
 		"xpos"		"20"	[$WIN32] //old 10
-		"xpos_minmode"		"59"	[$WIN32] //old 10
+		"xpos_minmode"		"53"	[$WIN32] //old 10
 		"ypos"		"r125"	[$WIN32] //old r70
 		"ypos_minmode"	"r55"
 		"zpos"		"-1" //old 0
