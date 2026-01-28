@@ -30,6 +30,7 @@
 		"zpos"			"0"
 		"wide"			"f0"
 		"tall"			"25"
+		"border"		"NoBorder"
 		"fillcolor"		"TanDarkerTransparent"
 		"autoResize"	"0"
 		"pinCorner"		"0"

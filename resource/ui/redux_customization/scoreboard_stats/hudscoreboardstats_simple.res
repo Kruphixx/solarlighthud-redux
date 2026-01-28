@@ -30,8 +30,16 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"BGFooter"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"xpos"			"cs-0.5"
+		"ypos"			"r25"
+		"wide"			"120"
+		"tall"			"40"
+		"border"		"BorderTanDarkerCornersTransparentVerySmall"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"	"0 0 0 0"
 		
 		if_mvm
 		{

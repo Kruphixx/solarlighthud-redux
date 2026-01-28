@@ -471,7 +471,7 @@
 			"ControlName"	"EditablePanel"
 			"fieldName"		"JoinPartyLobbyContainer"
 			"xpos"			"290"
-			"ypos"			"-25"
+			"ypos"			"-30"
 			"zpos"			"110"
 			"wide"			"100"
 			"tall"			"f0"
@@ -505,7 +505,7 @@
 
 				if_queued
 				{
-					"xpos"			"0"
+					"xpos"			"cs-0.5"
 					"wide"			"100"
 				}
 				
