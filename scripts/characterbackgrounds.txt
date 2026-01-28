@@ -40,4 +40,44 @@
 		"store_text"		"#TF_Trial_MainMenu_Upsell_Soldier"
 		"holiday_restriction"	"christmas"
 	}
+	"basic_medic"
+	{
+		"image"	"../console/characters/medic_sepia"
+		"item_url"	"medic"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Medic"
+	}
+	"halloween_medic"
+	{
+		"image"	"../console/characters/medic_sepia"
+		"item_url"	"medic"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Medic"
+		"holiday_restriction"	"halloween_or_fullmoon"
+	}
+	"christmas_medic"
+	{
+		"image"	"../console/characters/medic_sepia"
+		"item_url"	"medic"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Medic"
+		"holiday_restriction"	"christmas"
+	}
+	"basic_scout"
+	{
+		"image"	"../console/characters/scout_sepia"
+		"item_url"	"scout"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Scout"
+	}
+	"halloween_scout"
+	{
+		"image"	"../console/characters/scout_sepia"
+		"item_url"	"scout"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Scout"
+		"holiday_restriction"	"halloween_or_fullmoon"
+	}
+	"christmas_scout"
+	{
+		"image"	"../console/characters/scout_sepia"
+		"item_url"	"scout"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Scout"
+		"holiday_restriction"	"christmas"
+	}
 }
