@@ -2788,7 +2788,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"DisconnectButtonNew"
-		"xpos"			"c-277"
+		"xpos"			"c-266"
 		"ypos"			"269"
 		"zpos"			"8"
 		"wide"			"235"
@@ -2829,7 +2829,7 @@
 			"allcaps"			"1"
 			
 			"border_default"	""
-			"border_armed"		""		
+			"border_armed"		"ButtonFlickerWideTanDarker"		
 			
 			"image_drawcolor"	"235 226 202 255"
 			
@@ -2862,7 +2862,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"DisconnectButtonNewOutline"
-		"xpos"			"c-277"
+		"xpos"			"c-266"
 		"ypos"			"269"
 		"zpos"			"8"
 		"wide"			"235"
