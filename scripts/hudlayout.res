@@ -900,7 +900,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-275"
-		"ypos"					"8"
+		"ypos"					"20"
 		"wide"					"550"
 		"tall"					"300"
 		"zpos"					"4"
