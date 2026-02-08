@@ -197,15 +197,15 @@
 		"scaleImage"	"1"
 	}
 	
-	"KillStreakIcon"
+	"KillStreakIcon" //EVIL. STUBBORN. I HATE. GET RID OF IT
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"KillStreakIcon"
 		"xpos"			"0"
-		"ypos"			"26"
+		"ypos"			"24"
 		"zpos"			"14"
-		"wide"			"15"
-		"tall"			"15"
+		"wide"			"19"
+		"tall"			"19"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/leaderboard_streak"

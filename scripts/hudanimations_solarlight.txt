@@ -62,10 +62,9 @@ event CompetitiveGame_RestoreChatWindow //runs on every spawn
 	RunEventChild HudMatchStatus HudTournament_DoorsCleanup 2.6 //this animation freezes when respawning, make everything invis. but not immediately, since players respawn during the door shut sequence
 }
 
-event FlagOutlineHide //runs on every map load?
+event FlagOutlineHide //runs on every map load and every respawn, not ideal for hiding casual postgame bg :(
 {
 	Animate OutlineImage	Alpha		"0"				Linear 0.0 0.1
-	RunEventChild HudMatchStatus HudTournament_DoorsCleanup 0
 }
 
 event SpawnAnim
