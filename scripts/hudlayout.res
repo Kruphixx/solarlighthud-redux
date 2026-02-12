@@ -765,17 +765,18 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos" "r145" [$WIN32]
-		"ypos" "28" [$WIN32]
+		"ypos" "18" [$WIN32]
 		"wide" "145"
 		"tall" "340"
 
 		"item_wide"	"135"
+		"item_tall"	"24"
 		
 		"show_avatar"		"1"
-		"avatar_xpos"			"-9"
+		"avatar_xpos"			"-13"
 		"avatar_ypos"			"0"
-		"avatar_wide"			"16"
-		"avatar_tall"			"16"
+		"avatar_wide"			"24"
+		"avatar_tall"			"24"
 		
 		"show_dead_icon"	"1"
 		"dead_xpos"			"1"
@@ -783,13 +784,15 @@
 		"dead_wide"			"16"
 		"dead_tall"			"16"
 		
-		"show_voice_icon"	"1"
+		"show_voice_icon"	"0"
 		"icon_ypos"			"0"
 		"icon_xpos"			"19"
 		"icon_tall"			"16"
 		"icon_wide"			"16"
 		
 		"text_xpos"			"39"
+		"fade_in_time"		"0.05"
+		"fade_out_time"		"0.05"
 	}
 
 	HudHintDisplay
