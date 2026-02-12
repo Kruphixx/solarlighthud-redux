@@ -61,22 +61,22 @@
 		}
 	}
 	
-	"bg"
+	"bgline"
 	{
 		"ControlName"	"ImagePanel"
-		"fieldName"		"bg"
+		"fieldName"		"bgline"
 		"xpos"			"0"
 		"ypos"			"0"
-		"zpos"			"-15"
+		"zpos"			"-13"
 		"wide"			"f0"
 		"tall"			"f0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/menu_bg/background_diamond_looping_small"
+		"image"			"replay/thumbnails/menu_bg/line_warp"
 		"scaleImage"	"0"
 		"tileImage"	"1"
 		"mouseinputenabled"	"0"
-		"drawcolor"     "200 150 255 255"  
+		"drawcolor"     "0 0 0 64"  
 	}	
 	
 	"bggradient"
@@ -88,31 +88,48 @@
 		"zpos"			"-14"
 		"wide"			"f-20"
 		"tall"			"f-20"
-		"drawcolor"     "100 75 128 255"    
+		"drawcolor"     "32 32 32 255"    
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"training/gradient_black"
-		"alpha"			"230"
+		"alpha"			"100"
 		"proportionaltoparent"	"1"
 	}	
+	
+	"bgcolorsolid"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"bgcolorsolid"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-15"
+		"wide"			"f0"
+		"tall"			"f0"
+		"fillcolor"		"44 35 28 255"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+	}		
+
 	
 	"box"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"box"
-		"xpos"			"c-320"
-		"ypos"			"12"
+		"xpos"			"0"
+		"ypos"			"52"
 		"zpos"			"-11"
-		"wide"			"640"
-		"tall"			"382"
-		"fillcolor"		"0 0 0 200"
+		"wide"			"f0"
+		"tall"			"249"
+		"fillcolor"		"TanDark"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-	}	
+		"visible"		"1"
+		"enabled"		"1"
+	}		
 
 	"CaratLabel"
 	{
@@ -123,25 +140,78 @@
 		"visible"		"0"
 		"enabled"		"0"
 	}
+	
+	"TitleAnchor"
+	{	
+		"ControlName"			"ImagePanel"
+		"fieldName"				"TitleAnchor"
+		"xpos"					"c0"
+		"ypos"					"10"
+		"zpos"					"6"
+		"wide"					"0"
+		"tall"					"0"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"	
+		"fillcolor"				"SolarTeamBLU"
+		"PaintBackgroundType"	"0"
+	}
+	
 	"ArmoryLabel"
 	{
 		"ControlName"	"Label"
 		"fieldName"		"ArmoryLabel"
-		"font"			"FuturaItalic32"
+		"xpos"		"0"
+		"ypos"		"0"
+		"zpos"		"99"
+		"wide"		"f0"
+		"tall"		"35"
+		"proportionaltoparent"	"1"
 		"labelText"		"#Armory"
-		"textAlignment"	"west"
-		"xpos"			"c-310"
-		"ypos"			"18"
-		"zpos"			"1"
-		"wide"			"240"
-		"tall"			"35"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"textinsetx"	"5"
+		"textAlignment"	"south"
+		"font"			"SLItalicMedium"
+		"fgcolor_override"	"TanLight"
+		"auto_wide_tocontents"	"1"
+		"textinsetx"	"20"
+		"allcaps"		"1"
+		
+		"mouseinputenabled"	"0"
+
+		"pin_to_sibling"	"TitleAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
 	}
 
+	"ArmoryLabelStroke"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"ArmoryLabelStroke"
+		"xpos"		"0"
+		"ypos"		"0"
+		"zpos"		"98"
+		"wide"		"f0"
+		"tall"		"35"
+		"proportionaltoparent"	"1"
+		"labelText"		"#Armory"
+		"textAlignment"	"south"
+		"font"			"SLItalicMediumStroke"
+		"fgcolor_override"	"TanDarker"
+		"border"		"BorderTargetIDTanDarker"
+		"auto_wide_tocontents"	"1"
+		"textinsetx"	"20"
+		"allcaps"		"1"
+		"visible"		"1"
+		"enabled"		"1"
+		
+		"mouseinputenabled"	"0"
+		
+		"pin_to_sibling"	"TitleAnchor"
+		"pin_corner_to_sibling"		"4"
+		"pin_to_sibling_corner"		"4"
+	}
+	
 	"FiltersLabel"
 	{
 		"ControlName"	"CExLabel"
@@ -542,7 +612,7 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"StoreButton"
-		"xpos"			"c-138"
+		"xpos"			"c-100"
 		"ypos"			"343"
 		"zpos"			"20"
 		"wide"			"200"
