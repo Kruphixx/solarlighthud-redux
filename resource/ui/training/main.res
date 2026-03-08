@@ -255,17 +255,17 @@
 			
 			"Mode0Token"		"#Gametype_CP"
 			"Desc0Token"		"#TF_GameModeDesc_CP"
-			"Image0Path"		"illustrations/gamemode_cp"
+			"Image0Path"		"replay/thumbnails/gamemodeselect/gamemode_cp"
 			"Mode0Id"			"0"
 			
 			"Mode1Token"		"#Gametype_Koth"
 			"Desc1Token"		"#TF_GameModeDesc_Koth"
-			"Image1Path"		"illustrations/gamemode_koth"
+			"Image1Path"		"replay/thumbnails/gamemodeselect/gamemode_koth"
 			"Mode1Id"			"1"
 			
 			"Mode2Token"		"#Gametype_Escort"
 			"Desc2Token"		"#TF_GameModeDesc_Escort"
-			"Image2Path"		"illustrations/gamemode_payload"
+			"Image2Path"		"replay/thumbnails/gamemodeselect/gamemode_payload"
 			"Mode2Id"			"2"
 		}
 		

@@ -17,7 +17,7 @@
 		
 		"modename"			"#TR_AttackDefense"
 		"description"		"#TF_Training_Desc_BasicTraining"
-		"image"				"illustrations/training_basic"
+		"image"				"replay/thumbnails/gamemodeselect/training"
 		"startcommand"		"basictrainingselected"
 	}
 	
@@ -38,7 +38,7 @@
 		
 		"modename"			"#TF_OfflinePractice"
 		"description"		"#TF_Training_Desc_OfflinePractice"
-		"image"				"illustrations/training_offlinepractice"
+		"image"				"replay/thumbnails/gamemodeselect/offlinepractice"
 		"startcommand"		"offlinepracticeselected"
 	}
 }

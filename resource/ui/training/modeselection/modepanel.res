@@ -28,7 +28,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"mouseinputenabled" "0"
-			"fgcolor_override"	"87 79 70 255"
+			"fgcolor_override"	"TanLight"
 		}
 
 		"DescLabel"
@@ -47,7 +47,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"89 81 71 255"
+			"fgcolor_override"	"TanDark"
 			"auto_wide_tocontents" "0"
 			"wrap"				   "1"
 			"centerwrap"		   "1"
@@ -63,7 +63,7 @@
 			"tall"			"205"
 			"visible"		"1"
 			"enabled"		"1"
-			"border"		"BorderTanLightCornersVerySmall"
+			"border"		"BorderTanDarkerCornersVerySmall"
 		}
 		
 		// Parented to ImageFrame in code.

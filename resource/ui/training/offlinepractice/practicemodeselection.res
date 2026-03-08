@@ -29,7 +29,7 @@
 		"tileImage"		"0"
 		"scaleImage"	"1"
 		"image"			"replay/thumbnails/blank"
-		"border"		"BorderTanLightCornersVerySmall"
+		"border"		"BorderTanDarkerCornersVerySmall"
 	}
 	
 	"PrevButton"
@@ -98,7 +98,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"0"
-		"fgcolor_override"	"83 75 66 255"
+		"fgcolor_override"	"TanLight"
 	}
 	
 	"CurPageLabel"
@@ -118,7 +118,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"1"
-		"fgcolor_override"	"83 75 66 255"
+		"fgcolor_override"	"TanDark"
 	}
 	
 	"DescLabel"
@@ -137,7 +137,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"0"
-		"fgcolor_override"	"83 75 66 255"
+		"fgcolor_override"	"TanDark"
 	}
 	
 	"SelectCurrentGameModeButton"
