@@ -1,6 +1,3 @@
-//Repurposed for music picker menu
-//Missing Addon screen is found in basepage.res
-
 "Resource/UI/replaybrowser/mainpanel.res"
 {
 	"ReplayBrowser"
