@@ -1,6 +1,7 @@
 #base "redux_base/mainmenu_safemode.res"
 #base "redux_base/mainmenu_friendslist.res"
 #base "redux_base/mainmenu_preload.res"
+#base "music_player/mainmenu_musicplayer.res"
 
 
 "resource/ui/mainmenuoverride.res"
@@ -2202,8 +2203,8 @@
 		"proportionaltoparent"	"1"
 		"paintbackground"	"1"
 		
-		"border_default"	""
-		"border_armed"		""		
+		"border_default"	"NoBorder"
+		"border_armed"		"ButtonFlickerWideTanDark"		
 		
 		"image_drawcolor"	"235 226 202 255"
 		
@@ -2263,10 +2264,10 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"SLHRAdvancedOptionsButton"
-		"xpos"			"125"
-		"ypos"			"rs1"
-		"wide"			"120"
-		"tall"			"40"
+		"xpos"			"120"
+		"ypos"			"rs1+5"
+		"wide"			"130"
+		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -2286,8 +2287,8 @@
 		"proportionaltoparent"	"1"
 		"paintbackground"	"1"
 		
-		"border_default"	""
-		"border_armed"		""		
+		"border_default"	"NoBorder"
+		"border_armed"		"ButtonFlickerWideTanDark"		
 		
 		"image_drawcolor"	"235 226 202 255"
 		
@@ -2321,11 +2322,11 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"SLHRAdvancedOptionsButtonOutline"
-		"xpos"			"125"
-		"ypos"			"rs1"
+		"xpos"			"120"
+		"ypos"			"rs1+5"
 		"zpos"			"-1"
-		"wide"			"120"
-		"tall"			"40"
+		"wide"			"130"
+		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -2348,9 +2349,9 @@
 		"ControlName"	"CExImageButton"
 		"fieldName"		"SLHRCustomizationButton"
 		"xpos"			"250"
-		"ypos"			"rs1"
+		"ypos"			"rs1+8"
 		"wide"			"190"
-		"tall"			"35"
+		"tall"			"45"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -2370,8 +2371,8 @@
 		"proportionaltoparent"	"1"
 		"paintbackground"	"1"
 		
-		"border_default"	""
-		"border_armed"		""		
+		"border_default"	"NoBorder"
+		"border_armed"		"ButtonFlickerWideTanDark"			
 		
 		"image_drawcolor"	"235 226 202 255"
 		
@@ -2406,10 +2407,10 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"SLHRCustomizationButtonOutline"
 		"xpos"			"250"
-		"ypos"			"rs1"
+		"ypos"			"rs1+8"
 		"zpos"			"-1"
 		"wide"			"190"
-		"tall"			"35"
+		"tall"			"45"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
