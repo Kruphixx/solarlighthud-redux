@@ -181,7 +181,7 @@
 			"labelText"		"#Customization_Quicksettings_Title"
 			"textAlignment"	"center"
 			"xpos"			"cs-0.5"
-			"ypos"			"230"
+			"ypos"			"236"
 			"zpos"			"-9"
 			"wide"			"400"
 			"tall"			"22"
@@ -217,7 +217,7 @@
 			"ControlName"	"CExImageButton"
 			"fieldName"		"ToggleMinmodeButton"
 			"font"			"FuturaItalic20"
-			"labelText"		"Toggle Minmode"
+			"labelText"		"#Quicksetting_Minmode"
 			"textAlignment"	"center"
 			"xpos"			"cs-0.5"
 			"ypos"			"260"
@@ -255,7 +255,7 @@
 			"ControlName"	"CExImageButton"
 			"fieldName"		"ToggleMatchHUDButton"
 			"font"			"FuturaItalic20"
-			"labelText"		"Toggle Match HUD"
+			"labelText"		"#Quicksetting_MatchHUD"
 			"textAlignment"	"center"
 			"xpos"			"cs-0.5"
 			"ypos"			"282"
@@ -293,7 +293,7 @@
 			"ControlName"	"CExImageButton"
 			"fieldName"		"Toggle3DModelButton"
 			"font"			"FuturaItalic20"
-			"labelText"		"Toggle 3D Class Model"
+			"labelText"		"#Quicksetting_3DModel"
 			"textAlignment"	"center"
 			"xpos"			"cs-0.5"
 			"ypos"			"304"
@@ -323,6 +323,51 @@
 				"enabled"		"0"
 
 				"proportionaltoparent"	"1"
+			}	
+		}
+		
+		"AddonPackButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"AddonPackButton"
+			"font"			"FuturaItalic20"
+			"labelText"		"#Addon_Pack_Download"
+			"textAlignment"	"south"
+			"xpos"			"cs-0.5"
+			"ypos"			"330"
+			"zpos"			"-8"
+			"wide"			"200"
+			"tall"			"80"
+			"visible"		"1"
+			"enabled"		"1"
+			"command"			"url https://github.com/SolarLightTF2/solarlighthud-redux/blob/main/addonpack.md"
+			"actionsignallevel" 	"2"
+			"paintbackgroundtype" 	"0"
+			"roundedcorners"		"0"
+			"stay_armed_on_click"	"1"
+			"textinsety"	"-4"
+
+			"sound_armed"		"ui/item_info_mouseover.wav"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+
+			"fgcolor_override"	"TanLight"
+			"proportionaltoparent"	"1"
+			
+			"SubImage" //notification count image
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"-10"
+				"zpos"			"3"
+				"wide"			"160"
+				"tall"			"80"
+				"visible"		"1"
+				"image"			"replay/thumbnails/logo_addon_pack"
+				"scaleImage"	"1"
+				"paintBackground"   "1"
+			"proportionaltoparent"	"1"
 			}	
 		}
 
