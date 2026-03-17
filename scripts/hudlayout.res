@@ -29,7 +29,7 @@
 		"wide"		    "f0"
 		"tall"		    "480"
 		"scaleimage"	"1"
-		"image"			"replay/thumbnails/shaders/redux_sepia"
+		"image"			"replay/thumbnails/shaders/valve_mode"
 		"visible"		"0"
 	}
 	
@@ -933,7 +933,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-150"
-		"ypos"					"255"
+		"ypos"					"80"
 		"wide"					"300"
 		"tall"					"215"
 	}
