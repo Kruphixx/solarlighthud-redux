@@ -1,24 +1,3 @@
-# THIS HUD IS UNFINISHED and is not intended for public usage.
-
-Known issues:
-
-* Some customization features are in an incomplete state and are thus not included via menu buttons yet. They can still be executed via the console, but may be buggy or cause overlapping issues.
-* Potentially some placeholders / leftovers from either the stock HUD or the old HUD "SolarLightHUD Classic", mainly in the files
-* Some tip text is probably too long and probably cuts off while loading, especially in 4:3
-* Forgotten glow element in PLR when near the end of the track (appeared on helltower from what I saw)
-* MvM Lose panel is unedited
-* Check mvm buyback just in case...
-
-Below this is the intended readme
-
-
-
-
-
-
-
-
-
 # SolarLightHUD REDUX
 <img width="2560" height="1280" alt="thumbnail" src="https://github.com/user-attachments/assets/fee65220-2855-477d-b247-6e95168fb799" />
 
@@ -64,10 +43,24 @@ hudchat_top
 
 ClassicerHPAmmo
  
-# Known issues
+# Room for improvement
 
-* ~~Pip-boy Engineer HUD does not work correctly~~ temp reuse of the default engie ui
-* Need to optimize by removing unused elements
+Desired improvements for later:
+* Pyro, Engineer, Sniper and Spy currently do not have main menu renders
+* Centered Meters for the 'Classic' HUD Mode were nearly complete (courtesy of Techno), but were too buggy to ship in the current release
+* The Customization menus could benefit from better button layouts and more preview images
+* MvM robot carrier level-up meter is currently unchanged
+* CTF radars could benefit from new icons
+* Contract buttons and Alert buttons do not have unique appearances
+* Some materials could be updated to use vertexcolor
+* This HUD could be optimized a bit
+
+Issues:
+* Potentially some placeholders / leftovers from either the stock HUD or the old HUD "SolarLightHUD Classic", mainly in the files
+* Some tip text probably cuts off while loading, especially in 4:3, and even more noticeable when using a controller (which auto-enlarges sourcescheme elements)
+* Pibble HUD (for 2v2 PASS Time) looks too bland and could use an update
+* Some unofficial Vscript gamemodes (i.e. Freezetag, Prophunt) are unedited
+* Not all buttons have a consistent appearance
 
 To fix, or not to fix? That is the question.
 
