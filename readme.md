@@ -66,7 +66,7 @@ Issues:
 * Potentially some placeholders / leftovers from either the stock HUD or the old HUD "SolarLightHUD Classic", mainly in the files
 * Some tip text probably cuts off while loading, especially in 4:3, and even more noticeable when using a controller (which auto-enlarges sourcescheme elements)
 * Pibble HUD (for 2v2 PASS Time) looks too bland and could use an update
-* Some unofficial Vscript gamemodes (i.e. Freezetag, Prophunt) are unedited
+* Some unofficial Vscript gamemodes (i.e. Gun Game) are unedited
 * Not all buttons have a consistent appearance
 
 To fix, or not to fix? That is the question.
@@ -307,6 +307,8 @@ To fix, or not to fix? That is the question.
 * Minmodes are included for each PASS Time HUD, each one varying slightly depending on which option you picked. (TODO: Default PASS Minmode)
 * Every official PD map has been checked for issues and some fixes were made on a per-map basis, since PD lets me do that.
 * Tried to edit the HUD used in Perks but it's still a bit jank due to limitations, sorry.
+* Added a Freezetag HUD, copy pasted from arena_afterlife
+* Added a basic TF2 Party edit
 
 
 
