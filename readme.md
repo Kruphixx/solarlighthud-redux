@@ -69,10 +69,14 @@ Issues:
 * Pibble HUD (for 2v2 PASS Time) looks too bland and could use an update
 * Some unofficial Vscript gamemodes (i.e. Gun Game) are unedited
 * Not all buttons have a consistent appearance
-* Team Comtress 2 is not supported
+* Team Comtress 2 is not supported without modifications
 
 To fix, or not to fix? That is the question.
 
+# Note for Team Comtress 2 Users
+This HUD technically works in TC2 (though without any support for the new menus), but requires a modification.
+Something in the first-run script causes an instant game crash upon launch. This can be resolved by deleting customization.cfg or modifying valve.rc
+	* I'm pretty sure HUD customization menus don't work in most sourcemods anyway due to the lack of Sixense commands
 
 # REDUX PATCH NOTES (compared to old 2018 SolarLightHUD):
 
