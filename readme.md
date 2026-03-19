@@ -155,6 +155,9 @@ Something in the first-run script causes an instant game crash upon launch. This
 * New item model panels (loadout / backpack item display)
 * New loading screens.
 * New bottom-right icon upon game launch.
+* Tweaked the currently-unused Quickplay mode selection screen
+  * In the event that Quickplay ever returns, this HUD is at least slightly prepared for it
+  * Was tested in Team Comtress 2
 
 
 
