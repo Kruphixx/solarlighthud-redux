@@ -100,4 +100,24 @@
 		"store_text"		"#TF_Trial_MainMenu_Upsell_Heavy"
 		"holiday_restriction"	"christmas"
 	}
+	"basic_pyro"
+	{
+		"image"	"../console/characters/pyro_sepia"
+		"item_url"	"pyro"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Pyro"
+	}
+	"halloween_pyro"
+	{
+		"image"	"../console/characters/pyro_sepia"
+		"item_url"	"pyro"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Pyro"
+		"holiday_restriction"	"halloween_or_fullmoon"
+	}
+	"christmas_pyro"
+	{
+		"image"	"../console/characters/pyro_sepia"
+		"item_url"	"pyro"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Pyro"
+		"holiday_restriction"	"christmas"
+	}
 }
