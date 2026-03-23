@@ -160,4 +160,24 @@
 		"store_text"		"#TF_Trial_MainMenu_Upsell_Spy"
 		"holiday_restriction"	"christmas"
 	}
+	"basic_engineer"
+	{
+		"image"	"../console/characters/engineer_sepia"
+		"item_url"	"engineer"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Engineer"
+	}
+	"halloween_engineer"
+	{
+		"image"	"../console/characters/engineer_sepia"
+		"item_url"	"engineer"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Engineer"
+		"holiday_restriction"	"halloween_or_fullmoon"
+	}
+	"christmas_engineer"
+	{
+		"image"	"../console/characters/engineer_sepia"
+		"item_url"	"engineer"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Engineer"
+		"holiday_restriction"	"christmas"
+	}
 }
