@@ -27,5 +27,3 @@ Is blocked by sv_pure. Requires a preloader
 # Match HUD portraits
 
 Is blocked by sv_pure. Requires a preloader
-
-...Add link here when available...
