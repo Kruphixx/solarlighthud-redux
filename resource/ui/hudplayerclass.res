@@ -88,19 +88,9 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"classmodelpanelBG"
-		"xpos"			"20"		[$WIN32]
-		"ypos"			"r100"	[$WIN32]
-		"ypos_minmode"			"9999"	[$WIN32] //offscreen
-		"zpos"			"1"		
-		"wide"			"70"
-		"tall"			"100"
+		"ypos"			"9999"
 		"visible"		"0"
-		"visible_minmode"		"0"
-		"enabled"		"1"
-		"scaleImage"	"1"
-		"image"			"replay/thumbnails/bgshapes/SHAPES_CLASS_BG_RED"	
-		"teambg_2"		"replay/thumbnails/bgshapes/SHAPES_CLASS_BG_RED"
-		"teambg_3"		"replay/thumbnails/bgshapes/SHAPES_CLASS_BG_BLU"
+		"enabled"		"0"
 	}
 
 	"classmodelpanel"
@@ -108,10 +98,14 @@
 		"ControlName"	"CTFPlayerModelPanel"
 		"fieldName"		"classmodelpanel"
 		"xpos"			"0"	[$WIN32]
+		"xpos_minmode"	"40"
 		"ypos"			"r180"	[$WIN32]
+		"ypos_minmode"	"r138"
 		"zpos"			"2"		
 		"wide"			"80"
 		"tall"			"180"
+		"wide_minmode"	"62"
+		"tall_minmode"	"138"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
