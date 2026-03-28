@@ -88,9 +88,19 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"classmodelpanelBG"
-		"ypos"			"9999"
+		"xpos"			"20"		[$WIN32]
+		"ypos"			"r100"	[$WIN32]
+		"ypos_minmode"			"9999"	[$WIN32] //offscreen
+		"zpos"			"1"		
+		"wide"			"70"
+		"tall"			"100"
 		"visible"		"0"
-		"enabled"		"0"
+		"visible_minmode"		"0"
+		"enabled"		"1"
+		"scaleImage"	"1"
+		"image"			"replay/thumbnails/bgshapes/SHAPES_CLASS_BG_RED"	
+		"teambg_2"		"replay/thumbnails/bgshapes/SHAPES_CLASS_BG_RED"
+		"teambg_3"		"replay/thumbnails/bgshapes/SHAPES_CLASS_BG_BLU"
 	}
 
 	"classmodelpanel"
